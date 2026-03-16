@@ -4,7 +4,7 @@ the pointer value.</p>
 pointer that was set is not identical to <code>ptr</code>, an assertion fails. In other
 words, <code>ptr</code> must have <code>lock_bit</code> unset. This also means, you usually can
 only use this on the lowest bits.</p>
-</div><div class="tsd-parameters"><h4 class="tsd-parameters-title">Parameters</h4><ul class="tsd-parameter-list"><li><span><span class="tsd-kind-parameter">address</span>: <span class="tsd-signature-type">any</span></span><div class="tsd-comment tsd-typography"><p>a pointer to a #gpointer-sized value</p>
+</div><div class="tsd-parameters"><h4 class="tsd-parameters-title">Parameters</h4><ul class="tsd-parameter-list"><li><span><span class="tsd-kind-parameter">address</span>: <span class="tsd-signature-type">any</span></span><div class="tsd-comment tsd-typography"><p>a pointer to a <code>gpointer</code>-sized value</p>
 </div></li><li><span><span class="tsd-kind-parameter">lock_bit</span>: <span class="tsd-signature-type">number</span></span><div class="tsd-comment tsd-typography"><p>a bit value between 0 and 31</p>
 </div></li><li><span><span class="tsd-kind-parameter">ptr</span>: <span class="tsd-signature-type">any</span></span><div class="tsd-comment tsd-typography"><p>the new pointer value to set</p>
 </div></li><li><span><span class="tsd-kind-parameter">preserve_mask</span>: <span class="tsd-signature-type">never</span></span><div class="tsd-comment tsd-typography"><p>if non-zero, those bits of the current pointer in <code>address</code>   are preserved.   Note that the <code>lock_bit</code> bit will be always unset regardless of   <code>ptr</code>, <code>preserve_mask</code> and the currently set value in <code>address</code>.</p>

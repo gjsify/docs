@@ -10,7 +10,7 @@ name. For example, <code>bloatpad</code> or <code>bloatpad-io</code>.</p>
 not advisable, as it cannot be filtered against using the <code>G_MESSAGES_DEBUG</code>
 environment variable.</p>
 <p>For example, GTK uses this in its <code>Makefile.am</code>:</p>
-<pre><code><span class="hl-6">AM_CPPFLAGS</span><span class="hl-1"> = -</span><span class="hl-6">DG_LOG_DOMAIN</span><span class="hl-1">=\</span><span class="hl-2">&quot;Gtk</span><span class="hl-10">\&quot;</span>
+<pre><code><span class="hl-6">AM_CPPFLAGS</span><span class="hl-1"> = -</span><span class="hl-6">DG_LOG_DOMAIN</span><span class="hl-1">=\</span><span class="hl-2">&quot;Gtk</span><span class="hl-15">\&quot;</span>
 </code><button>Copy</button></pre>
 
 <p>Applications can choose to leave it as the default <code>null</code> (or <code>&quot;&quot;</code>)

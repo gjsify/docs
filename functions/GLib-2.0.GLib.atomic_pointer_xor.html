@@ -5,10 +5,10 @@ storing the result back in <code>atomic</code>.</p>
 <p>This call acts as a full compiler and hardware memory barrier.</p>
 <p>While <code>atomic</code> has a <code>volatile</code> qualifier, this is a historical artifact and
 the pointer passed to it should not be <code>volatile</code>.</p>
-<p>In GLib 2.80, the return type was changed from #gsize to #guintptr to add
+<p>In GLib 2.80, the return type was changed from <code>gsize</code> to <code>guintptr</code> to add
 support for platforms with 128-bit pointers. This should not affect existing
 code.</p>
-</div><div class="tsd-parameters"><h4 class="tsd-parameters-title">Parameters</h4><ul class="tsd-parameter-list"><li><span><span class="tsd-kind-parameter">atomic</span>: <span class="tsd-signature-type">any</span></span><div class="tsd-comment tsd-typography"><p>a pointer to a #gpointer-sized value</p>
+</div><div class="tsd-parameters"><h4 class="tsd-parameters-title">Parameters</h4><ul class="tsd-parameter-list"><li><span><span class="tsd-kind-parameter">atomic</span>: <span class="tsd-signature-type">any</span></span><div class="tsd-comment tsd-typography"><p>a pointer to a <code>gpointer</code>-sized value</p>
 </div></li><li><span><span class="tsd-kind-parameter">val</span>: <span class="tsd-signature-type">number</span></span><div class="tsd-comment tsd-typography"><p>the value to 'xor'</p>
 </div></li></ul></div><h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">never</span></h4><p>the value of <code>atomic</code> before the operation, unsigned</p>
 <div class="tsd-comment tsd-typography"><div class="tsd-tag-since"><h4 class="tsd-anchor-link" id="since">Since<a href="#since" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.30</p>

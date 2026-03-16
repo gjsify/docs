@@ -6,7 +6,7 @@ In any case the value of <code>atomic</code> before this operation is stored in 
 <code>{ *preval = *atomic; if (*atomic == oldval) { *atomic = newval; return TRUE; } else return FALSE; }</code>.</p>
 <p>This call acts as a full compiler and hardware memory barrier.</p>
 <p>See also <code>g_atomic_pointer_compare_and_exchange()</code></p>
-</div><div class="tsd-parameters"><h4 class="tsd-parameters-title">Parameters</h4><ul class="tsd-parameter-list"><li><span><span class="tsd-kind-parameter">atomic</span>: <span class="tsd-signature-type">any</span></span><div class="tsd-comment tsd-typography"><p>a pointer to a #gpointer-sized value</p>
+</div><div class="tsd-parameters"><h4 class="tsd-parameters-title">Parameters</h4><ul class="tsd-parameter-list"><li><span><span class="tsd-kind-parameter">atomic</span>: <span class="tsd-signature-type">any</span></span><div class="tsd-comment tsd-typography"><p>a pointer to a <code>gpointer</code>-sized value</p>
 </div></li><li><span><span class="tsd-kind-parameter">oldval</span>: <span class="tsd-signature-type">any</span></span><div class="tsd-comment tsd-typography"><p>the value to compare with</p>
 </div></li><li><span><span class="tsd-kind-parameter">newval</span>: <span class="tsd-signature-type">any</span></span><div class="tsd-comment tsd-typography"><p>the value to conditionally replace with</p>
 </div></li></ul></div><h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">,</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">]</span></h4><p><code>true</code> if the exchange took place</p>

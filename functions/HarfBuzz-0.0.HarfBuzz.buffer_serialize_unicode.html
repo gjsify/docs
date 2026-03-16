@@ -5,7 +5,7 @@ There are currently two supported serialization formats:</p>
 <h2 id="text" class="tsd-anchor-link">text<a href="#text" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2>
 <p>A human-readable, plain text format.
 The serialized codepoints will look something like:</p>
-<pre><code><span class="hl-1"> &lt;</span><span class="hl-6">U</span><span class="hl-1">+</span><span class="hl-11">0651</span><span class="hl-1">=</span><span class="hl-11">0</span><span class="hl-1">|</span><span class="hl-6">U</span><span class="hl-1">+</span><span class="hl-11">0628</span><span class="hl-1">=</span><span class="hl-11">1</span><span class="hl-1">&gt;</span>
+<pre><code><span class="hl-1"> &lt;</span><span class="hl-6">U</span><span class="hl-1">+</span><span class="hl-10">0651</span><span class="hl-1">=</span><span class="hl-10">0</span><span class="hl-1">|</span><span class="hl-6">U</span><span class="hl-1">+</span><span class="hl-10">0628</span><span class="hl-1">=</span><span class="hl-10">1</span><span class="hl-1">&gt;</span>
 </code><button>Copy</button></pre>
 
 <ul>
@@ -13,7 +13,7 @@ The serialized codepoints will look something like:</p>
 <li>Unicode codepoints are expressed as zero-padded four (or more)
 digit hexadecimal numbers preceded by <code>U+</code></li>
 <li>If #HB_BUFFER_SERIALIZE_FLAG_NO_CLUSTERS is not set, the cluster
-will be indicated with a <code>=</code> then #hb_glyph_info_t.cluster.</li>
+will be indicated with a <code>=</code> then <a href="../classes/HarfBuzz-0.0.HarfBuzz.glyph_info_t.html" class="tsd-kind-class">HarfBuzz.glyph_info_t</a>.cluster.</li>
 </ul>
 <h2 id="json" class="tsd-anchor-link">json<a href="#json" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2>
 <p>A machine-readable, structured format.
@@ -21,18 +21,18 @@ The serialized codepoints will be a list of objects with the following
 properties:</p>
 <ul>
 <li><code>u</code>: the Unicode codepoint as a decimal integer</li>
-<li><code>cl</code>: #hb_glyph_info_t.cluster if
+<li><code>cl</code>: <a href="../classes/HarfBuzz-0.0.HarfBuzz.glyph_info_t.html" class="tsd-kind-class">HarfBuzz.glyph_info_t</a>.cluster if
 #HB_BUFFER_SERIALIZE_FLAG_NO_CLUSTERS is not set.</li>
 </ul>
 <p>For example:</p>
-<pre><code><span class="hl-1">[{</span><span class="hl-5">u:</span><span class="hl-11">1617</span><span class="hl-1">,</span><span class="hl-5">cl:</span><span class="hl-11">0</span><span class="hl-1">},{</span><span class="hl-5">u:</span><span class="hl-11">1576</span><span class="hl-1">,</span><span class="hl-5">cl:</span><span class="hl-11">1</span><span class="hl-1">}]</span>
+<pre><code><span class="hl-1">[{</span><span class="hl-5">u:</span><span class="hl-10">1617</span><span class="hl-1">,</span><span class="hl-5">cl:</span><span class="hl-10">0</span><span class="hl-1">},{</span><span class="hl-5">u:</span><span class="hl-10">1576</span><span class="hl-1">,</span><span class="hl-5">cl:</span><span class="hl-10">1</span><span class="hl-1">}]</span>
 </code><button>Copy</button></pre>
 
-</div><div class="tsd-parameters"><h4 class="tsd-parameters-title">Parameters</h4><ul class="tsd-parameter-list"><li><span><span class="tsd-kind-parameter">buffer</span>: <a href="../classes/HarfBuzz-0.0.HarfBuzz.buffer_t.html" class="tsd-signature-type tsd-kind-class">buffer_t</a></span><div class="tsd-comment tsd-typography"><p>an #hb_buffer_t buffer.</p>
+</div><div class="tsd-parameters"><h4 class="tsd-parameters-title">Parameters</h4><ul class="tsd-parameter-list"><li><span><span class="tsd-kind-parameter">buffer</span>: <a href="../classes/HarfBuzz-0.0.HarfBuzz.buffer_t.html" class="tsd-signature-type tsd-kind-class">buffer_t</a></span><div class="tsd-comment tsd-typography"><p>an <a href="../classes/HarfBuzz-0.0.HarfBuzz.buffer_t.html" class="tsd-kind-class">HarfBuzz.buffer_t</a> buffer.</p>
 </div></li><li><span><span class="tsd-kind-parameter">start</span>: <span class="tsd-signature-type">number</span></span><div class="tsd-comment tsd-typography"><p>the first item in <code>buffer</code> to serialize.</p>
 </div></li><li><span><span class="tsd-kind-parameter">end</span>: <span class="tsd-signature-type">number</span></span><div class="tsd-comment tsd-typography"><p>the last item in <code>buffer</code> to serialize.</p>
-</div></li><li><span><span class="tsd-kind-parameter">format</span>: <a href="../enums/HarfBuzz-0.0.HarfBuzz.buffer_serialize_format_t.html" class="tsd-signature-type tsd-kind-enum">buffer_serialize_format_t</a></span><div class="tsd-comment tsd-typography"><p>the #hb_buffer_serialize_format_t to use for formatting the output.</p>
-</div></li><li><span><span class="tsd-kind-parameter">flags</span>: <a href="../enums/HarfBuzz-0.0.HarfBuzz.buffer_serialize_flags_t.html" class="tsd-signature-type tsd-kind-enum">buffer_serialize_flags_t</a></span><div class="tsd-comment tsd-typography"><p>the #hb_buffer_serialize_flags_t that control what glyph properties         to serialize.</p>
+</div></li><li><span><span class="tsd-kind-parameter">format</span>: <a href="../enums/HarfBuzz-0.0.HarfBuzz.buffer_serialize_format_t.html" class="tsd-signature-type tsd-kind-enum">buffer_serialize_format_t</a></span><div class="tsd-comment tsd-typography"><p>the <a href="../enums/HarfBuzz-0.0.HarfBuzz.buffer_serialize_format_t.html" class="tsd-kind-enum">HarfBuzz.buffer_serialize_format_t</a> to use for formatting the output.</p>
+</div></li><li><span><span class="tsd-kind-parameter">flags</span>: <a href="../enums/HarfBuzz-0.0.HarfBuzz.buffer_serialize_flags_t.html" class="tsd-signature-type tsd-kind-enum">buffer_serialize_flags_t</a></span><div class="tsd-comment tsd-typography"><p>the <a href="../enums/HarfBuzz-0.0.HarfBuzz.buffer_serialize_flags_t.html" class="tsd-kind-enum">HarfBuzz.buffer_serialize_flags_t</a> that control what glyph properties         to serialize.</p>
 </div></li></ul></div><h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">,</span> <span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ArrayBufferLike</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">,</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></h4><p>The number of serialized items.</p>
 <div class="tsd-comment tsd-typography"><div class="tsd-tag-since"><h4 class="tsd-anchor-link" id="since">Since<a href="#since" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.7.3</p>
 </div></div><aside class="tsd-sources"><ul><li>Defined in <a href="https://github.com/gjsify/types/blob/main/harfbuzz-0.0/harfbuzz-0.0.d.ts#L1911">harfbuzz-0.0/harfbuzz-0.0.d.ts:1911</a></li></ul></aside></div></li></ul></section></div></section><nav id="gi-docgen-toc"><div class="tsd-page-navigation"><h3>Content</h3><div class="tsd-accordion-details"><a href="#text"><span>text</span></a><a href="#json"><span>json</span></a></div></div></nav></div><div class="overlay"></div></body></html>

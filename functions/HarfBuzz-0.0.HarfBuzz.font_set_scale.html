@@ -3,7 +3,7 @@
 font size. Typically the client establishes a scale factor
 to be used between the two. For example, 64, or 256, which
 would be the fractional-precision part of the font scale.
-This is necessary because #hb_position_t values are integer
+This is necessary because <a href="../types/HarfBuzz-0.0.HarfBuzz.position_t.html" class="tsd-kind-type-alias">HarfBuzz.position_t</a> values are integer
 types and you need to leave room for fractional values
 in there.</p>
 <p>For example, to set the font size to 20, with 64
@@ -15,11 +15,11 @@ HarfBuzz does not care about that.  You can set the point
 size of the font using <code>hb_font_set_ptem()</code>, and the pixel
 size using <code>hb_font_set_ppem()</code>.</p>
 <p>The choice of scale is yours but needs to be consistent between
-what you set here, and what you expect out of #hb_position_t
+what you set here, and what you expect out of <a href="../types/HarfBuzz-0.0.HarfBuzz.position_t.html" class="tsd-kind-type-alias">HarfBuzz.position_t</a>
 as well has draw / paint API output values.</p>
 <p>Fonts default to a scale equal to the UPEM value of their face.
 A font with this setting is sometimes called an &quot;unscaled&quot; font.</p>
-</div><div class="tsd-parameters"><h4 class="tsd-parameters-title">Parameters</h4><ul class="tsd-parameter-list"><li><span><span class="tsd-kind-parameter">font</span>: <a href="../classes/HarfBuzz-0.0.HarfBuzz.font_t.html" class="tsd-signature-type tsd-kind-class">font_t</a></span><div class="tsd-comment tsd-typography"><p>#hb_font_t to work upon</p>
+</div><div class="tsd-parameters"><h4 class="tsd-parameters-title">Parameters</h4><ul class="tsd-parameter-list"><li><span><span class="tsd-kind-parameter">font</span>: <a href="../classes/HarfBuzz-0.0.HarfBuzz.font_t.html" class="tsd-signature-type tsd-kind-class">font_t</a></span><div class="tsd-comment tsd-typography"><p><a href="../classes/HarfBuzz-0.0.HarfBuzz.font_t.html" class="tsd-kind-class">HarfBuzz.font_t</a> to work upon</p>
 </div></li><li><span><span class="tsd-kind-parameter">x_scale</span>: <span class="tsd-signature-type">number</span></span><div class="tsd-comment tsd-typography"><p>Horizontal scale value to assign</p>
 </div></li><li><span><span class="tsd-kind-parameter">y_scale</span>: <span class="tsd-signature-type">number</span></span><div class="tsd-comment tsd-typography"><p>Vertical scale value to assign</p>
 </div></li></ul></div><h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><div class="tsd-comment tsd-typography"><div class="tsd-tag-since"><h4 class="tsd-anchor-link" id="since">Since<a href="#since" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>0.9.2</p>
