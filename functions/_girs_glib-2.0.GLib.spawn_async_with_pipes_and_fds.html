@@ -1,0 +1,180 @@
+<!DOCTYPE html><html class="default" lang="en" data-base="../"><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>spawn_async_with_pipes_and_fds | TypeScript API Documentation for GJS</title><meta name="description" content="Documentation for TypeScript API Documentation for GJS"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="icon" type="image/png" href="../assets/favicon-96x96.png" sizes="96x96"/><link rel="shortcut icon" href="../assets/favicon.ico"/><link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png"/><meta name="apple-mobile-web-app-title" content="TypeScript API Documentation for GJS"/><link rel="manifest" href="../assets/site.webmanifest"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><link rel="stylesheet" href="../assets/gi-docgen.css"/><script defer src="../assets/main.js"></script><script defer src="../assets/gi-docgen-inherited.js"></script><script async src="../assets/icons.js" id="tsd-icons-script"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script><script async src="../assets/hierarchy.js" id="tsd-hierarchy-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os";document.body.style.display="none";setTimeout(() => window.app?app.showPage():document.body.style.removeProperty("display"),500)</script><div id="gi-docgen-body-wrapper"><nav id="gi-docgen-sidebar"><div class="gi-docgen-module-logo"><a href="../modules/_girs_glib-2.0.html"><img src="../assets/logo_x4.png" alt="GJS TypeScript Definitions" class="logo"/></a><p class="gi-docgen-logo-subtitle">TypeScript API Reference for GJS</p></div><div class="gi-docgen-search"><button id="tsd-search-trigger" class="gi-docgen-search-button" aria-label="Search"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-search"></use></svg><span>Search the docs</span></button><dialog id="tsd-search" aria-label="Search"><input role="combobox" id="tsd-search-input" aria-controls="tsd-search-results" aria-autocomplete="list" aria-expanded="true" autocapitalize="off" autocomplete="off" placeholder="Search the docs" maxLength="100"/><ul role="listbox" id="tsd-search-results"></ul><div id="tsd-search-status" aria-live="polite" aria-atomic="true"><div>Preparing search index...</div></div></dialog></div><nav class="tsd-navigation gi-docgen-sidebar-section"><ul class="tsd-small-nested-navigation gi-docgen-module-list"><li><a href="../index.html">← Back to overview</a></li></ul></nav><div class="tsd-navigation settings"><details class="tsd-accordion"><summary class="tsd-accordion-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><h3>Settings</h3></summary><div class="tsd-accordion-details"><div class="tsd-filter-visibility"><span class="settings-label">Member Visibility</span><ul id="tsd-filter-options"><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div><div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div><div class="gi-docgen-generator"><p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.0.0-beta.40</p></div></nav><section id="gi-docgen-main"><div class="gi-docgen-content"><div class="gi-docgen-page-title"><span class="gi-docgen-object-type">Function</span><h1><a href="../modules/_girs_glib-2.0.html">glib-2.0</a><span class="gi-docgen-breadcrumb-sep"> ▶ </span><a href="../modules/_girs_glib-2.0.GLib.html">GLib</a><span class="gi-docgen-breadcrumb-sep"> ▶ </span>spawn_async_with_pipes_and_fds</h1></div><section class="tsd-panel"><ul class="tsd-signatures"><li class=""><div class="tsd-signature tsd-anchor-link" id="spawn_async_with_pipes_and_fds"><span class="tsd-kind-call-signature">spawn_async_with_pipes_and_fds</span><span class="tsd-signature-symbol">(</span><br/>    <span class="tsd-kind-parameter">working_directory</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-kind-parameter">argv</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-kind-parameter">envp</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-kind-parameter">flags</span><span class="tsd-signature-symbol">:</span> <a href="../enums/_girs_glib-2.0.GLib.SpawnFlags.html" class="tsd-signature-type tsd-kind-enum">SpawnFlags</a><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-kind-parameter">child_setup</span><span class="tsd-signature-symbol">:</span> <a href="../interfaces/_girs_glib-2.0.GLib.SpawnChildSetupFunc.html" class="tsd-signature-type tsd-kind-interface">SpawnChildSetupFunc</a><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-kind-parameter">stdin_fd</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-kind-parameter">stdout_fd</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-kind-parameter">stderr_fd</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-kind-parameter">source_fds</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-kind-parameter">target_fds</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">,</span><br/><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">,</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">,</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">,</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">,</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><a href="#spawn_async_with_pipes_and_fds" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div><div class="tsd-description"><div class="tsd-comment tsd-typography"><p>Executes a child program asynchronously (your program will not
+block waiting for the child to exit).</p>
+<p>The child program is specified by the only argument that must be
+provided, <code>argv</code>. <code>argv</code> should be a <code>null</code>-terminated array of strings,
+to be passed as the argument vector for the child. The first string
+in <code>argv</code> is of course the name of the program to execute. By default,
+the name of the program must be a full path. If <code>flags</code> contains the
+<a href="../enums/_girs_glib-2.0.GLib.SpawnFlags.html#search_path" class="tsd-kind-enum-member">GLib.SpawnFlags.SEARCH_PATH</a> flag, the <code>PATH</code> environment variable is used to
+search for the executable. If <code>flags</code> contains the
+<a href="../enums/_girs_glib-2.0.GLib.SpawnFlags.html#search_path_from_envp" class="tsd-kind-enum-member">GLib.SpawnFlags.SEARCH_PATH_FROM_ENVP</a> flag, the <code>PATH</code> variable from <code>envp</code>
+is used to search for the executable. If both the
+<a href="../enums/_girs_glib-2.0.GLib.SpawnFlags.html#search_path" class="tsd-kind-enum-member">GLib.SpawnFlags.SEARCH_PATH</a> and <a href="../enums/_girs_glib-2.0.GLib.SpawnFlags.html#search_path_from_envp" class="tsd-kind-enum-member">GLib.SpawnFlags.SEARCH_PATH_FROM_ENVP</a> flags are
+set, the <code>PATH</code> variable from <code>envp</code> takes precedence over the
+environment variable.</p>
+<p>If the program name is not a full path and <a href="../enums/_girs_glib-2.0.GLib.SpawnFlags.html#search_path" class="tsd-kind-enum-member">GLib.SpawnFlags.SEARCH_PATH</a> flag
+is not used, then the program will be run from the current directory
+(or <code>working_directory</code>, if specified); this might be unexpected or even
+dangerous in some cases when the current directory is world-writable.</p>
+<p>On Windows, note that all the string or string vector arguments to
+this function and the other <code>g_spawn*()</code> functions are in UTF-8, the
+GLib file name encoding. Unicode characters that are not part of
+the system codepage passed in these arguments will be correctly
+available in the spawned program only if it uses wide character API
+to retrieve its command line. For C programs built with Microsoft's
+tools it is enough to make the program have a <code>wmain()</code> instead of
+<code>main()</code>. <code>wmain()</code> has a wide character argument vector as parameter.</p>
+<p>At least currently, mingw doesn't support <code>wmain()</code>, so if you use
+mingw to develop the spawned program, it should call
+<code>g_win32_get_command_line()</code> to get arguments in UTF-8.</p>
+<p>On Windows the low-level child process creation API <code>CreateProcess()</code>
+doesn't use argument vectors, but a command line. The C runtime
+library's <code>spawn*()</code> family of functions (which <code>g_spawn_async_with_pipes()</code>
+eventually calls) paste the argument vector elements together into
+a command line, and the C runtime startup code does a corresponding
+reconstruction of an argument vector from the command line, to be
+passed to <code>main()</code>. Complications arise when you have argument vector
+elements that contain spaces or double quotes. The <code>spawn*()</code> functions
+don't do any quoting or escaping, but on the other hand the startup
+code does do unquoting and unescaping in order to enable receiving
+arguments with embedded spaces or double quotes. To work around this
+asymmetry, <code>g_spawn_async_with_pipes()</code> will do quoting and escaping on
+argument vector elements that need it before calling the C runtime
+<code>spawn()</code> function.</p>
+<p>The returned <code>child_pid</code> on Windows is a handle to the child
+process, not its identifier. Process handles and process
+identifiers are different concepts on Windows.</p>
+<p><code>envp</code> is a <code>null</code>-terminated array of strings, where each string
+has the form <code>KEY=VALUE</code>. This will become the child's environment.
+If <code>envp</code> is <code>null</code>, the child inherits its parent's environment.</p>
+<p><code>flags</code> should be the bitwise OR of any flags you want to affect the
+function's behaviour. The <a href="../enums/_girs_glib-2.0.GLib.SpawnFlags.html#do_not_reap_child" class="tsd-kind-enum-member">GLib.SpawnFlags.DO_NOT_REAP_CHILD</a> means that the
+child will not automatically be reaped; you must use a child watch
+(g_child_watch_add()) to be notified about the death of the child process,
+otherwise it will stay around as a zombie process until this process exits.
+Eventually you must call <code>g_spawn_close_pid()</code> on the <code>child_pid</code>, in order to
+free resources which may be associated with the child process. (On Unix,
+using a child watch is equivalent to calling <code>waitpid()</code> or handling
+the <code>SIGCHLD</code> signal manually. On Windows, calling <code>g_spawn_close_pid()</code>
+is equivalent to calling <code>CloseHandle()</code> on the process handle returned
+in <code>child_pid</code>). See <code>g_child_watch_add()</code>.</p>
+<p>Open UNIX file descriptors marked as <code>FD_CLOEXEC</code> will be automatically
+closed in the child process. <a href="../enums/_girs_glib-2.0.GLib.SpawnFlags.html#leave_descriptors_open" class="tsd-kind-enum-member">GLib.SpawnFlags.LEAVE_DESCRIPTORS_OPEN</a> means that
+other open file descriptors will be inherited by the child; otherwise all
+descriptors except stdin/stdout/stderr will be closed before calling <code>exec()</code>
+in the child. <a href="../enums/_girs_glib-2.0.GLib.SpawnFlags.html#search_path" class="tsd-kind-enum-member">GLib.SpawnFlags.SEARCH_PATH</a> means that <code>argv</code>[0] need not be an
+absolute path, it will be looked for in the <code>PATH</code> environment
+variable. <a href="../enums/_girs_glib-2.0.GLib.SpawnFlags.html#search_path_from_envp" class="tsd-kind-enum-member">GLib.SpawnFlags.SEARCH_PATH_FROM_ENVP</a> means need not be an
+absolute path, it will be looked for in the <code>PATH</code> variable from
+<code>envp</code>. If both <a href="../enums/_girs_glib-2.0.GLib.SpawnFlags.html#search_path" class="tsd-kind-enum-member">GLib.SpawnFlags.SEARCH_PATH</a> and <a href="../enums/_girs_glib-2.0.GLib.SpawnFlags.html#search_path_from_envp" class="tsd-kind-enum-member">GLib.SpawnFlags.SEARCH_PATH_FROM_ENVP</a>
+are used, the value from <code>envp</code> takes precedence over the environment.</p>
+<p><a href="../enums/_girs_glib-2.0.GLib.SpawnFlags.html#child_inherits_stdin" class="tsd-kind-enum-member">GLib.SpawnFlags.CHILD_INHERITS_STDIN</a> means that the child will inherit the parent's
+standard input (by default, the child's standard input is attached to
+<code>/dev/null</code>). <a href="../enums/_girs_glib-2.0.GLib.SpawnFlags.html#stdin_from_dev_null" class="tsd-kind-enum-member">GLib.SpawnFlags.STDIN_FROM_DEV_NULL</a> explicitly imposes the default
+behavior. Both flags cannot be enabled at the same time and, in both cases,
+the <code>stdin_pipe_out</code> argument is ignored.</p>
+<p><a href="../enums/_girs_glib-2.0.GLib.SpawnFlags.html#stdout_to_dev_null" class="tsd-kind-enum-member">GLib.SpawnFlags.STDOUT_TO_DEV_NULL</a> means that the child's standard output
+will be discarded (by default, it goes to the same location as the parent's
+standard output). <a href="../enums/_girs_glib-2.0.GLib.SpawnFlags.html#child_inherits_stdout" class="tsd-kind-enum-member">GLib.SpawnFlags.CHILD_INHERITS_STDOUT</a> explicitly imposes the
+default behavior. Both flags cannot be enabled at the same time and, in
+both cases, the <code>stdout_pipe_out</code> argument is ignored.</p>
+<p><a href="../enums/_girs_glib-2.0.GLib.SpawnFlags.html#stderr_to_dev_null" class="tsd-kind-enum-member">GLib.SpawnFlags.STDERR_TO_DEV_NULL</a> means that the child's standard error
+will be discarded (by default, it goes to the same location as the parent's
+standard error). <a href="../enums/_girs_glib-2.0.GLib.SpawnFlags.html#child_inherits_stderr" class="tsd-kind-enum-member">GLib.SpawnFlags.CHILD_INHERITS_STDERR</a> explicitly imposes the
+default behavior. Both flags cannot be enabled at the same time and, in
+both cases, the <code>stderr_pipe_out</code> argument is ignored.</p>
+<p>It is valid to pass the same FD in multiple parameters (e.g. you can pass
+a single FD for both <code>stdout_fd</code> and <code>stderr_fd</code>, and include it in
+<code>source_fds</code> too).</p>
+<p><code>source_fds</code> and <code>target_fds</code> allow zero or more FDs from this process to be
+remapped to different FDs in the spawned process. If <code>n_fds</code> is greater than
+zero, <code>source_fds</code> and <code>target_fds</code> must both be non-<code>null</code> and the same length.
+Each FD in <code>source_fds</code> is remapped to the FD number at the same index in
+<code>target_fds</code>. The source and target FD may be equal to simply propagate an FD
+to the spawned process. FD remappings are processed after standard FDs, so
+any target FDs which equal <code>stdin_fd</code>, <code>stdout_fd</code> or <code>stderr_fd</code> will overwrite
+them in the spawned process.</p>
+<p><code>source_fds</code> is supported on Windows since 2.72.</p>
+<p><a href="../enums/_girs_glib-2.0.GLib.SpawnFlags.html#file_and_argv_zero" class="tsd-kind-enum-member">GLib.SpawnFlags.FILE_AND_ARGV_ZERO</a> means that the first element of <code>argv</code> is
+the file to execute, while the remaining elements are the actual
+argument vector to pass to the file. Normally <code>g_spawn_async_with_pipes()</code>
+uses <code>argv</code>[0] as the file to execute, and passes all of <code>argv</code> to the child.</p>
+<p><code>child_setup</code> and <code>user_data</code> are a function and user data. On POSIX
+platforms, the function is called in the child after GLib has
+performed all the setup it plans to perform (including creating
+pipes, closing file descriptors, etc.) but before calling <code>exec()</code>.
+That is, <code>child_setup</code> is called just before calling <code>exec()</code> in the
+child. Obviously actions taken in this function will only affect
+the child, not the parent.</p>
+<p>On Windows, there is no separate <code>fork()</code> and <code>exec()</code> functionality.
+Child processes are created and run with a single API call,
+<code>CreateProcess()</code>. There is no sensible thing <code>child_setup</code>
+could be used for on Windows so it is ignored and not called.</p>
+<p>If non-<code>null</code>, <code>child_pid</code> will on Unix be filled with the child's
+process ID. You can use the process ID to send signals to the child,
+or to use <code>g_child_watch_add()</code> (or <code>waitpid()</code>) if you specified the
+<a href="../enums/_girs_glib-2.0.GLib.SpawnFlags.html#do_not_reap_child" class="tsd-kind-enum-member">GLib.SpawnFlags.DO_NOT_REAP_CHILD</a> flag. On Windows, <code>child_pid</code> will be
+filled with a handle to the child process only if you specified the
+<a href="../enums/_girs_glib-2.0.GLib.SpawnFlags.html#do_not_reap_child" class="tsd-kind-enum-member">GLib.SpawnFlags.DO_NOT_REAP_CHILD</a> flag. You can then access the child
+process using the Win32 API, for example wait for its termination
+with the <code>WaitFor*()</code> functions, or examine its exit code with
+<code>GetExitCodeProcess()</code>. You should close the handle with <code>CloseHandle()</code>
+or <code>g_spawn_close_pid()</code> when you no longer need it.</p>
+<p>If non-<code>null</code>, the <code>stdin_pipe_out</code>, <code>stdout_pipe_out</code>, <code>stderr_pipe_out</code>
+locations will be filled with file descriptors for writing to the child's
+standard input or reading from its standard output or standard error.
+The caller of <code>g_spawn_async_with_pipes()</code> must close these file descriptors
+when they are no longer in use. If these parameters are <code>null</code>, the
+corresponding pipe won't be created.</p>
+<p>If <code>stdin_pipe_out</code> is <code>null</code>, the child's standard input is attached to
+<code>/dev/null</code> unless <a href="../enums/_girs_glib-2.0.GLib.SpawnFlags.html#child_inherits_stdin" class="tsd-kind-enum-member">GLib.SpawnFlags.CHILD_INHERITS_STDIN</a> is set.</p>
+<p>If <code>stderr_pipe_out</code> is NULL, the child's standard error goes to the same
+location as the parent's standard error unless <a href="../enums/_girs_glib-2.0.GLib.SpawnFlags.html#stderr_to_dev_null" class="tsd-kind-enum-member">GLib.SpawnFlags.STDERR_TO_DEV_NULL</a>
+is set.</p>
+<p>If <code>stdout_pipe_out</code> is NULL, the child's standard output goes to the same
+location as the parent's standard output unless <a href="../enums/_girs_glib-2.0.GLib.SpawnFlags.html#stdout_to_dev_null" class="tsd-kind-enum-member">GLib.SpawnFlags.STDOUT_TO_DEV_NULL</a>
+is set.</p>
+<p><code>error</code> can be <code>null</code> to ignore errors, or non-<code>null</code> to report errors.
+If an error is set, the function returns <code>false</code>. Errors are reported
+even if they occur in the child (for example if the executable in
+``argv<code>[0]</code> is not found). Typically the <code>message</code> field of returned
+errors should be displayed to users. Possible errors are those from
+the <code>G_SPAWN_ERROR</code> domain.</p>
+<p>If an error occurs, <code>child_pid</code>, <code>stdin_pipe_out</code>, <code>stdout_pipe_out</code>,
+and <code>stderr_pipe_out</code> will not be filled with valid values.</p>
+<p>If <code>child_pid</code> is not <code>null</code> and an error does not occur then the returned
+process reference must be closed using <code>g_spawn_close_pid()</code>.</p>
+<p>On modern UNIX platforms, GLib can use an efficient process launching
+codepath driven internally by <code>posix_spawn()</code>. This has the advantage of
+avoiding the fork-time performance costs of cloning the parent process
+address space, and avoiding associated memory overcommit checks that are
+not relevant in the context of immediately executing a distinct process.
+This optimized codepath will be used provided that the following conditions
+are met:</p>
+<ol>
+<li><a href="../enums/_girs_glib-2.0.GLib.SpawnFlags.html#do_not_reap_child" class="tsd-kind-enum-member">GLib.SpawnFlags.DO_NOT_REAP_CHILD</a> is set</li>
+<li><a href="../enums/_girs_glib-2.0.GLib.SpawnFlags.html#leave_descriptors_open" class="tsd-kind-enum-member">GLib.SpawnFlags.LEAVE_DESCRIPTORS_OPEN</a> is set</li>
+<li><a href="../enums/_girs_glib-2.0.GLib.SpawnFlags.html#search_path_from_envp" class="tsd-kind-enum-member">GLib.SpawnFlags.SEARCH_PATH_FROM_ENVP</a> is not set</li>
+<li><code>working_directory</code> is <code>null</code></li>
+<li><code>child_setup</code> is <code>null</code></li>
+<li>The program is of a recognised binary format, or has a shebang.
+Otherwise, GLib will have to execute the program through the
+shell, which is not done using the optimized codepath.</li>
+</ol>
+<p>If you are writing a GTK application, and the program you are spawning is a
+graphical application too, then to ensure that the spawned program opens its
+windows on the right screen, you may want to use <code>GdkAppLaunchContext</code>,
+<code>GAppLaunchContext</code>, or set the <code>DISPLAY</code> environment variable.</p>
+</div><div class="tsd-parameters"><h4 class="tsd-parameters-title">Parameters</h4><ul class="tsd-parameter-list"><li><span><span class="tsd-kind-parameter">working_directory</span>: <span class="tsd-signature-type">string</span></span><div class="tsd-comment tsd-typography"><p>child's current working     directory, or <code>null</code> to inherit parent's, in the GLib file name encoding</p>
+</div></li><li><span><span class="tsd-kind-parameter">argv</span>: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></span><div class="tsd-comment tsd-typography"><p>child's argument     vector, in the GLib file name encoding; it must be non-empty and <code>null</code>-terminated</p>
+</div></li><li><span><span class="tsd-kind-parameter">envp</span>: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></span><div class="tsd-comment tsd-typography"><p>child's environment, or <code>null</code> to inherit parent's, in the GLib file     name encoding</p>
+</div></li><li><span><span class="tsd-kind-parameter">flags</span>: <a href="../enums/_girs_glib-2.0.GLib.SpawnFlags.html" class="tsd-signature-type tsd-kind-enum">SpawnFlags</a></span><div class="tsd-comment tsd-typography"><p>flags from <a href="../enums/_girs_glib-2.0.GLib.SpawnFlags.html" class="tsd-kind-enum">GLib.SpawnFlags</a></p>
+</div></li><li><span><span class="tsd-kind-parameter">child_setup</span>: <a href="../interfaces/_girs_glib-2.0.GLib.SpawnChildSetupFunc.html" class="tsd-signature-type tsd-kind-interface">SpawnChildSetupFunc</a></span><div class="tsd-comment tsd-typography"><p>function to run     in the child just before <code>exec()</code></p>
+</div></li><li><span><span class="tsd-kind-parameter">stdin_fd</span>: <span class="tsd-signature-type">number</span></span><div class="tsd-comment tsd-typography"><p>file descriptor to use for child's stdin, or <code>-1</code></p>
+</div></li><li><span><span class="tsd-kind-parameter">stdout_fd</span>: <span class="tsd-signature-type">number</span></span><div class="tsd-comment tsd-typography"><p>file descriptor to use for child's stdout, or <code>-1</code></p>
+</div></li><li><span><span class="tsd-kind-parameter">stderr_fd</span>: <span class="tsd-signature-type">number</span></span><div class="tsd-comment tsd-typography"><p>file descriptor to use for child's stderr, or <code>-1</code></p>
+</div></li><li><span><span class="tsd-kind-parameter">source_fds</span>: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></span><div class="tsd-comment tsd-typography"><p>array of FDs from the parent    process to make available in the child process</p>
+</div></li><li><span><span class="tsd-kind-parameter">target_fds</span>: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></span><div class="tsd-comment tsd-typography"><p>array of FDs to remap    <code>source_fds</code> to in the child process</p>
+</div></li></ul></div><h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">,</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">,</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">,</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">,</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></h4><p><code>true</code> on success, <code>false</code> if an error was set</p>
+<div class="tsd-comment tsd-typography"><div class="tsd-tag-since"><h4 class="tsd-anchor-link" id="since">Since<a href="#since" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.68</p>
+</div></div><aside class="tsd-sources"><ul><li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0/glib-2.0.d.ts#L11024">glib-2.0/glib-2.0.d.ts:11024</a></li></ul></aside></div></li></ul></section></div></section><nav id="gi-docgen-toc"></nav></div><div class="overlay"></div></body></html>
