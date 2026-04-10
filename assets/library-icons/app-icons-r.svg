@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256" height="256" version="1.1"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="Gradient" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" style="stop-color:#FFBE6F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F9F06B;stop-opacity:1" />
+    </linearGradient>
+    <filter id="alpha-to-white">
+      <feColorMatrix in="SourceGraphic" type="matrix"
+                     values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.8 0"/>
+    </filter>
+    <g id="child-svg"><svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 0 16 16" width="16px">
+    <g fill="#222222">
+        <path d="m 15.59375 0 l -5.652344 5.382812 c 0.683594 0.355469 1.234375 0.910157 1.589844 1.589844 l 0.171875 -0.171875 l 0.007813 0.007813 l 4.300781 -4.300782 v -2.507812 z m -7.582031 6 c -1.65625 0 -3 1.339844 -3 3 v 3 h 3 c 1.660156 0.007812 3 -1.34375 3 -3 c 0 -1.660156 -1.339844 -3 -3 -3 z m 0 0" />
+        <path d="m 3 2 c -1.644531 0 -3 1.355469 -3 3 v 8 c 0 1.644531 1.355469 3 3 3 h 9.007812 c 1.644532 0 3 -1.355469 3 -3 v -8 l -2 2 v 6 c 0 0.570312 -0.429687 1 -1 1 h -9.007812 c -0.570312 0 -1 -0.429688 -1 -1 v -8 c 0 -0.570312 0.429688 -1 1 -1 h 7 l 1.800781 -1.867188 c -0.277343 -0.085937 -0.566406 -0.132812 -0.871093 -0.132812 z m 0 0" />
+    </g>
+</svg></g>
+  </defs>
+  <rect
+      width="256"
+      height="256"
+      fill="url(#Gradient)"
+      ry="128"
+      x="0"
+      y="0" />
+  <use xlink:href="#child-svg" filter="url(#alpha-to-white)"
+       transform="matrix(8,0,0,8,64,64)" />
+</svg>
