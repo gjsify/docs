@@ -32,7 +32,7 @@
 <li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div>
 <div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
 <div class="gi-docgen-generator">
-<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.3.0</p></div></nav>
+<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.4.0</p></div></nav>
 <section id="gi-docgen-main">
 <div class="gi-docgen-content">
 <div class="gi-docgen-page-title"><span class="gi-docgen-object-type">Interface</span>
@@ -49,7 +49,7 @@ Contains only the virtual methods that need to be implemented.</p>
 <ul class="tsd-hierarchy">
 <li class="tsd-hierarchy-item"><a href="../modules/Atk-1.0.Atk.html" class="tsd-signature-type tsd-kind-namespace">Atk</a><span class="tsd-signature-symbol">.</span><a href="Atk-1.0.Atk.Document.html" class="tsd-signature-type tsd-kind-interface">Document</a></li></ul></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/atk-1.0.d.ts#L8872">atk-1.0/atk-1.0.d.ts:8872</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/atk-1.0.d.ts#L9038">atk-1.0/atk-1.0.d.ts:9038</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-accordion" open><summary class="tsd-accordion-summary tsd-index-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
@@ -58,11 +58,11 @@ Contains only the virtual methods that need to be implemented.</p>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading tsd-anchor-link" id="methods">Methods<a href="#methods" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-index-list"><a href="#vfunc_get_current_page_number" class="tsd-index-link"><span>vfunc_<wbr/>get_<wbr/>current_<wbr/>page_<wbr/>number</span></a>
-<a href="#vfunc_get_document" class="tsd-index-link"><span>vfunc_<wbr/>get_<wbr/>document</span></a>
+<a href="#vfunc_get_document" class="tsd-index-link deprecated"><span>vfunc_<wbr/>get_<wbr/>document</span></a>
 <a href="#vfunc_get_document_attribute_value" class="tsd-index-link"><span>vfunc_<wbr/>get_<wbr/>document_<wbr/>attribute_<wbr/>value</span></a>
 <a href="#vfunc_get_document_attributes" class="tsd-index-link"><span>vfunc_<wbr/>get_<wbr/>document_<wbr/>attributes</span></a>
-<a href="#vfunc_get_document_locale" class="tsd-index-link"><span>vfunc_<wbr/>get_<wbr/>document_<wbr/>locale</span></a>
-<a href="#vfunc_get_document_type" class="tsd-index-link"><span>vfunc_<wbr/>get_<wbr/>document_<wbr/>type</span></a>
+<a href="#vfunc_get_document_locale" class="tsd-index-link deprecated"><span>vfunc_<wbr/>get_<wbr/>document_<wbr/>locale</span></a>
+<a href="#vfunc_get_document_type" class="tsd-index-link deprecated"><span>vfunc_<wbr/>get_<wbr/>document_<wbr/>type</span></a>
 <a href="#vfunc_get_page_count" class="tsd-index-link"><span>vfunc_<wbr/>get_<wbr/>page_<wbr/>count</span></a>
 <a href="#vfunc_get_text_selections" class="tsd-index-link"><span>vfunc_<wbr/>get_<wbr/>text_<wbr/>selections</span></a>
 <a href="#vfunc_set_document_attribute" class="tsd-index-link"><span>vfunc_<wbr/>set_<wbr/>document_<wbr/>attribute</span></a>
@@ -79,11 +79,15 @@ Contains only the virtual methods that need to be implemented.</p>
 <div class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Retrieves the current page number inside <code>document</code>.</p>
 </div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+<div class="tsd-comment tsd-typography">
+<div class="tsd-tag-since">
+<h4 class="tsd-anchor-link" id="since">Since<a href="#since" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.12</p>
+</div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/atk-1.0.d.ts#L8879">atk-1.0/atk-1.0.d.ts:8879</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/atk-1.0.d.ts#L9046">atk-1.0/atk-1.0.d.ts:9046</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
-<h3 class="tsd-anchor-link" id="vfunc_get_document"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>get_<wbr/>document</span><a href="#vfunc_get_document" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<h3 class="tsd-anchor-link" id="vfunc_get_document"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><code class="tsd-tag tsd-tag-gir tsd-tag-gir-deprecated">Deprecated</code><span class="deprecated">vfunc_<wbr/>get_<wbr/>document</span><a href="#vfunc_get_document" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="">
 <div class="tsd-signature tsd-anchor-link" id="vfunc_get_document-1"><span class="tsd-kind-call-signature">vfunc_get_document</span><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><a href="#vfunc_get_document-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div>
@@ -92,9 +96,13 @@ Contains only the virtual methods that need to be implemented.</p>
 up to the caller to check atk_document_get_type to determine
 how to cast this pointer.</p>
 </div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span></h4><aside class="tsd-sources">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span></h4>
+<div class="tsd-comment tsd-typography">
+<div class="tsd-tag-deprecated">
+<h4 class="tsd-anchor-link" id="deprecated">Deprecated<a href="#deprecated" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>Since 2.12. <code>document</code> is already a representation of the document. Use it directly, or one of its children, as an instance of the DOM.</p>
+</div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/atk-1.0.d.ts#L8887">atk-1.0/atk-1.0.d.ts:8887</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/atk-1.0.d.ts#L9055">atk-1.0/atk-1.0.d.ts:9055</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="vfunc_get_document_attribute_value"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>get_<wbr/>document_<wbr/>attribute_<wbr/>value</span><a href="#vfunc_get_document_attribute_value" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -109,9 +117,13 @@ how to cast this pointer.</p>
 <li><span><span class="tsd-kind-parameter">attribute_name</span>: <span class="tsd-signature-type">string</span></span>
 <div class="tsd-comment tsd-typography"><p>a character string representing the name of the attribute   whose value is being queried.</p>
 </div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><aside class="tsd-sources">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+<div class="tsd-comment tsd-typography">
+<div class="tsd-tag-since">
+<h4 class="tsd-anchor-link" id="since-1">Since<a href="#since-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>1.12</p>
+</div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/atk-1.0.d.ts#L8894">atk-1.0/atk-1.0.d.ts:8894</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/atk-1.0.d.ts#L9063">atk-1.0/atk-1.0.d.ts:9063</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="vfunc_get_document_attributes"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>get_<wbr/>document_<wbr/>attributes</span><a href="#vfunc_get_document_attributes" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -121,11 +133,15 @@ how to cast this pointer.</p>
 <div class="tsd-comment tsd-typography"><p>Gets an AtkAttributeSet which describes document-wide
 attributes as name-value pairs.</p>
 </div>
-<h4 class="tsd-returns-title">Returns <a href="../classes/GLib-2.0.GLib.SList.html" class="tsd-signature-type tsd-kind-class">SList</a></h4><aside class="tsd-sources">
+<h4 class="tsd-returns-title">Returns <a href="../classes/GLib-2.0.GLib.SList.html" class="tsd-signature-type tsd-kind-class">SList</a></h4>
+<div class="tsd-comment tsd-typography">
+<div class="tsd-tag-since">
+<h4 class="tsd-anchor-link" id="since-2">Since<a href="#since-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>1.12</p>
+</div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/atk-1.0.d.ts#L8901">atk-1.0/atk-1.0.d.ts:8901</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/atk-1.0.d.ts#L9071">atk-1.0/atk-1.0.d.ts:9071</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
-<h3 class="tsd-anchor-link" id="vfunc_get_document_locale"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>get_<wbr/>document_<wbr/>locale</span><a href="#vfunc_get_document_locale" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<h3 class="tsd-anchor-link" id="vfunc_get_document_locale"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><code class="tsd-tag tsd-tag-gir tsd-tag-gir-deprecated">Deprecated</code><span class="deprecated">vfunc_<wbr/>get_<wbr/>document_<wbr/>locale</span><a href="#vfunc_get_document_locale" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="">
 <div class="tsd-signature tsd-anchor-link" id="vfunc_get_document_locale-1"><span class="tsd-kind-call-signature">vfunc_get_document_locale</span><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><a href="#vfunc_get_document_locale-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div>
@@ -136,20 +152,28 @@ text substrings or images within this document may have
 a different locale, see atk_text_get_attributes and
 atk_image_get_image_locale.</p>
 </div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><aside class="tsd-sources">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+<div class="tsd-comment tsd-typography">
+<div class="tsd-tag-deprecated">
+<h4 class="tsd-anchor-link" id="deprecated-1">Deprecated<a href="#deprecated-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>since 2.7.90: Please use <code>atk_object_get_object_locale()</code> instead.</p>
+</div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/atk-1.0.d.ts#L8911">atk-1.0/atk-1.0.d.ts:8911</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/atk-1.0.d.ts#L9082">atk-1.0/atk-1.0.d.ts:9082</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
-<h3 class="tsd-anchor-link" id="vfunc_get_document_type"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>get_<wbr/>document_<wbr/>type</span><a href="#vfunc_get_document_type" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<h3 class="tsd-anchor-link" id="vfunc_get_document_type"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><code class="tsd-tag tsd-tag-gir tsd-tag-gir-deprecated">Deprecated</code><span class="deprecated">vfunc_<wbr/>get_<wbr/>document_<wbr/>type</span><a href="#vfunc_get_document_type" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="">
 <div class="tsd-signature tsd-anchor-link" id="vfunc_get_document_type-1"><span class="tsd-kind-call-signature">vfunc_get_document_type</span><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><a href="#vfunc_get_document_type-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div>
 <div class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Gets a string indicating the document type.</p>
 </div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><aside class="tsd-sources">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+<div class="tsd-comment tsd-typography">
+<div class="tsd-tag-deprecated">
+<h4 class="tsd-anchor-link" id="deprecated-2">Deprecated<a href="#deprecated-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>Since 2.12. Please use <code>atk_document_get_attributes()</code> to ask for the document type if it applies.</p>
+</div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/atk-1.0.d.ts#L8917">atk-1.0/atk-1.0.d.ts:8917</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/atk-1.0.d.ts#L9089">atk-1.0/atk-1.0.d.ts:9089</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="vfunc_get_page_count"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>get_<wbr/>page_<wbr/>count</span><a href="#vfunc_get_page_count" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -158,9 +182,13 @@ atk_image_get_image_locale.</p>
 <div class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Retrieves the total number of pages inside <code>document</code>.</p>
 </div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+<div class="tsd-comment tsd-typography">
+<div class="tsd-tag-since">
+<h4 class="tsd-anchor-link" id="since-3">Since<a href="#since-3" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.12</p>
+</div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/atk-1.0.d.ts#L8923">atk-1.0/atk-1.0.d.ts:8923</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/atk-1.0.d.ts#L9096">atk-1.0/atk-1.0.d.ts:9096</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="vfunc_get_text_selections"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>get_<wbr/>text_<wbr/>selections</span><a href="#vfunc_get_text_selections" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -169,9 +197,13 @@ atk_image_get_image_locale.</p>
 <div class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Returns an array of AtkTextSelections within this document.</p>
 </div>
-<h4 class="tsd-returns-title">Returns <a href="../modules/Atk-1.0.Atk.html" class="tsd-signature-type tsd-kind-namespace">Atk</a><span class="tsd-signature-symbol">.</span><a href="../classes/Atk-1.0.Atk.TextSelection.html" class="tsd-signature-type tsd-kind-class">TextSelection</a><span class="tsd-signature-symbol">[]</span></h4><aside class="tsd-sources">
+<h4 class="tsd-returns-title">Returns <a href="../modules/Atk-1.0.Atk.html" class="tsd-signature-type tsd-kind-namespace">Atk</a><span class="tsd-signature-symbol">.</span><a href="../classes/Atk-1.0.Atk.TextSelection.html" class="tsd-signature-type tsd-kind-class">TextSelection</a><span class="tsd-signature-symbol">[]</span></h4>
+<div class="tsd-comment tsd-typography">
+<div class="tsd-tag-since">
+<h4 class="tsd-anchor-link" id="since-4">Since<a href="#since-4" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.52</p>
+</div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/atk-1.0.d.ts#L8929">atk-1.0/atk-1.0.d.ts:8929</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/atk-1.0.d.ts#L9103">atk-1.0/atk-1.0.d.ts:9103</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="vfunc_set_document_attribute"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>set_<wbr/>document_<wbr/>attribute</span><a href="#vfunc_set_document_attribute" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -189,9 +221,13 @@ atk_image_get_image_locale.</p>
 <li><span><span class="tsd-kind-parameter">attribute_value</span>: <span class="tsd-signature-type">string</span></span>
 <div class="tsd-comment tsd-typography"><p>a string value to be associated with <code>attribute_name</code>.</p>
 </div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><aside class="tsd-sources">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+<div class="tsd-comment tsd-typography">
+<div class="tsd-tag-since">
+<h4 class="tsd-anchor-link" id="since-5">Since<a href="#since-5" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>1.12</p>
+</div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/atk-1.0.d.ts#L8937">atk-1.0/atk-1.0.d.ts:8937</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/atk-1.0.d.ts#L9112">atk-1.0/atk-1.0.d.ts:9112</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="vfunc_set_text_selections"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>set_<wbr/>text_<wbr/>selections</span><a href="#vfunc_set_text_selections" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -210,9 +246,13 @@ FALSE will be returned.</p>
 <li><span><span class="tsd-kind-parameter">selections</span>: <a href="../modules/Atk-1.0.Atk.html" class="tsd-signature-type tsd-kind-namespace">Atk</a><span class="tsd-signature-symbol">.</span><a href="../classes/Atk-1.0.Atk.TextSelection.html" class="tsd-signature-type tsd-kind-class">TextSelection</a><span class="tsd-signature-symbol">[]</span></span>
 <div class="tsd-comment tsd-typography"><p>a GArray of AtkTextSelections              to be selected.</p>
 </div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><aside class="tsd-sources">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+<div class="tsd-comment tsd-typography">
+<div class="tsd-tag-since">
+<h4 class="tsd-anchor-link" id="since-6">Since<a href="#since-6" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.52</p>
+</div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/atk-1.0.d.ts#L8948">atk-1.0/atk-1.0.d.ts:8948</a></li></ul></aside></div></li></ul></section></section></details></div></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/atk-1.0.d.ts#L9124">atk-1.0/atk-1.0.d.ts:9124</a></li></ul></aside></div></li></ul></section></section></details></div></section>
 <nav id="gi-docgen-toc">
 <div class="tsd-page-navigation">
 <h3>Content</h3>

@@ -32,7 +32,7 @@
 <li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div>
 <div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
 <div class="gi-docgen-generator">
-<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.3.0</p></div></nav>
+<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.4.0</p></div></nav>
 <section id="gi-docgen-main">
 <div class="gi-docgen-content">
 <div class="gi-docgen-page-title"><span class="gi-docgen-object-type">Class (GI Struct)</span>
@@ -66,7 +66,7 @@ global constructors (for example, those using GCC’s
 <a href="#make_resident" class="tsd-index-link"><span>make_<wbr/>resident</span></a>
 <a href="#name" class="tsd-index-link"><span>name</span></a>
 <a href="#symbol" class="tsd-index-link"><span>symbol</span></a>
-<a href="#build_path" class="tsd-index-link"><span>build_<wbr/>path</span></a>
+<a href="#build_path" class="tsd-index-link deprecated"><span>build_<wbr/>path</span></a>
 <a href="#error" class="tsd-index-link"><span>error</span></a>
 <a href="#error_quark" class="tsd-index-link"><span>error_<wbr/>quark</span></a>
 <a href="#supported" class="tsd-index-link"><span>supported</span></a>
@@ -103,7 +103,7 @@ global constructors (for example, those using GCC’s
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><p><code>true</code> on success</p>
 <aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gmodule-2.0.d.ts#L180">gmodule-2.0/gmodule-2.0.d.ts:180</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gmodule-2.0.d.ts#L181">gmodule-2.0/gmodule-2.0.d.ts:181</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="make_resident"><span>make_<wbr/>resident</span><a href="#make_resident" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -115,7 +115,7 @@ Any future <code>g_module_close()</code> calls on the module will be ignored.</p
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gmodule-2.0.d.ts#L186">gmodule-2.0/gmodule-2.0.d.ts:186</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gmodule-2.0.d.ts#L187">gmodule-2.0/gmodule-2.0.d.ts:187</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="name"><span>name</span><a href="#name" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -128,7 +128,7 @@ Any future <code>g_module_close()</code> calls on the module will be ignored.</p
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><p>the filename of the module</p>
 <aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gmodule-2.0.d.ts#L194">gmodule-2.0/gmodule-2.0.d.ts:194</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gmodule-2.0.d.ts#L195">gmodule-2.0/gmodule-2.0.d.ts:195</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="symbol"><span>symbol</span><a href="#symbol" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -147,9 +147,9 @@ by <code>G_MODULE_EXPORT</code>. Note that a valid symbol can be <code>null</cod
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">,</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">]</span></h4><p><code>true</code> on success</p>
 <aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gmodule-2.0.d.ts#L202">gmodule-2.0/gmodule-2.0.d.ts:202</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gmodule-2.0.d.ts#L203">gmodule-2.0/gmodule-2.0.d.ts:203</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
-<h3 class="tsd-anchor-link" id="build_path"><code class="tsd-tag">Static</code><span>build_<wbr/>path</span><a href="#build_path" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<h3 class="tsd-anchor-link" id="build_path"><code class="tsd-tag">Static</code><code class="tsd-tag tsd-tag-gir tsd-tag-gir-deprecated">Deprecated 2.76</code><span class="deprecated">build_<wbr/>path</span><a href="#build_path" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
 <li class="">
 <div class="tsd-signature tsd-anchor-link" id="build_path-1"><span class="tsd-kind-call-signature">build_path</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">directory</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">,</span> <span class="tsd-kind-parameter">module_name</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><a href="#build_path-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div>
@@ -169,15 +169,19 @@ directory it will return <code>\Windows\mylibrary.dll</code>.</p>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
-<li><span><span class="tsd-kind-parameter">directory</span>: <span class="tsd-signature-type">string</span></span>
+<li><span><code class="tsd-tag tsd-tag-gir tsd-tag-gir-deprecated">Deprecated</code><span class="tsd-kind-parameter">directory</span>: <span class="tsd-signature-type">string</span></span>
 <div class="tsd-comment tsd-typography"><p>the directory where the module is. This can be     <code>null</code> or the empty string to indicate that the standard platform-specific     directories will be used, though that is not recommended</p>
 </div></li>
-<li><span><span class="tsd-kind-parameter">module_name</span>: <span class="tsd-signature-type">string</span></span>
+<li><span><code class="tsd-tag tsd-tag-gir tsd-tag-gir-deprecated">Deprecated</code><span class="tsd-kind-parameter">module_name</span>: <span class="tsd-signature-type">string</span></span>
 <div class="tsd-comment tsd-typography"><p>the name of the module</p>
 </div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><aside class="tsd-sources">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+<div class="tsd-comment tsd-typography">
+<div class="tsd-tag-deprecated">
+<h4 class="tsd-anchor-link" id="deprecated">Deprecated<a href="#deprecated" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>since 2.76: Use <code>g_module_open()</code> instead with <code>module_name</code> as the basename of the file_name argument. See <code>G_MODULE_SUFFIX</code> for why.</p>
+</div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gmodule-2.0.d.ts#L161">gmodule-2.0/gmodule-2.0.d.ts:161</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gmodule-2.0.d.ts#L162">gmodule-2.0/gmodule-2.0.d.ts:162</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="error"><code class="tsd-tag">Static</code><span>error</span><a href="#error" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -188,7 +192,7 @@ directory it will return <code>\Windows\mylibrary.dll</code>.</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gmodule-2.0.d.ts#L166">gmodule-2.0/gmodule-2.0.d.ts:166</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gmodule-2.0.d.ts#L167">gmodule-2.0/gmodule-2.0.d.ts:167</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="error_quark"><code class="tsd-tag">Static</code><span>error_<wbr/>quark</span><a href="#error_quark" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -197,7 +201,7 @@ directory it will return <code>\Windows\mylibrary.dll</code>.</p>
 <div class="tsd-description">
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gmodule-2.0.d.ts#L168">gmodule-2.0/gmodule-2.0.d.ts:168</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gmodule-2.0.d.ts#L169">gmodule-2.0/gmodule-2.0.d.ts:169</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="supported"><code class="tsd-tag">Static</code><span>supported</span><a href="#supported" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -208,7 +212,7 @@ directory it will return <code>\Windows\mylibrary.dll</code>.</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gmodule-2.0.d.ts#L173">gmodule-2.0/gmodule-2.0.d.ts:173</a></li></ul></aside></div></li></ul></section></section></details></div></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gmodule-2.0.d.ts#L174">gmodule-2.0/gmodule-2.0.d.ts:174</a></li></ul></aside></div></li></ul></section></section></details></div></section>
 <nav id="gi-docgen-toc">
 <div class="tsd-page-navigation">
 <h3>Content</h3>
