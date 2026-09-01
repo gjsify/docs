@@ -34,7 +34,7 @@
 <li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div>
 <div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
 <div class="gi-docgen-generator">
-<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.4.0</p></div></nav>
+<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.5.0</p></div></nav>
 <section id="gi-docgen-main">
 <div class="gi-docgen-content">
 <div class="gi-docgen-page-title"><span class="gi-docgen-object-type">Class (GI Struct)</span>
@@ -60,7 +60,7 @@ A callback can also be installed at <a href="#" class="tsd-kind-class">Gst.Promi
 result changes with <code>gst_promise_new_with_change_func()</code>.
 The change callback can be used to chain <code>GstPromises</code>'s together as in the
 following example.</p>
-<pre><code class="c"><span class="hl-3">const</span><span class="hl-1"> GstStructure *reply;</span><br/><span class="hl-1">GstPromise *p;</span><br/><span class="hl-4">if</span><span class="hl-1"> (</span><span class="hl-0">gst_promise_wait</span><span class="hl-1"> (promise) != GST_PROMISE_RESULT_REPLIED)</span><br/><span class="hl-1">  </span><span class="hl-4">return</span><span class="hl-1">;</span><span class="hl-10"> // interrupted or expired value</span><br/><span class="hl-1">reply = </span><span class="hl-0">gst_promise_get_reply</span><span class="hl-1"> (promise);</span><br/><span class="hl-4">if</span><span class="hl-1"> (error in reply)</span><br/><span class="hl-1">  </span><span class="hl-4">return</span><span class="hl-1">;</span><span class="hl-10"> // propagate error</span><br/><span class="hl-1">p = </span><span class="hl-0">gst_promise_new_with_change_func</span><span class="hl-1"> (another_promise_change_func, user_data, notify);</span><br/><span class="hl-1">pass p to promise-using API</span>
+<pre><code class="c"><span class="hl-3">const</span><span class="hl-1"> GstStructure *reply;</span><br/><span class="hl-1">GstPromise *p;</span><br/><span class="hl-4">if</span><span class="hl-1"> (</span><span class="hl-0">gst_promise_wait</span><span class="hl-1"> (promise) != GST_PROMISE_RESULT_REPLIED)</span><br/><span class="hl-1">  </span><span class="hl-4">return</span><span class="hl-1">;</span><span class="hl-9"> // interrupted or expired value</span><br/><span class="hl-1">reply = </span><span class="hl-0">gst_promise_get_reply</span><span class="hl-1"> (promise);</span><br/><span class="hl-4">if</span><span class="hl-1"> (error in reply)</span><br/><span class="hl-1">  </span><span class="hl-4">return</span><span class="hl-1">;</span><span class="hl-9"> // propagate error</span><br/><span class="hl-1">p = </span><span class="hl-0">gst_promise_new_with_change_func</span><span class="hl-1"> (another_promise_change_func, user_data, notify);</span><br/><span class="hl-1">pass p to promise-using API</span>
 </code><button type="button">Copy</button></pre>
 
 <p>Each <a href="#" class="tsd-kind-class">Gst.Promise</a> starts out with a <a href="../enums/Gst-1.0.Gst.PromiseResult.html" class="tsd-kind-enum">Gst.PromiseResult</a> of
@@ -88,7 +88,7 @@ that uses <a href="#" class="tsd-kind-class">Gst.Promise</a>.</p>
 <h4 class="tsd-anchor-link" id="since">Since<a href="#since" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>1.14</p>
 </div></div></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L22945">gst-1.0/gst-1.0.d.ts:22945</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L23243">gst-1.0/gst-1.0.d.ts:23243</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-accordion" open><summary class="tsd-accordion-summary tsd-index-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
@@ -129,7 +129,7 @@ that uses <a href="#" class="tsd-kind-class">Gst.Promise</a>.</p>
 <li><span><code class="tsd-tag">Optional</code><span class="tsd-kind-parameter">properties</span>: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{</span> <span class="tsd-kind-property">parent</span><span class="tsd-signature-symbol">:</span> <a href="Gst-1.0.Gst.MiniObject.html" class="tsd-signature-type tsd-kind-class">MiniObject</a> <span class="tsd-signature-symbol">}</span><span class="tsd-signature-symbol">&gt;</span></span></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="../modules/Gst-1.0.Gst.html" class="tsd-signature-type tsd-kind-namespace">Gst</a><span class="tsd-signature-symbol">.</span><a href="" class="tsd-signature-type tsd-kind-class">Promise</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L22950">gst-1.0/gst-1.0.d.ts:22950</a></li></ul></aside></div></li></ul></section></section></details>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L23248">gst-1.0/gst-1.0.d.ts:23248</a></li></ul></aside></div></li></ul></section></section></details>
 <details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Properties"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
 <h2 class="tsd-anchor-link" id="properties-1">Properties<a href="#properties-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2></summary>
 <section>
@@ -137,7 +137,7 @@ that uses <a href="#" class="tsd-kind-class">Gst.Promise</a>.</p>
 <h3 class="tsd-anchor-link" id="gtype"><code class="tsd-tag">Static</code><span>$gtype</span><a href="#gtype" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">$gtype</span><span class="tsd-signature-symbol">:</span> <a href="../types/GObject-2.0.GObject.GType.html" class="tsd-signature-type tsd-kind-type-alias">GType</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/Gst-1.0.Gst.html" class="tsd-signature-type tsd-kind-namespace">Gst</a><span class="tsd-signature-symbol">.</span><a href="" class="tsd-signature-type tsd-kind-class">Promise</a><span class="tsd-signature-symbol">&gt;</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L22946">gst-1.0/gst-1.0.d.ts:22946</a></li></ul></aside></section></section></details>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L23244">gst-1.0/gst-1.0.d.ts:23244</a></li></ul></aside></section></section></details>
 <details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Methods"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
 <h2 class="tsd-anchor-link" id="methods-1">Methods<a href="#methods-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2></summary>
 <section>
@@ -157,7 +157,7 @@ message is handled and/or destroyed (possibly unanswered).</p>
 <h4 class="tsd-anchor-link" id="since-1">Since<a href="#since-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>1.14</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L22965">gst-1.0/gst-1.0.d.ts:22965</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L23263">gst-1.0/gst-1.0.d.ts:23263</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_reply"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 1.14</code><span>get_<wbr/>reply</span><a href="#get_reply" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -174,7 +174,7 @@ message is handled and/or destroyed (possibly unanswered).</p>
 <h4 class="tsd-anchor-link" id="since-2">Since<a href="#since-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>1.14</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L22973">gst-1.0/gst-1.0.d.ts:22973</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L23271">gst-1.0/gst-1.0.d.ts:23271</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="interrupt"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 1.14</code><span>interrupt</span><a href="#interrupt" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -191,7 +191,7 @@ the value produced anymore.</p>
 <h4 class="tsd-anchor-link" id="since-3">Since<a href="#since-3" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>1.14</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L22981">gst-1.0/gst-1.0.d.ts:22981</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L23279">gst-1.0/gst-1.0.d.ts:23279</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="ref"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 1.14</code><span>ref</span><a href="#ref" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -207,7 +207,7 @@ the value produced anymore.</p>
 <h4 class="tsd-anchor-link" id="since-4">Since<a href="#since-4" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>1.14</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L22988">gst-1.0/gst-1.0.d.ts:22988</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L23286">gst-1.0/gst-1.0.d.ts:23286</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="reply"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 1.14</code><span>reply</span><a href="#reply" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -232,7 +232,7 @@ is not visible to the consumer.</p>
 <h4 class="tsd-anchor-link" id="since-5">Since<a href="#since-5" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>1.14</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L23000">gst-1.0/gst-1.0.d.ts:23000</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L23298">gst-1.0/gst-1.0.d.ts:23298</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="unref"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 1.14</code><span>unref</span><a href="#unref" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -248,7 +248,7 @@ promise will be freed.</p>
 <h4 class="tsd-anchor-link" id="since-6">Since<a href="#since-6" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>1.14</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L23007">gst-1.0/gst-1.0.d.ts:23007</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L23305">gst-1.0/gst-1.0.d.ts:23305</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="wait"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 1.14</code><span>wait</span><a href="#wait" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -266,7 +266,7 @@ immediately with the current result.</p>
 <h4 class="tsd-anchor-link" id="since-7">Since<a href="#since-7" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>1.14</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L23016">gst-1.0/gst-1.0.d.ts:23016</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L23314">gst-1.0/gst-1.0.d.ts:23314</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="new"><code class="tsd-tag">Static</code><span>new</span><a href="#new" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -275,7 +275,7 @@ immediately with the current result.</p>
 <div class="tsd-description">
 <h4 class="tsd-returns-title">Returns <a href="../modules/Gst-1.0.Gst.html" class="tsd-signature-type tsd-kind-namespace">Gst</a><span class="tsd-signature-symbol">.</span><a href="" class="tsd-signature-type tsd-kind-class">Promise</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L22954">gst-1.0/gst-1.0.d.ts:22954</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L23252">gst-1.0/gst-1.0.d.ts:23252</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="new_with_change_func"><code class="tsd-tag">Static</code><span>new_<wbr/>with_<wbr/>change_<wbr/>func</span><a href="#new_with_change_func" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -288,7 +288,7 @@ immediately with the current result.</p>
 <li><span><span class="tsd-kind-parameter">func</span>: <a href="../interfaces/Gst-1.0.Gst.PromiseChangeFunc.html" class="tsd-signature-type tsd-kind-interface">PromiseChangeFunc</a></span></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="../modules/Gst-1.0.Gst.html" class="tsd-signature-type tsd-kind-namespace">Gst</a><span class="tsd-signature-symbol">.</span><a href="" class="tsd-signature-type tsd-kind-class">Promise</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L22956">gst-1.0/gst-1.0.d.ts:22956</a></li></ul></aside></div></li></ul></section></section></details></div></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L23254">gst-1.0/gst-1.0.d.ts:23254</a></li></ul></aside></div></li></ul></section></section></details></div></section>
 <nav id="gi-docgen-toc">
 <div class="tsd-page-navigation">
 <h3>Content</h3>

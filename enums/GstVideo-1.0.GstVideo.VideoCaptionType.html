@@ -33,7 +33,7 @@
 <li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div>
 <div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
 <div class="gi-docgen-generator">
-<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.4.0</p></div></nav>
+<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.5.0</p></div></nav>
 <section id="gi-docgen-main">
 <div class="gi-docgen-content">
 <div class="gi-docgen-page-title"><span class="gi-docgen-object-type">Enumeration (GI Enum)</span>
@@ -46,8 +46,8 @@
 <h4 class="tsd-anchor-link" id="since">Since<a href="#since" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>1.16</p>
 </div></div></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gstvideo-1.0.d.ts#L580">gstvideo-1.0/gstvideo-1.0.d.ts:580</a></li>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gstvideo-1.0.d.ts#L589">gstvideo-1.0/gstvideo-1.0.d.ts:589</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gstvideo-1.0.d.ts#L587">gstvideo-1.0/gstvideo-1.0.d.ts:587</a></li>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gstvideo-1.0.d.ts#L596">gstvideo-1.0/gstvideo-1.0.d.ts:596</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-accordion" open><summary class="tsd-accordion-summary tsd-index-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
@@ -66,7 +66,7 @@
 <section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="cea608_raw"><span>CEA608_<wbr/>RAW</span><a href="#cea608_raw" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">CEA608_RAW</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">CEA608_RAW</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">1</span></div>
 <div class="tsd-comment tsd-typography"><p>CEA-608 as byte pairs. Note that
 this format is not recommended since is does not specify to
 which field the caption comes from and therefore assumes
@@ -76,10 +76,10 @@ if you wish to store CEA-608 from two fields and prefix each byte pair
 with 0xFC for the first field and 0xFD for the second field.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gstvideo-1.0.d.ts#L603">gstvideo-1.0/gstvideo-1.0.d.ts:603</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gstvideo-1.0.d.ts#L610">gstvideo-1.0/gstvideo-1.0.d.ts:610</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="cea608_s334_1a"><span>CEA608_<wbr/>S334_<wbr/>1<wbr/>A</span><a href="#cea608_s334_1a" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">CEA608_S334_1A</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">CEA608_S334_1A</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">2</span></div>
 <div class="tsd-comment tsd-typography"><p>CEA-608 as byte triplets as defined
 in SMPTE S334-1 Annex A. The second and third byte of the byte triplet
 is the raw CEA608 data, the first byte is a bitfield: The top/7th bit is
@@ -90,32 +90,32 @@ for 525-line field 1, line 272 for 525-line field 2, line 5 for
 625-line field 1 and line 318 for 625-line field 2).</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gstvideo-1.0.d.ts#L614">gstvideo-1.0/gstvideo-1.0.d.ts:614</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gstvideo-1.0.d.ts#L621">gstvideo-1.0/gstvideo-1.0.d.ts:621</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="cea708_cdp"><span>CEA708_<wbr/>CDP</span><a href="#cea708_cdp" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">CEA708_CDP</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">CEA708_CDP</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">4</span></div>
 <div class="tsd-comment tsd-typography"><p>CEA-708 (and optionally CEA-608) in
 a CDP (Caption Distribution Packet) defined by SMPTE S-334-2.
 Contains the whole CDP (starting with 0x9669).</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gstvideo-1.0.d.ts#L626">gstvideo-1.0/gstvideo-1.0.d.ts:626</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gstvideo-1.0.d.ts#L633">gstvideo-1.0/gstvideo-1.0.d.ts:633</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="cea708_raw"><span>CEA708_<wbr/>RAW</span><a href="#cea708_raw" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">CEA708_RAW</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">CEA708_RAW</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">3</span></div>
 <div class="tsd-comment tsd-typography"><p>CEA-708 as cc_data byte triplets. They
 can also contain 608-in-708 and the first byte of each triplet has to
 be inspected for detecting the type.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gstvideo-1.0.d.ts#L620">gstvideo-1.0/gstvideo-1.0.d.ts:620</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gstvideo-1.0.d.ts#L627">gstvideo-1.0/gstvideo-1.0.d.ts:627</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="unknown"><span>UNKNOWN</span><a href="#unknown" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">UNKNOWN</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">UNKNOWN</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">0</span></div>
 <div class="tsd-comment tsd-typography"><p>Unknown type of CC</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gstvideo-1.0.d.ts#L593">gstvideo-1.0/gstvideo-1.0.d.ts:593</a></li></ul></aside></section></section></details>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gstvideo-1.0.d.ts#L600">gstvideo-1.0/gstvideo-1.0.d.ts:600</a></li></ul></aside></section></section></details>
 <details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Variables"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
 <h2>Variables</h2></summary><dl class="tsd-member-summaries"><dt class="tsd-member-summary" id="gtype"><span class="tsd-member-summary-name"><a href="../variables/GstVideo-1.0.GstVideo.VideoCaptionType._gtype.html">$gtype</a><a href="#gtype" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></span></dt><dd class="tsd-member-summary"></dd></dl></details></div></section>
 <nav id="gi-docgen-toc">

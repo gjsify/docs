@@ -32,7 +32,7 @@
 <li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div>
 <div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
 <div class="gi-docgen-generator">
-<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.4.0</p></div></nav>
+<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.5.0</p></div></nav>
 <section id="gi-docgen-main">
 <div class="gi-docgen-content">
 <div class="gi-docgen-page-title"><span class="gi-docgen-object-type">Class (GI Struct)</span>
@@ -41,7 +41,7 @@
 <div class="tsd-comment tsd-typography"><p>An opaque structure used as the base of all classes.</p>
 </div></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L5624">gobject-2.0/gobject-2.0.d.ts:5624</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L5645">gobject-2.0/gobject-2.0.d.ts:5645</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-accordion" open><summary class="tsd-accordion-summary tsd-index-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
@@ -84,7 +84,7 @@
 <h3 class="tsd-anchor-link" id="gtype"><code class="tsd-tag">Static</code><span>$gtype</span><a href="#gtype" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">$gtype</span><span class="tsd-signature-symbol">:</span> <a href="../types/GObject-2.0.GObject.GType.html" class="tsd-signature-type tsd-kind-type-alias">GType</a><span class="tsd-signature-symbol">&lt;</span><a href="" class="tsd-signature-type tsd-kind-class">TypeClass</a><span class="tsd-signature-symbol">&gt;</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L5625">gobject-2.0/gobject-2.0.d.ts:5625</a></li></ul></aside></section></section></details>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L5646">gobject-2.0/gobject-2.0.d.ts:5646</a></li></ul></aside></section></section></details>
 <details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Methods"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
 <h2 class="tsd-anchor-link" id="methods-1">Methods<a href="#methods-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2></summary>
 <section>
@@ -109,7 +109,7 @@ MyObjectPrivate to an object MyObject defined in the standard
 GObject fashion in the type's <code>class_init()</code> function.</p>
 <p>Note the use of a structure member &quot;priv&quot; to avoid the overhead
 of repeatedly calling MY_OBJECT_GET_PRIVATE().</p>
-<pre><code class="c"><span class="hl-3">typedef</span><span class="hl-1"> </span><span class="hl-3">struct</span><span class="hl-1"> _MyObject        MyObject;</span><br/><span class="hl-3">typedef</span><span class="hl-1"> </span><span class="hl-3">struct</span><span class="hl-1"> _MyObjectPrivate MyObjectPrivate;</span><br/><br/><span class="hl-3">struct</span><span class="hl-1"> _MyObject {</span><br/><span class="hl-1"> GObject parent;</span><br/><br/><span class="hl-1"> MyObjectPrivate *priv;</span><br/><span class="hl-1">};</span><br/><br/><span class="hl-3">struct</span><span class="hl-1"> _MyObjectPrivate {</span><br/><span class="hl-1">  </span><span class="hl-3">int</span><span class="hl-1"> some_field;</span><br/><span class="hl-1">};</span><br/><br/><span class="hl-3">static</span><span class="hl-1"> </span><span class="hl-3">void</span><br/><span class="hl-0">my_object_class_init</span><span class="hl-1"> (MyObjectClass *</span><span class="hl-5">klass</span><span class="hl-1">)</span><br/><span class="hl-1">{</span><br/><span class="hl-1">  </span><span class="hl-0">g_type_class_add_private</span><span class="hl-1"> (klass, </span><span class="hl-3">sizeof</span><span class="hl-1"> (MyObjectPrivate));</span><br/><span class="hl-1">}</span><br/><br/><span class="hl-3">static</span><span class="hl-1"> </span><span class="hl-3">void</span><br/><span class="hl-0">my_object_init</span><span class="hl-1"> (MyObject *</span><span class="hl-5">my_object</span><span class="hl-1">)</span><br/><span class="hl-1">{</span><br/><span class="hl-1">  </span><span class="hl-5">my_object</span><span class="hl-1">-&gt;</span><span class="hl-5">priv</span><span class="hl-1"> = </span><span class="hl-0">G_TYPE_INSTANCE_GET_PRIVATE</span><span class="hl-1"> (my_object,</span><br/><span class="hl-1">                                                 MY_TYPE_OBJECT,</span><br/><span class="hl-1">                                                 MyObjectPrivate);</span><br/><span class="hl-1">  </span><span class="hl-10">// my_object-&gt;priv-&gt;some_field will be automatically initialised to 0</span><br/><span class="hl-1">}</span><br/><br/><span class="hl-3">static</span><span class="hl-1"> </span><span class="hl-3">int</span><br/><span class="hl-0">my_object_get_some_field</span><span class="hl-1"> (MyObject *</span><span class="hl-5">my_object</span><span class="hl-1">)</span><br/><span class="hl-1">{</span><br/><span class="hl-1">  MyObjectPrivate *priv;</span><br/><br/><span class="hl-1">  </span><span class="hl-0">g_return_val_if_fail</span><span class="hl-1"> (</span><span class="hl-0">MY_IS_OBJECT</span><span class="hl-1"> (my_object), </span><span class="hl-9">0</span><span class="hl-1">);</span><br/><br/><span class="hl-1">  priv = </span><span class="hl-5">my_object</span><span class="hl-1">-&gt;</span><span class="hl-5">priv</span><span class="hl-1">;</span><br/><br/><span class="hl-1">  </span><span class="hl-4">return</span><span class="hl-1"> </span><span class="hl-5">priv</span><span class="hl-1">-&gt;</span><span class="hl-5">some_field</span><span class="hl-1">;</span><br/><span class="hl-1">}</span>
+<pre><code class="c"><span class="hl-3">typedef</span><span class="hl-1"> </span><span class="hl-3">struct</span><span class="hl-1"> _MyObject        MyObject;</span><br/><span class="hl-3">typedef</span><span class="hl-1"> </span><span class="hl-3">struct</span><span class="hl-1"> _MyObjectPrivate MyObjectPrivate;</span><br/><br/><span class="hl-3">struct</span><span class="hl-1"> _MyObject {</span><br/><span class="hl-1"> GObject parent;</span><br/><br/><span class="hl-1"> MyObjectPrivate *priv;</span><br/><span class="hl-1">};</span><br/><br/><span class="hl-3">struct</span><span class="hl-1"> _MyObjectPrivate {</span><br/><span class="hl-1">  </span><span class="hl-3">int</span><span class="hl-1"> some_field;</span><br/><span class="hl-1">};</span><br/><br/><span class="hl-3">static</span><span class="hl-1"> </span><span class="hl-3">void</span><br/><span class="hl-0">my_object_class_init</span><span class="hl-1"> (MyObjectClass *</span><span class="hl-5">klass</span><span class="hl-1">)</span><br/><span class="hl-1">{</span><br/><span class="hl-1">  </span><span class="hl-0">g_type_class_add_private</span><span class="hl-1"> (klass, </span><span class="hl-3">sizeof</span><span class="hl-1"> (MyObjectPrivate));</span><br/><span class="hl-1">}</span><br/><br/><span class="hl-3">static</span><span class="hl-1"> </span><span class="hl-3">void</span><br/><span class="hl-0">my_object_init</span><span class="hl-1"> (MyObject *</span><span class="hl-5">my_object</span><span class="hl-1">)</span><br/><span class="hl-1">{</span><br/><span class="hl-1">  </span><span class="hl-5">my_object</span><span class="hl-1">-&gt;</span><span class="hl-5">priv</span><span class="hl-1"> = </span><span class="hl-0">G_TYPE_INSTANCE_GET_PRIVATE</span><span class="hl-1"> (my_object,</span><br/><span class="hl-1">                                                 MY_TYPE_OBJECT,</span><br/><span class="hl-1">                                                 MyObjectPrivate);</span><br/><span class="hl-1">  </span><span class="hl-9">// my_object-&gt;priv-&gt;some_field will be automatically initialised to 0</span><br/><span class="hl-1">}</span><br/><br/><span class="hl-3">static</span><span class="hl-1"> </span><span class="hl-3">int</span><br/><span class="hl-0">my_object_get_some_field</span><span class="hl-1"> (MyObject *</span><span class="hl-5">my_object</span><span class="hl-1">)</span><br/><span class="hl-1">{</span><br/><span class="hl-1">  MyObjectPrivate *priv;</span><br/><br/><span class="hl-1">  </span><span class="hl-0">g_return_val_if_fail</span><span class="hl-1"> (</span><span class="hl-0">MY_IS_OBJECT</span><span class="hl-1"> (my_object), </span><span class="hl-8">0</span><span class="hl-1">);</span><br/><br/><span class="hl-1">  priv = </span><span class="hl-5">my_object</span><span class="hl-1">-&gt;</span><span class="hl-5">priv</span><span class="hl-1">;</span><br/><br/><span class="hl-1">  </span><span class="hl-4">return</span><span class="hl-1"> </span><span class="hl-5">priv</span><span class="hl-1">-&gt;</span><span class="hl-5">some_field</span><span class="hl-1">;</span><br/><span class="hl-1">}</span>
 </code><button type="button">Copy</button></pre>
 
 </div>
@@ -128,7 +128,7 @@ of repeatedly calling MY_OBJECT_GET_PRIVATE().</p>
 <h4 class="tsd-anchor-link" id="deprecated">Deprecated<a href="#deprecated" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>since 2.58: Use the G_ADD_PRIVATE() macro with the <code>G_DEFINE_*</code>   family of macros to add instance private data to a type</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L5747">gobject-2.0/gobject-2.0.d.ts:5747</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L5768">gobject-2.0/gobject-2.0.d.ts:5768</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_private"><span>get_<wbr/>private</span><a href="#get_private" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -141,7 +141,7 @@ of repeatedly calling MY_OBJECT_GET_PRIVATE().</p>
 <li><span><span class="tsd-kind-parameter">private_type</span>: <a href="../types/GObject-2.0.GObject.GType.html" class="tsd-signature-type tsd-kind-type-alias">GType</a></span></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L5752">gobject-2.0/gobject-2.0.d.ts:5752</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L5773">gobject-2.0/gobject-2.0.d.ts:5773</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="peek_parent"><span>peek_<wbr/>parent</span><a href="#peek_parent" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -159,7 +159,7 @@ g_type_class_peek (g_type_parent (G_TYPE_FROM_CLASS (g_class)))</p>
 <h4 class="tsd-returns-title">Returns <a href="" class="tsd-signature-type tsd-kind-class">TypeClass</a></h4><p>the parent class   of <code>g_class</code></p>
 <aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L5767">gobject-2.0/gobject-2.0.d.ts:5767</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L5788">gobject-2.0/gobject-2.0.d.ts:5788</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="unref"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-deprecated">Deprecated 2.84</code><span class="deprecated">unref</span><a href="#unref" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -177,7 +177,7 @@ class pointer after <code>g_type_class_unref()</code> are invalid.</p>
 <h4 class="tsd-anchor-link" id="deprecated-1">Deprecated<a href="#deprecated-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>since 2.84: Type class reference counting has been removed and type    classes now cannot be finalized. This function no longer does anything.</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L5777">gobject-2.0/gobject-2.0.d.ts:5777</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L5798">gobject-2.0/gobject-2.0.d.ts:5798</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="adjust_private_offset"><code class="tsd-tag">Static</code><span>adjust_<wbr/>private_<wbr/>offset</span><a href="#adjust_private_offset" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -191,7 +191,7 @@ class pointer after <code>g_type_class_unref()</code> are invalid.</p>
 <li><span><span class="tsd-kind-parameter">private_size_or_offset</span>: <span class="tsd-signature-type">number</span></span></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L5632">gobject-2.0/gobject-2.0.d.ts:5632</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L5653">gobject-2.0/gobject-2.0.d.ts:5653</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get"><code class="tsd-tag">Static</code><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.84</code><span>get</span><a href="#get" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -215,7 +215,7 @@ already.</p>
 <h4 class="tsd-anchor-link" id="since-1">Since<a href="#since-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.84</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L5644">gobject-2.0/gobject-2.0.d.ts:5644</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L5665">gobject-2.0/gobject-2.0.d.ts:5665</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="peek"><code class="tsd-tag">Static</code><span>peek</span><a href="#peek" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -237,7 +237,7 @@ referenced before).</p>
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="" class="tsd-signature-type tsd-kind-class">TypeClass</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L5657">gobject-2.0/gobject-2.0.d.ts:5657</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L5678">gobject-2.0/gobject-2.0.d.ts:5678</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="peek_static"><code class="tsd-tag">Static</code><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>peek_<wbr/>static</span><a href="#peek_static" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -259,7 +259,7 @@ static types.</p>
 <h4 class="tsd-anchor-link" id="since-2">Since<a href="#since-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L5665">gobject-2.0/gobject-2.0.d.ts:5665</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L5686">gobject-2.0/gobject-2.0.d.ts:5686</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="ref"><code class="tsd-tag">Static</code><code class="tsd-tag tsd-tag-gir tsd-tag-gir-deprecated">Deprecated 2.84</code><span class="deprecated">ref</span><a href="#ref" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -282,7 +282,7 @@ static types.</p>
 <h4 class="tsd-anchor-link" id="deprecated-2">Deprecated<a href="#deprecated-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>since 2.84: Use <code>g_type_class_get()</code> instead</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L5675">gobject-2.0/gobject-2.0.d.ts:5675</a></li></ul></aside></div></li></ul></section></section></details></div></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L5696">gobject-2.0/gobject-2.0.d.ts:5696</a></li></ul></aside></div></li></ul></section></section></details></div></section>
 <nav id="gi-docgen-toc">
 <div class="tsd-page-navigation">
 <h3>Content</h3>

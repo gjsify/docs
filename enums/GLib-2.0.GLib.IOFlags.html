@@ -28,7 +28,7 @@
 <li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div>
 <div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
 <div class="gi-docgen-generator">
-<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.4.0</p></div></nav>
+<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.5.0</p></div></nav>
 <section id="gi-docgen-main">
 <div class="gi-docgen-content">
 <div class="gi-docgen-page-title"><span class="gi-docgen-object-type">Enumeration (GI Flags)</span>
@@ -39,7 +39,7 @@ read with <code>g_io_channel_get_flags()</code>, but not changed with
 <code>g_io_channel_set_flags()</code>.</p>
 </div></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L15552">glib-2.0/glib-2.0.d.ts:15552</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L15843">glib-2.0/glib-2.0.d.ts:15843</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-accordion" open><summary class="tsd-accordion-summary tsd-index-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
@@ -63,85 +63,89 @@ read with <code>g_io_channel_get_flags()</code>, but not changed with
 <section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="append"><span>APPEND</span><a href="#append" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">APPEND</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">APPEND</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">1</span></div>
 <div class="tsd-comment tsd-typography"><p>Turns on append mode, corresponds to <code>O_APPEND</code>
 (see the documentation of the UNIX <code>open()</code> syscall)</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L15561">glib-2.0/glib-2.0.d.ts:15561</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L15853">glib-2.0/glib-2.0.d.ts:15853</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_mask"><span>GET_<wbr/>MASK</span><a href="#get_mask" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">GET_MASK</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">GET_MASK</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">31</span></div>
 <div class="tsd-comment tsd-typography"><p>The mask of the flags that are returned from
 <code>g_io_channel_get_flags()</code></p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L15598">glib-2.0/glib-2.0.d.ts:15598</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L15890">glib-2.0/glib-2.0.d.ts:15890</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="is_readable"><span>IS_<wbr/>READABLE</span><a href="#is_readable" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">IS_READABLE</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">IS_READABLE</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">4</span></div>
 <div class="tsd-comment tsd-typography"><p>Indicates that the io channel is readable.
 This flag cannot be changed.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L15572">glib-2.0/glib-2.0.d.ts:15572</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L15864">glib-2.0/glib-2.0.d.ts:15864</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="is_seekable"><span>IS_<wbr/>SEEKABLE</span><a href="#is_seekable" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">IS_SEEKABLE</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">IS_SEEKABLE</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">16</span></div>
 <div class="tsd-comment tsd-typography"><p>Indicates that the io channel is seekable,
 i.e. that <code>g_io_channel_seek_position()</code> can be used on it.
 This flag cannot be changed.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L15589">glib-2.0/glib-2.0.d.ts:15589</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L15881">glib-2.0/glib-2.0.d.ts:15881</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="is_writable"><span>IS_<wbr/>WRITABLE</span><a href="#is_writable" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">IS_WRITABLE</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">IS_WRITABLE</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">8</span></div>
 <div class="tsd-comment tsd-typography"><p>Indicates that the io channel is writable.
 This flag cannot be changed.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L15577">glib-2.0/glib-2.0.d.ts:15577</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L15869">glib-2.0/glib-2.0.d.ts:15869</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="is_writeable"><span>IS_<wbr/>WRITEABLE</span><a href="#is_writeable" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">IS_WRITEABLE</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">IS_WRITEABLE</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">8</span></div>
 <div class="tsd-comment tsd-typography"><p>A misspelled version of <code>G_IO_FLAG_IS_WRITABLE</code>
 that existed before the spelling was fixed in GLib 2.30. It is kept
 here for compatibility reasons. Deprecated since 2.30</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L15583">glib-2.0/glib-2.0.d.ts:15583</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L15875">glib-2.0/glib-2.0.d.ts:15875</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="mask"><span>MASK</span><a href="#mask" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">MASK</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">MASK</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">31</span></div>
 <div class="tsd-comment tsd-typography"><p>The mask that specifies all the valid flags.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L15593">glib-2.0/glib-2.0.d.ts:15593</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L15885">glib-2.0/glib-2.0.d.ts:15885</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="nonblock"><span>NONBLOCK</span><a href="#nonblock" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">NONBLOCK</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">NONBLOCK</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">2</span></div>
 <div class="tsd-comment tsd-typography"><p>Turns on nonblocking mode, corresponds to
 <code>O_NONBLOCK</code>/<code>O_NDELAY</code> (see the documentation of the UNIX <code>open()</code>
 syscall)</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L15567">glib-2.0/glib-2.0.d.ts:15567</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L15859">glib-2.0/glib-2.0.d.ts:15859</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="none"><span>NONE</span><a href="#none" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">NONE</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">NONE</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">0</span></div>
 <div class="tsd-comment tsd-typography"><p>No special flags set.</p>
-</div><aside class="tsd-sources">
+</div>
+<div class="tsd-comment tsd-typography">
+<div class="tsd-tag-since">
+<h4 class="tsd-anchor-link" id="since">Since<a href="#since" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.74</p>
+</div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L15556">glib-2.0/glib-2.0.d.ts:15556</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L15848">glib-2.0/glib-2.0.d.ts:15848</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="set_mask"><span>SET_<wbr/>MASK</span><a href="#set_mask" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">SET_MASK</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">SET_MASK</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">3</span></div>
 <div class="tsd-comment tsd-typography"><p>The mask of the flags that the user can modify
 with <code>g_io_channel_set_flags()</code></p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L15603">glib-2.0/glib-2.0.d.ts:15603</a></li></ul></aside></section></section></details></div></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L15895">glib-2.0/glib-2.0.d.ts:15895</a></li></ul></aside></section></section></details></div></section>
 <nav id="gi-docgen-toc">
 <div class="tsd-page-navigation">
 <h3>Content</h3>

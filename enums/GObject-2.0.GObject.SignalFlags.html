@@ -32,7 +32,7 @@
 <li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div>
 <div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
 <div class="gi-docgen-generator">
-<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.4.0</p></div></nav>
+<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.5.0</p></div></nav>
 <section id="gi-docgen-main">
 <div class="gi-docgen-content">
 <div class="gi-docgen-page-title"><span class="gi-docgen-object-type">Enumeration (GI Flags)</span>
@@ -41,7 +41,7 @@
 <div class="tsd-comment tsd-typography"><p>The signal flags are used to specify a signal's behaviour.</p>
 </div></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L2932">gobject-2.0/gobject-2.0.d.ts:2932</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L2949">gobject-2.0/gobject-2.0.d.ts:2949</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-accordion" open><summary class="tsd-accordion-summary tsd-index-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
@@ -65,17 +65,21 @@
 <section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="accumulator_first_run"><span>ACCUMULATOR_<wbr/>FIRST_<wbr/>RUN</span><a href="#accumulator_first_run" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">ACCUMULATOR_FIRST_RUN</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">ACCUMULATOR_FIRST_RUN</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">131072</span></div>
 <div class="tsd-comment tsd-typography"><p>The signal accumulator was invoked for the first time.</p>
 <p>This flag is only used in <a href="../interfaces/GObject-2.0.GObject.SignalAccumulator.html" class="tsd-kind-interface">GObject.SignalAccumulator</a>[accumulator functions]
 for the <code>run_type</code> field of the <a href="../classes/GObject-2.0.GObject.SignalInvocationHint.html" class="tsd-kind-class">GObject.SignalInvocationHint</a>, to
 mark the first call to the accumulator function for a signal emission.</p>
-</div><aside class="tsd-sources">
+</div>
+<div class="tsd-comment tsd-typography">
+<div class="tsd-tag-since">
+<h4 class="tsd-anchor-link" id="since">Since<a href="#since" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.68</p>
+</div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L2988">gobject-2.0/gobject-2.0.d.ts:2988</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L3008">gobject-2.0/gobject-2.0.d.ts:3008</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="action"><span>ACTION</span><a href="#action" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">ACTION</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">ACTION</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">32</span></div>
 <div class="tsd-comment tsd-typography"><p>Action signals are signals that may freely be emitted on alive
 objects from user code via GObject.signal_emit and friends, without
 the need of being embedded into extra code that performs pre or
@@ -84,69 +88,77 @@ of as object methods which can be called generically by
 third-party code.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L2964">gobject-2.0/gobject-2.0.d.ts:2964</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L2981">gobject-2.0/gobject-2.0.d.ts:2981</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="deprecated"><span>DEPRECATED</span><a href="#deprecated" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">DEPRECATED</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">DEPRECATED</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">256</span></div>
 <div class="tsd-comment tsd-typography"><p>The signal is deprecated and will be removed in a future version.</p>
 <p>A warning will be generated if it is connected while running with
 <code>G_ENABLE_DIAGNOSTIC=1</code>.</p>
-</div><aside class="tsd-sources">
+</div>
+<div class="tsd-comment tsd-typography">
+<div class="tsd-tag-since">
+<h4 class="tsd-anchor-link" id="since-1">Since<a href="#since-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.32</p>
+</div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L2980">gobject-2.0/gobject-2.0.d.ts:2980</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L2999">gobject-2.0/gobject-2.0.d.ts:2999</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="detailed"><span>DETAILED</span><a href="#detailed" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">DETAILED</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">DETAILED</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">16</span></div>
 <div class="tsd-comment tsd-typography"><p>This signal supports <code>::detail</code> appendices to the signal name
 upon handler connections and emissions.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L2955">gobject-2.0/gobject-2.0.d.ts:2955</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L2972">gobject-2.0/gobject-2.0.d.ts:2972</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="must_collect"><span>MUST_<wbr/>COLLECT</span><a href="#must_collect" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">MUST_COLLECT</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">MUST_COLLECT</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">128</span></div>
 <div class="tsd-comment tsd-typography"><p>Varargs signal emission will always collect the arguments, even if there
 are no signal handlers connected.</p>
-</div><aside class="tsd-sources">
+</div>
+<div class="tsd-comment tsd-typography">
+<div class="tsd-tag-since">
+<h4 class="tsd-anchor-link" id="since-2">Since<a href="#since-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.30</p>
+</div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L2973">gobject-2.0/gobject-2.0.d.ts:2973</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L2991">gobject-2.0/gobject-2.0.d.ts:2991</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="no_hooks"><span>NO_<wbr/>HOOKS</span><a href="#no_hooks" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">NO_HOOKS</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">NO_HOOKS</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">64</span></div>
 <div class="tsd-comment tsd-typography"><p>No emissions hooks are supported for this signal.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L2968">gobject-2.0/gobject-2.0.d.ts:2968</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L2985">gobject-2.0/gobject-2.0.d.ts:2985</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="no_recurse"><span>NO_<wbr/>RECURSE</span><a href="#no_recurse" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">NO_RECURSE</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">NO_RECURSE</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">8</span></div>
 <div class="tsd-comment tsd-typography"><p>Signals being emitted for an object while currently being in
 emission for this very object will not be emitted recursively,
 but instead cause the first emission to be restarted.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L2950">gobject-2.0/gobject-2.0.d.ts:2950</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L2967">gobject-2.0/gobject-2.0.d.ts:2967</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="run_cleanup"><span>RUN_<wbr/>CLEANUP</span><a href="#run_cleanup" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">RUN_CLEANUP</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">RUN_CLEANUP</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">4</span></div>
 <div class="tsd-comment tsd-typography"><p>Invoke the default signal handler in the last emission stage</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L2944">gobject-2.0/gobject-2.0.d.ts:2944</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L2961">gobject-2.0/gobject-2.0.d.ts:2961</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="run_first"><span>RUN_<wbr/>FIRST</span><a href="#run_first" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">RUN_FIRST</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">RUN_FIRST</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">1</span></div>
 <div class="tsd-comment tsd-typography"><p>Invoke the default signal handler in the first emission stage</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L2936">gobject-2.0/gobject-2.0.d.ts:2936</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L2953">gobject-2.0/gobject-2.0.d.ts:2953</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="run_last"><span>RUN_<wbr/>LAST</span><a href="#run_last" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">RUN_LAST</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">RUN_LAST</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">2</span></div>
 <div class="tsd-comment tsd-typography"><p>Invoke the default signal handler in the third emission stage</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L2940">gobject-2.0/gobject-2.0.d.ts:2940</a></li></ul></aside></section></section></details></div></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gobject-2.0.d.ts#L2957">gobject-2.0/gobject-2.0.d.ts:2957</a></li></ul></aside></section></section></details></div></section>
 <nav id="gi-docgen-toc">
 <div class="tsd-page-navigation">
 <h3>Content</h3>

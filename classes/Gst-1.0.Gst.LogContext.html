@@ -34,7 +34,7 @@
 <li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div>
 <div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
 <div class="gi-docgen-generator">
-<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.4.0</p></div></nav>
+<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.5.0</p></div></nav>
 <section id="gi-docgen-main">
 <div class="gi-docgen-content">
 <div class="gi-docgen-page-title"><span class="gi-docgen-object-type">Class (GI Struct)</span>
@@ -44,18 +44,18 @@
 logging once or periodic logging, avoiding to
 spam the terminal with the same log message multiple times.</p>
 <h2 id="simple-log-context-using-static-macros" class="tsd-anchor-link">Simple log context using static macros<a href="#simple-log-context-using-static-macros" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2>
-<pre><code class="c"><span class="hl-10">// At global/file scope:</span><br/><span class="hl-0">GST_LOG_CONTEXT_STATIC_DEFINE</span><span class="hl-1">(my_context, GST_LOG_CONTEXT_FLAG_THROTTLE, );</span><br/><span class="hl-4">#define</span><span class="hl-3"> MY_CONTEXT </span><span class="hl-0">GST_LOG_CONTEXT_LAZY_INIT</span><span class="hl-3">(my_context)</span><br/><br/><span class="hl-10">// Then in code:</span><br/><span class="hl-0">GST_CTX_INFO</span><span class="hl-1">(MY_CONTEXT, </span><span class="hl-2">&quot;This will only appear once per file/line&quot;</span><span class="hl-1">);</span>
+<pre><code class="c"><span class="hl-9">// At global/file scope:</span><br/><span class="hl-0">GST_LOG_CONTEXT_STATIC_DEFINE</span><span class="hl-1">(my_context, GST_LOG_CONTEXT_FLAG_THROTTLE, );</span><br/><span class="hl-4">#define</span><span class="hl-3"> MY_CONTEXT </span><span class="hl-0">GST_LOG_CONTEXT_LAZY_INIT</span><span class="hl-3">(my_context)</span><br/><br/><span class="hl-9">// Then in code:</span><br/><span class="hl-0">GST_CTX_INFO</span><span class="hl-1">(MY_CONTEXT, </span><span class="hl-2">&quot;This will only appear once per file/line&quot;</span><span class="hl-1">);</span>
 </code><button type="button">Copy</button></pre>
 
 <h2 id="periodic-logging" class="tsd-anchor-link">Periodic logging<a href="#periodic-logging" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2>
 <p>For messages that should be logged periodically (e.g., maximum once per minute):</p>
-<pre><code class="c"><span class="hl-10">// At global/file scope:</span><br/><span class="hl-0">GST_LOG_CONTEXT_STATIC_DEFINE</span><span class="hl-1">(my_periodic_context, GST_LOG_CONTEXT_FLAG_THROTTLE,</span><br/><span class="hl-1">  </span><span class="hl-0">GST_LOG_CONTEXT_BUILDER_SET_INTERVAL</span><span class="hl-1">(</span><span class="hl-9">60</span><span class="hl-1"> * </span><span class="hl-5">GST_SECOND</span><span class="hl-1">);</span><br/><span class="hl-1">);</span><br/><span class="hl-4">#define</span><span class="hl-3"> MY_PERIODIC_CONTEXT </span><span class="hl-0">GST_LOG_CONTEXT_LAZY_INIT</span><span class="hl-3">(my_periodic_context)</span><br/><br/><span class="hl-10">// Then in code:</span><br/><span class="hl-0">GST_CTX_INFO</span><span class="hl-1">(MY_PERIODIC_CONTEXT, </span><span class="hl-2">&quot;This appears once per minute&quot;</span><span class="hl-1">);</span>
+<pre><code class="c"><span class="hl-9">// At global/file scope:</span><br/><span class="hl-0">GST_LOG_CONTEXT_STATIC_DEFINE</span><span class="hl-1">(my_periodic_context, GST_LOG_CONTEXT_FLAG_THROTTLE,</span><br/><span class="hl-1">  </span><span class="hl-0">GST_LOG_CONTEXT_BUILDER_SET_INTERVAL</span><span class="hl-1">(</span><span class="hl-8">60</span><span class="hl-1"> * </span><span class="hl-5">GST_SECOND</span><span class="hl-1">);</span><br/><span class="hl-1">);</span><br/><span class="hl-4">#define</span><span class="hl-3"> MY_PERIODIC_CONTEXT </span><span class="hl-0">GST_LOG_CONTEXT_LAZY_INIT</span><span class="hl-3">(my_periodic_context)</span><br/><br/><span class="hl-9">// Then in code:</span><br/><span class="hl-0">GST_CTX_INFO</span><span class="hl-1">(MY_PERIODIC_CONTEXT, </span><span class="hl-2">&quot;This appears once per minute&quot;</span><span class="hl-1">);</span>
 </code><button type="button">Copy</button></pre>
 
 <h2 id="customizing-message-hash-with-custom-flags-and-category" class="tsd-anchor-link">Customizing Message hash with custom flags and category<a href="#customizing-message-hash-with-custom-flags-and-category" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2>
 <p>By default, a message's hash is determined by the file name, object pointer,
 and format string. You can customize this with builder operations:</p>
-<pre><code class="c"><span class="hl-10">// Ignore the object pointer when determining message hash (with throttling)</span><br/><span class="hl-0">GST_LOG_CONTEXT_STATIC_DEFINE</span><span class="hl-1">(obj_independent_ctx, GST_LOG_CONTEXT_FLAG_THROTTLE,</span><br/><span class="hl-1">  </span><span class="hl-0">GST_LOG_CONTEXT_BUILDER_SET_HASH_FLAGS</span><span class="hl-1">(GST_LOG_CONTEXT_IGNORE_OBJECT);</span><br/><span class="hl-1">);</span><br/><br/><span class="hl-10">// Use a custom category (without throttling)</span><br/><span class="hl-0">GST_LOG_CONTEXT_STATIC_DEFINE</span><span class="hl-1">(custom_cat_ctx, GST_LOG_CONTEXT_FLAG_NONE,</span><br/><span class="hl-1">  </span><span class="hl-0">GST_LOG_CONTEXT_BUILDER_SET_CATEGORY</span><span class="hl-1">(my_category);</span><br/><span class="hl-1">);</span>
+<pre><code class="c"><span class="hl-9">// Ignore the object pointer when determining message hash (with throttling)</span><br/><span class="hl-0">GST_LOG_CONTEXT_STATIC_DEFINE</span><span class="hl-1">(obj_independent_ctx, GST_LOG_CONTEXT_FLAG_THROTTLE,</span><br/><span class="hl-1">  </span><span class="hl-0">GST_LOG_CONTEXT_BUILDER_SET_HASH_FLAGS</span><span class="hl-1">(GST_LOG_CONTEXT_IGNORE_OBJECT);</span><br/><span class="hl-1">);</span><br/><br/><span class="hl-9">// Use a custom category (without throttling)</span><br/><span class="hl-0">GST_LOG_CONTEXT_STATIC_DEFINE</span><span class="hl-1">(custom_cat_ctx, GST_LOG_CONTEXT_FLAG_NONE,</span><br/><span class="hl-1">  </span><span class="hl-0">GST_LOG_CONTEXT_BUILDER_SET_CATEGORY</span><span class="hl-1">(my_category);</span><br/><span class="hl-1">);</span>
 </code><button type="button">Copy</button></pre>
 
 </div>
@@ -64,7 +64,7 @@ and format string. You can customize this with builder operations:</p>
 <h4 class="tsd-anchor-link" id="since">Since<a href="#since" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>1.28</p>
 </div></div></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L20939">gst-1.0/gst-1.0.d.ts:20939</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L21237">gst-1.0/gst-1.0.d.ts:21237</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-accordion" open><summary class="tsd-accordion-summary tsd-index-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
@@ -100,7 +100,7 @@ and format string. You can customize this with builder operations:</p>
 <h3 class="tsd-anchor-link" id="gtype"><code class="tsd-tag">Static</code><span>$gtype</span><a href="#gtype" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">$gtype</span><span class="tsd-signature-symbol">:</span> <a href="../types/GObject-2.0.GObject.GType.html" class="tsd-signature-type tsd-kind-type-alias">GType</a><span class="tsd-signature-symbol">&lt;</span><a href="" class="tsd-signature-type tsd-kind-class">LogContext</a><span class="tsd-signature-symbol">&gt;</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L20940">gst-1.0/gst-1.0.d.ts:20940</a></li></ul></aside></section></section></details>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L21238">gst-1.0/gst-1.0.d.ts:21238</a></li></ul></aside></section></section></details>
 <details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Methods"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
 <h2 class="tsd-anchor-link" id="methods-1">Methods<a href="#methods-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2></summary>
 <section>
@@ -118,7 +118,7 @@ and format string. You can customize this with builder operations:</p>
 <h4 class="tsd-anchor-link" id="since-1">Since<a href="#since-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>1.28</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L20947">gst-1.0/gst-1.0.d.ts:20947</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L21245">gst-1.0/gst-1.0.d.ts:21245</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="reset"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 1.28</code><span>reset</span><a href="#reset" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -133,7 +133,7 @@ and format string. You can customize this with builder operations:</p>
 <h4 class="tsd-anchor-link" id="since-2">Since<a href="#since-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>1.28</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L20953">gst-1.0/gst-1.0.d.ts:20953</a></li></ul></aside></div></li></ul></section></section></details></div></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L21251">gst-1.0/gst-1.0.d.ts:21251</a></li></ul></aside></div></li></ul></section></section></details></div></section>
 <nav id="gi-docgen-toc">
 <div class="tsd-page-navigation">
 <h3>Content</h3>

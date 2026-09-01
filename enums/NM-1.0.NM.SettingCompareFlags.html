@@ -32,7 +32,7 @@
 <li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div>
 <div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
 <div class="gi-docgen-generator">
-<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.4.0</p></div></nav>
+<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.5.0</p></div></nav>
 <section id="gi-docgen-main">
 <div class="gi-docgen-content">
 <div class="gi-docgen-page-title"><span class="gi-docgen-object-type">Enumeration (GI Enum)</span>
@@ -66,7 +66,7 @@ two connections.</p>
 <section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="diff_result_no_default"><span>DIFF_<wbr/>RESULT_<wbr/>NO_<wbr/>DEFAULT</span><a href="#diff_result_no_default" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">DIFF_RESULT_NO_DEFAULT</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">DIFF_RESULT_NO_DEFAULT</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">64</span></div>
 <div class="tsd-comment tsd-typography"><p>if this flag is set,
 <code>nm_setting_diff()</code> and <code>nm_connection_diff()</code> will not include properties that
 are set to their default value. This is the opposite of
@@ -83,7 +83,7 @@ and <code>NM_SETTING_DIFF_RESULT_IN_B_DEFAULT</code>, if the values are default 
 <li>Defined in <a href="https://github.com/gjsify/types/blob/main/nm-1.0.d.ts#L1882">nm-1.0/nm-1.0.d.ts:1882</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="diff_result_with_default"><span>DIFF_<wbr/>RESULT_<wbr/>WITH_<wbr/>DEFAULT</span><a href="#diff_result_with_default" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">DIFF_RESULT_WITH_DEFAULT</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">DIFF_RESULT_WITH_DEFAULT</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">32</span></div>
 <div class="tsd-comment tsd-typography"><p>if this flag is set,
 <code>nm_setting_diff()</code> and <code>nm_connection_diff()</code> will also include properties that
 are set to their default value. See also <code>NM_SETTING_COMPARE_FLAG_DIFF_RESULT_NO_DEFAULT</code>.</p>
@@ -92,14 +92,14 @@ are set to their default value. See also <code>NM_SETTING_COMPARE_FLAG_DIFF_RESU
 <li>Defined in <a href="https://github.com/gjsify/types/blob/main/nm-1.0.d.ts#L1868">nm-1.0/nm-1.0.d.ts:1868</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="exact"><span>EXACT</span><a href="#exact" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">EXACT</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">EXACT</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">0</span></div>
 <div class="tsd-comment tsd-typography"><p>match all properties exactly</p>
 </div><aside class="tsd-sources">
 <ul>
 <li>Defined in <a href="https://github.com/gjsify/types/blob/main/nm-1.0.d.ts#L1836">nm-1.0/nm-1.0.d.ts:1836</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="fuzzy"><span>FUZZY</span><a href="#fuzzy" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">FUZZY</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">FUZZY</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">1</span></div>
 <div class="tsd-comment tsd-typography"><p>match only important attributes, like SSID,
 type, security settings, etc.  Does not match, for example, connection ID
 or UUID.</p>
@@ -108,7 +108,7 @@ or UUID.</p>
 <li>Defined in <a href="https://github.com/gjsify/types/blob/main/nm-1.0.d.ts#L1842">nm-1.0/nm-1.0.d.ts:1842</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="ignore_agent_owned_secrets"><span>IGNORE_<wbr/>AGENT_<wbr/>OWNED_<wbr/>SECRETS</span><a href="#ignore_agent_owned_secrets" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">IGNORE_AGENT_OWNED_SECRETS</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">IGNORE_AGENT_OWNED_SECRETS</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">8</span></div>
 <div class="tsd-comment tsd-typography"><p>ignore secrets for which
 the secret's flags indicate the secret is owned by a user secret agent
 (ie, the secret's flag includes <code>NM_SETTING_SECRET_FLAG_AGENT_OWNED</code>)</p>
@@ -117,14 +117,14 @@ the secret's flags indicate the secret is owned by a user secret agent
 <li>Defined in <a href="https://github.com/gjsify/types/blob/main/nm-1.0.d.ts#L1856">nm-1.0/nm-1.0.d.ts:1856</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="ignore_id"><span>IGNORE_<wbr/>ID</span><a href="#ignore_id" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">IGNORE_ID</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">IGNORE_ID</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">2</span></div>
 <div class="tsd-comment tsd-typography"><p>ignore the connection's ID</p>
 </div><aside class="tsd-sources">
 <ul>
 <li>Defined in <a href="https://github.com/gjsify/types/blob/main/nm-1.0.d.ts#L1846">nm-1.0/nm-1.0.d.ts:1846</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="ignore_not_saved_secrets"><span>IGNORE_<wbr/>NOT_<wbr/>SAVED_<wbr/>SECRETS</span><a href="#ignore_not_saved_secrets" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">IGNORE_NOT_SAVED_SECRETS</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">IGNORE_NOT_SAVED_SECRETS</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">16</span></div>
 <div class="tsd-comment tsd-typography"><p>ignore secrets for which
 the secret's flags indicate the secret should not be saved to persistent
 storage (ie, the secret's flag includes <code>NM_SETTING_SECRET_FLAG_NOT_SAVED</code>)</p>
@@ -133,14 +133,14 @@ storage (ie, the secret's flag includes <code>NM_SETTING_SECRET_FLAG_NOT_SAVED</
 <li>Defined in <a href="https://github.com/gjsify/types/blob/main/nm-1.0.d.ts#L1862">nm-1.0/nm-1.0.d.ts:1862</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="ignore_secrets"><span>IGNORE_<wbr/>SECRETS</span><a href="#ignore_secrets" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">IGNORE_SECRETS</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">IGNORE_SECRETS</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">4</span></div>
 <div class="tsd-comment tsd-typography"><p>ignore all secrets</p>
 </div><aside class="tsd-sources">
 <ul>
 <li>Defined in <a href="https://github.com/gjsify/types/blob/main/nm-1.0.d.ts#L1850">nm-1.0/nm-1.0.d.ts:1850</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="ignore_timestamp"><span>IGNORE_<wbr/>TIMESTAMP</span><a href="#ignore_timestamp" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">IGNORE_TIMESTAMP</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">IGNORE_TIMESTAMP</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">128</span></div>
 <div class="tsd-comment tsd-typography"><p>ignore the connection's timestamp</p>
 </div><aside class="tsd-sources">
 <ul>

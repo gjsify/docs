@@ -34,7 +34,7 @@
 <li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div>
 <div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
 <div class="gi-docgen-generator">
-<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.4.0</p></div></nav>
+<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.5.0</p></div></nav>
 <section id="gi-docgen-main">
 <div class="gi-docgen-content">
 <div class="gi-docgen-page-title"><span class="gi-docgen-object-type">Enumeration (GI Enum)</span>
@@ -63,7 +63,7 @@
 <section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="drop"><span>DROP</span><a href="#drop" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">DROP</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">DROP</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">0</span></div>
 <div class="tsd-comment tsd-typography"><p>drop data in data probes. For push mode this means that
 the data item is not sent downstream. For pull mode, it means that
 the data item is not passed upstream. In both cases, no other probes
@@ -74,7 +74,7 @@ caller.</p>
 <li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L992">gst-1.0/gst-1.0.d.ts:992</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="handled"><span>HANDLED</span><a href="#handled" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">HANDLED</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">HANDLED</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">4</span></div>
 <div class="tsd-comment tsd-typography"><p>Data has been handled in the probe and will not be
 forwarded further. For events and buffers this is the same behaviour as
 <a href="#drop" class="tsd-kind-enum-member">Gst.PadProbeReturn.DROP</a> (except that in this case you need to unref the buffer
@@ -88,7 +88,7 @@ Since: 1.6</p>
 <li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L1023">gst-1.0/gst-1.0.d.ts:1023</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="ok"><span>OK</span><a href="#ok" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">OK</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">OK</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">1</span></div>
 <div class="tsd-comment tsd-typography"><p>normal probe return value. This leaves the probe in
 place, and defers decisions about dropping or passing data to other
 probes, if any. If there are no other probes, the default behaviour
@@ -99,7 +99,7 @@ and 'pass' for non-blocking probes).</p>
 <li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L1000">gst-1.0/gst-1.0.d.ts:1000</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="pass"><span>PASS</span><a href="#pass" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">PASS</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">PASS</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">3</span></div>
 <div class="tsd-comment tsd-typography"><p>pass the data item in the block probe and block on the
 next item. Note, that if there are multiple pad probes installed and
 any probe returns PASS, the data will be passed.</p>
@@ -108,7 +108,7 @@ any probe returns PASS, the data will be passed.</p>
 <li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L1012">gst-1.0/gst-1.0.d.ts:1012</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="remove"><span>REMOVE</span><a href="#remove" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">REMOVE</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">REMOVE</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">2</span></div>
 <div class="tsd-comment tsd-typography"><p>remove this probe, passing the data. For blocking probes
 this will cause data flow to unblock, unless there are also other
 blocking probes installed.</p>

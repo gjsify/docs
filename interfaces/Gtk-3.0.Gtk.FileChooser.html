@@ -34,7 +34,7 @@
 <li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div>
 <div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
 <div class="gi-docgen-generator">
-<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.4.0</p></div></nav>
+<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.5.0</p></div></nav>
 <section id="gi-docgen-main">
 <div class="gi-docgen-content">
 <div class="gi-docgen-page-title"><span class="gi-docgen-object-type">Interface (GI Interface)</span>
@@ -99,7 +99,7 @@ corresponding file, you must call
 flag that indicates whether your callback could successfully
 generate a preview.</p>
 <h2 id="example-using-a-preview-widget-gtkfilechooser-preview" class="tsd-anchor-link">Example: Using a Preview Widget ## {#gtkfilechooser-preview}<a href="#example-using-a-preview-widget-gtkfilechooser-preview" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2>
-<pre><code class="c"><span class="hl-1">{</span><br/><span class="hl-1">  GtkImage *preview;</span><br/><br/><span class="hl-1">  ...</span><br/><br/><span class="hl-1">  preview = </span><span class="hl-0">gtk_image_new</span><span class="hl-1"> ();</span><br/><br/><span class="hl-1">  </span><span class="hl-0">gtk_file_chooser_set_preview_widget</span><span class="hl-1"> (my_file_chooser, preview);</span><br/><span class="hl-1">  </span><span class="hl-0">g_signal_connect</span><span class="hl-1"> (my_file_chooser, </span><span class="hl-2">&quot;update-preview&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">		    </span><span class="hl-0">G_CALLBACK</span><span class="hl-1"> (update_preview_cb), preview);</span><br/><span class="hl-1">}</span><br/><br/><span class="hl-3">static</span><span class="hl-1"> </span><span class="hl-3">void</span><br/><span class="hl-0">update_preview_cb</span><span class="hl-1"> (GtkFileChooser *</span><span class="hl-5">file_chooser</span><span class="hl-1">, gpointer </span><span class="hl-5">data</span><span class="hl-1">)</span><br/><span class="hl-1">{</span><br/><span class="hl-1">  GtkWidget *preview;</span><br/><span class="hl-1">  </span><span class="hl-3">char</span><span class="hl-1"> *filename;</span><br/><span class="hl-1">  GdkPixbuf *pixbuf;</span><br/><span class="hl-1">  gboolean have_preview;</span><br/><br/><span class="hl-1">  preview = </span><span class="hl-0">GTK_WIDGET</span><span class="hl-1"> (data);</span><br/><span class="hl-1">  filename = </span><span class="hl-0">gtk_file_chooser_get_preview_filename</span><span class="hl-1"> (file_chooser);</span><br/><br/><span class="hl-1">  pixbuf = </span><span class="hl-0">gdk_pixbuf_new_from_file_at_size</span><span class="hl-1"> (filename, </span><span class="hl-9">128</span><span class="hl-1">, </span><span class="hl-9">128</span><span class="hl-1">, </span><span class="hl-3">NULL</span><span class="hl-1">);</span><br/><span class="hl-1">  have_preview = (pixbuf != </span><span class="hl-3">NULL</span><span class="hl-1">);</span><br/><span class="hl-1">  </span><span class="hl-0">g_free</span><span class="hl-1"> (filename);</span><br/><br/><span class="hl-1">  </span><span class="hl-0">gtk_image_set_from_pixbuf</span><span class="hl-1"> (</span><span class="hl-0">GTK_IMAGE</span><span class="hl-1"> (preview), pixbuf);</span><br/><span class="hl-1">  </span><span class="hl-4">if</span><span class="hl-1"> (pixbuf)</span><br/><span class="hl-1">    </span><span class="hl-0">g_object_unref</span><span class="hl-1"> (pixbuf);</span><br/><br/><span class="hl-1">  </span><span class="hl-0">gtk_file_chooser_set_preview_widget_active</span><span class="hl-1"> (file_chooser, have_preview);</span><br/><span class="hl-1">}</span>
+<pre><code class="c"><span class="hl-1">{</span><br/><span class="hl-1">  GtkImage *preview;</span><br/><br/><span class="hl-1">  ...</span><br/><br/><span class="hl-1">  preview = </span><span class="hl-0">gtk_image_new</span><span class="hl-1"> ();</span><br/><br/><span class="hl-1">  </span><span class="hl-0">gtk_file_chooser_set_preview_widget</span><span class="hl-1"> (my_file_chooser, preview);</span><br/><span class="hl-1">  </span><span class="hl-0">g_signal_connect</span><span class="hl-1"> (my_file_chooser, </span><span class="hl-2">&quot;update-preview&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">		    </span><span class="hl-0">G_CALLBACK</span><span class="hl-1"> (update_preview_cb), preview);</span><br/><span class="hl-1">}</span><br/><br/><span class="hl-3">static</span><span class="hl-1"> </span><span class="hl-3">void</span><br/><span class="hl-0">update_preview_cb</span><span class="hl-1"> (GtkFileChooser *</span><span class="hl-5">file_chooser</span><span class="hl-1">, gpointer </span><span class="hl-5">data</span><span class="hl-1">)</span><br/><span class="hl-1">{</span><br/><span class="hl-1">  GtkWidget *preview;</span><br/><span class="hl-1">  </span><span class="hl-3">char</span><span class="hl-1"> *filename;</span><br/><span class="hl-1">  GdkPixbuf *pixbuf;</span><br/><span class="hl-1">  gboolean have_preview;</span><br/><br/><span class="hl-1">  preview = </span><span class="hl-0">GTK_WIDGET</span><span class="hl-1"> (data);</span><br/><span class="hl-1">  filename = </span><span class="hl-0">gtk_file_chooser_get_preview_filename</span><span class="hl-1"> (file_chooser);</span><br/><br/><span class="hl-1">  pixbuf = </span><span class="hl-0">gdk_pixbuf_new_from_file_at_size</span><span class="hl-1"> (filename, </span><span class="hl-8">128</span><span class="hl-1">, </span><span class="hl-8">128</span><span class="hl-1">, </span><span class="hl-3">NULL</span><span class="hl-1">);</span><br/><span class="hl-1">  have_preview = (pixbuf != </span><span class="hl-3">NULL</span><span class="hl-1">);</span><br/><span class="hl-1">  </span><span class="hl-0">g_free</span><span class="hl-1"> (filename);</span><br/><br/><span class="hl-1">  </span><span class="hl-0">gtk_image_set_from_pixbuf</span><span class="hl-1"> (</span><span class="hl-0">GTK_IMAGE</span><span class="hl-1"> (preview), pixbuf);</span><br/><span class="hl-1">  </span><span class="hl-4">if</span><span class="hl-1"> (pixbuf)</span><br/><span class="hl-1">    </span><span class="hl-0">g_object_unref</span><span class="hl-1"> (pixbuf);</span><br/><br/><span class="hl-1">  </span><span class="hl-0">gtk_file_chooser_set_preview_widget_active</span><span class="hl-1"> (file_chooser, have_preview);</span><br/><span class="hl-1">}</span>
 </code><button type="button">Copy</button></pre>
 
 <h1 id="adding-extra-widgets" class="tsd-anchor-link">Adding Extra Widgets<a href="#adding-extra-widgets" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h1>
@@ -133,9 +133,9 @@ the whole extra widget.</p>
 <li><a href="../modules/Gtk-3.0.Gtk.html" class="tsd-signature-type tsd-kind-namespace">Gtk</a><span class="tsd-signature-symbol">.</span><a href="../classes/Gtk-3.0.Gtk.FileChooserNative.html" class="tsd-signature-type tsd-kind-class">FileChooserNative</a></li>
 <li><a href="../modules/Gtk-3.0.Gtk.html" class="tsd-signature-type tsd-kind-namespace">Gtk</a><span class="tsd-signature-symbol">.</span><a href="../classes/Gtk-3.0.Gtk.FileChooserWidget.html" class="tsd-signature-type tsd-kind-class">FileChooserWidget</a></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L149937">gtk-3.0/gtk-3.0.d.ts:149937</a></li>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150099">gtk-3.0/gtk-3.0.d.ts:150099</a></li>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150951">gtk-3.0/gtk-3.0.d.ts:150951</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150337">gtk-3.0/gtk-3.0.d.ts:150337</a></li>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150499">gtk-3.0/gtk-3.0.d.ts:150499</a></li>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L151358">gtk-3.0/gtk-3.0.d.ts:151358</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-accordion" open><summary class="tsd-accordion-summary tsd-index-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
@@ -286,7 +286,7 @@ It is not defined at runtime and should not be accessed in JS code.</p>
 </div><aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#signals">$signals</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3662">gobject-2.0/gobject-2.0.d.ts:3662</a></li></ul></aside></section></section></details>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3683">gobject-2.0/gobject-2.0.d.ts:3683</a></li></ul></aside></section></section></details>
 <details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Accessors"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
 <h2 class="tsd-anchor-link" id="accessors-1">Accessors<a href="#accessors-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2></summary>
 <section>
@@ -304,7 +304,7 @@ It is not defined at runtime and should not be accessed in JS code.</p>
 
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150105">gtk-3.0/gtk-3.0.d.ts:150105</a></li></ul></aside></div></li>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150505">gtk-3.0/gtk-3.0.d.ts:150505</a></li></ul></aside></div></li>
 <li>
 <div class="tsd-signature" id="actionaction-1"><span class="tsd-signature-keyword">set</span> <span class="tsd-kind-set-signature">action</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">:</span> <a href="../modules/Gtk-3.0.Gtk.html" class="tsd-signature-type tsd-kind-namespace">Gtk</a><span class="tsd-signature-symbol">.</span><a href="../enums/Gtk-3.0.Gtk.FileChooserAction.html" class="tsd-signature-type tsd-kind-enum">FileChooserAction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span></div>
 <div class="tsd-description">
@@ -314,7 +314,7 @@ It is not defined at runtime and should not be accessed in JS code.</p>
 <li><span><span class="tsd-kind-parameter">val</span>: <a href="../modules/Gtk-3.0.Gtk.html" class="tsd-signature-type tsd-kind-namespace">Gtk</a><span class="tsd-signature-symbol">.</span><a href="../enums/Gtk-3.0.Gtk.FileChooserAction.html" class="tsd-signature-type tsd-kind-enum">FileChooserAction</a></span></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150106">gtk-3.0/gtk-3.0.d.ts:150106</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150506">gtk-3.0/gtk-3.0.d.ts:150506</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="create_folders"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.18</code><span>create_<wbr/>folders</span><a href="#create_folders" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -335,7 +335,7 @@ will offer the user to create new folders.</p>
 
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150114">gtk-3.0/gtk-3.0.d.ts:150114</a></li></ul></aside></div></li>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150514">gtk-3.0/gtk-3.0.d.ts:150514</a></li></ul></aside></div></li>
 <li>
 <div class="tsd-signature" id="create_folderscreate_folders-1"><span class="tsd-signature-keyword">set</span> <span class="tsd-kind-set-signature">create_folders</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span></div>
 <div class="tsd-description">
@@ -345,7 +345,7 @@ will offer the user to create new folders.</p>
 <li><span><span class="tsd-kind-parameter">val</span>: <span class="tsd-signature-type">boolean</span></span></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150115">gtk-3.0/gtk-3.0.d.ts:150115</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150515">gtk-3.0/gtk-3.0.d.ts:150515</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="createfolders"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.18</code><span>create<wbr/>Folders</span><a href="#createfolders" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -366,7 +366,7 @@ will offer the user to create new folders.</p>
 
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150123">gtk-3.0/gtk-3.0.d.ts:150123</a></li></ul></aside></div></li>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150523">gtk-3.0/gtk-3.0.d.ts:150523</a></li></ul></aside></div></li>
 <li>
 <div class="tsd-signature" id="createfolderscreatefolders-1"><span class="tsd-signature-keyword">set</span> <span class="tsd-kind-set-signature">createFolders</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span></div>
 <div class="tsd-description">
@@ -376,7 +376,7 @@ will offer the user to create new folders.</p>
 <li><span><span class="tsd-kind-parameter">val</span>: <span class="tsd-signature-type">boolean</span></span></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150124">gtk-3.0/gtk-3.0.d.ts:150124</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150524">gtk-3.0/gtk-3.0.d.ts:150524</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="do_overwrite_confirmation"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.8</code><span>do_<wbr/>overwrite_<wbr/>confirmation</span><a href="#do_overwrite_confirmation" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -398,7 +398,7 @@ selects a file name that already exists.</p>
 
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150133">gtk-3.0/gtk-3.0.d.ts:150133</a></li></ul></aside></div></li>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150533">gtk-3.0/gtk-3.0.d.ts:150533</a></li></ul></aside></div></li>
 <li>
 <div class="tsd-signature" id="do_overwrite_confirmationdo_overwrite_confirmation-1"><span class="tsd-signature-keyword">set</span> <span class="tsd-kind-set-signature">do_overwrite_confirmation</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span></div>
 <div class="tsd-description">
@@ -408,7 +408,7 @@ selects a file name that already exists.</p>
 <li><span><span class="tsd-kind-parameter">val</span>: <span class="tsd-signature-type">boolean</span></span></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150134">gtk-3.0/gtk-3.0.d.ts:150134</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150534">gtk-3.0/gtk-3.0.d.ts:150534</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="dooverwriteconfirmation"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.8</code><span>do<wbr/>Overwrite<wbr/>Confirmation</span><a href="#dooverwriteconfirmation" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -430,7 +430,7 @@ selects a file name that already exists.</p>
 
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150143">gtk-3.0/gtk-3.0.d.ts:150143</a></li></ul></aside></div></li>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150543">gtk-3.0/gtk-3.0.d.ts:150543</a></li></ul></aside></div></li>
 <li>
 <div class="tsd-signature" id="dooverwriteconfirmationdooverwriteconfirmation-1"><span class="tsd-signature-keyword">set</span> <span class="tsd-kind-set-signature">doOverwriteConfirmation</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span></div>
 <div class="tsd-description">
@@ -440,7 +440,7 @@ selects a file name that already exists.</p>
 <li><span><span class="tsd-kind-parameter">val</span>: <span class="tsd-signature-type">boolean</span></span></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150144">gtk-3.0/gtk-3.0.d.ts:150144</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150544">gtk-3.0/gtk-3.0.d.ts:150544</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="extra_widget"><span>extra_<wbr/>widget</span><a href="#extra_widget" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -449,7 +449,7 @@ selects a file name that already exists.</p>
 <div class="tsd-description">
 <h4 class="tsd-returns-title">Returns <a href="../modules/Gtk-3.0.Gtk.html" class="tsd-signature-type tsd-kind-namespace">Gtk</a><span class="tsd-signature-symbol">.</span><a href="../classes/Gtk-3.0.Gtk.Widget.html" class="tsd-signature-type tsd-kind-class">Widget</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150146">gtk-3.0/gtk-3.0.d.ts:150146</a></li></ul></aside></div></li>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150546">gtk-3.0/gtk-3.0.d.ts:150546</a></li></ul></aside></div></li>
 <li>
 <div class="tsd-signature" id="extra_widgetextra_widget-1"><span class="tsd-signature-keyword">set</span> <span class="tsd-kind-set-signature">extra_widget</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">:</span> <a href="../modules/Gtk-3.0.Gtk.html" class="tsd-signature-type tsd-kind-namespace">Gtk</a><span class="tsd-signature-symbol">.</span><a href="../classes/Gtk-3.0.Gtk.Widget.html" class="tsd-signature-type tsd-kind-class">Widget</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span></div>
 <div class="tsd-description">
@@ -459,7 +459,7 @@ selects a file name that already exists.</p>
 <li><span><span class="tsd-kind-parameter">val</span>: <a href="../modules/Gtk-3.0.Gtk.html" class="tsd-signature-type tsd-kind-namespace">Gtk</a><span class="tsd-signature-symbol">.</span><a href="../classes/Gtk-3.0.Gtk.Widget.html" class="tsd-signature-type tsd-kind-class">Widget</a></span></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150147">gtk-3.0/gtk-3.0.d.ts:150147</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150547">gtk-3.0/gtk-3.0.d.ts:150547</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="extrawidget"><span>extra<wbr/>Widget</span><a href="#extrawidget" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -468,7 +468,7 @@ selects a file name that already exists.</p>
 <div class="tsd-description">
 <h4 class="tsd-returns-title">Returns <a href="../modules/Gtk-3.0.Gtk.html" class="tsd-signature-type tsd-kind-namespace">Gtk</a><span class="tsd-signature-symbol">.</span><a href="../classes/Gtk-3.0.Gtk.Widget.html" class="tsd-signature-type tsd-kind-class">Widget</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150149">gtk-3.0/gtk-3.0.d.ts:150149</a></li></ul></aside></div></li>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150549">gtk-3.0/gtk-3.0.d.ts:150549</a></li></ul></aside></div></li>
 <li>
 <div class="tsd-signature" id="extrawidgetextrawidget-1"><span class="tsd-signature-keyword">set</span> <span class="tsd-kind-set-signature">extraWidget</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">:</span> <a href="../modules/Gtk-3.0.Gtk.html" class="tsd-signature-type tsd-kind-namespace">Gtk</a><span class="tsd-signature-symbol">.</span><a href="../classes/Gtk-3.0.Gtk.Widget.html" class="tsd-signature-type tsd-kind-class">Widget</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span></div>
 <div class="tsd-description">
@@ -478,7 +478,7 @@ selects a file name that already exists.</p>
 <li><span><span class="tsd-kind-parameter">val</span>: <a href="../modules/Gtk-3.0.Gtk.html" class="tsd-signature-type tsd-kind-namespace">Gtk</a><span class="tsd-signature-symbol">.</span><a href="../classes/Gtk-3.0.Gtk.Widget.html" class="tsd-signature-type tsd-kind-class">Widget</a></span></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150150">gtk-3.0/gtk-3.0.d.ts:150150</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150550">gtk-3.0/gtk-3.0.d.ts:150550</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="filter"><span>filter</span><a href="#filter" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -487,7 +487,7 @@ selects a file name that already exists.</p>
 <div class="tsd-description">
 <h4 class="tsd-returns-title">Returns <a href="../modules/Gtk-3.0.Gtk.html" class="tsd-signature-type tsd-kind-namespace">Gtk</a><span class="tsd-signature-symbol">.</span><a href="../classes/Gtk-3.0.Gtk.FileFilter.html" class="tsd-signature-type tsd-kind-class">FileFilter</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150152">gtk-3.0/gtk-3.0.d.ts:150152</a></li></ul></aside></div></li>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150552">gtk-3.0/gtk-3.0.d.ts:150552</a></li></ul></aside></div></li>
 <li>
 <div class="tsd-signature" id="filterfilter-1"><span class="tsd-signature-keyword">set</span> <span class="tsd-kind-set-signature">filter</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">:</span> <a href="../modules/Gtk-3.0.Gtk.html" class="tsd-signature-type tsd-kind-namespace">Gtk</a><span class="tsd-signature-symbol">.</span><a href="../classes/Gtk-3.0.Gtk.FileFilter.html" class="tsd-signature-type tsd-kind-class">FileFilter</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span></div>
 <div class="tsd-description">
@@ -497,7 +497,7 @@ selects a file name that already exists.</p>
 <li><span><span class="tsd-kind-parameter">val</span>: <a href="../modules/Gtk-3.0.Gtk.html" class="tsd-signature-type tsd-kind-namespace">Gtk</a><span class="tsd-signature-symbol">.</span><a href="../classes/Gtk-3.0.Gtk.FileFilter.html" class="tsd-signature-type tsd-kind-class">FileFilter</a></span></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150153">gtk-3.0/gtk-3.0.d.ts:150153</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150553">gtk-3.0/gtk-3.0.d.ts:150553</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="local_only"><span>local_<wbr/>only</span><a href="#local_only" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -512,7 +512,7 @@ selects a file name that already exists.</p>
 
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150158">gtk-3.0/gtk-3.0.d.ts:150158</a></li></ul></aside></div></li>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150558">gtk-3.0/gtk-3.0.d.ts:150558</a></li></ul></aside></div></li>
 <li>
 <div class="tsd-signature" id="local_onlylocal_only-1"><span class="tsd-signature-keyword">set</span> <span class="tsd-kind-set-signature">local_only</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span></div>
 <div class="tsd-description">
@@ -522,7 +522,7 @@ selects a file name that already exists.</p>
 <li><span><span class="tsd-kind-parameter">val</span>: <span class="tsd-signature-type">boolean</span></span></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150159">gtk-3.0/gtk-3.0.d.ts:150159</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150559">gtk-3.0/gtk-3.0.d.ts:150559</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="localonly"><span>local<wbr/>Only</span><a href="#localonly" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -537,7 +537,7 @@ selects a file name that already exists.</p>
 
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150164">gtk-3.0/gtk-3.0.d.ts:150164</a></li></ul></aside></div></li>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150564">gtk-3.0/gtk-3.0.d.ts:150564</a></li></ul></aside></div></li>
 <li>
 <div class="tsd-signature" id="localonlylocalonly-1"><span class="tsd-signature-keyword">set</span> <span class="tsd-kind-set-signature">localOnly</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span></div>
 <div class="tsd-description">
@@ -547,7 +547,7 @@ selects a file name that already exists.</p>
 <li><span><span class="tsd-kind-parameter">val</span>: <span class="tsd-signature-type">boolean</span></span></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150165">gtk-3.0/gtk-3.0.d.ts:150165</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150565">gtk-3.0/gtk-3.0.d.ts:150565</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="preview_widget"><span>preview_<wbr/>widget</span><a href="#preview_widget" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -556,7 +556,7 @@ selects a file name that already exists.</p>
 <div class="tsd-description">
 <h4 class="tsd-returns-title">Returns <a href="../modules/Gtk-3.0.Gtk.html" class="tsd-signature-type tsd-kind-namespace">Gtk</a><span class="tsd-signature-symbol">.</span><a href="../classes/Gtk-3.0.Gtk.Widget.html" class="tsd-signature-type tsd-kind-class">Widget</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150167">gtk-3.0/gtk-3.0.d.ts:150167</a></li></ul></aside></div></li>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150567">gtk-3.0/gtk-3.0.d.ts:150567</a></li></ul></aside></div></li>
 <li>
 <div class="tsd-signature" id="preview_widgetpreview_widget-1"><span class="tsd-signature-keyword">set</span> <span class="tsd-kind-set-signature">preview_widget</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">:</span> <a href="../modules/Gtk-3.0.Gtk.html" class="tsd-signature-type tsd-kind-namespace">Gtk</a><span class="tsd-signature-symbol">.</span><a href="../classes/Gtk-3.0.Gtk.Widget.html" class="tsd-signature-type tsd-kind-class">Widget</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span></div>
 <div class="tsd-description">
@@ -566,7 +566,7 @@ selects a file name that already exists.</p>
 <li><span><span class="tsd-kind-parameter">val</span>: <a href="../modules/Gtk-3.0.Gtk.html" class="tsd-signature-type tsd-kind-namespace">Gtk</a><span class="tsd-signature-symbol">.</span><a href="../classes/Gtk-3.0.Gtk.Widget.html" class="tsd-signature-type tsd-kind-class">Widget</a></span></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150168">gtk-3.0/gtk-3.0.d.ts:150168</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150568">gtk-3.0/gtk-3.0.d.ts:150568</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="preview_widget_active"><span>preview_<wbr/>widget_<wbr/>active</span><a href="#preview_widget_active" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -581,7 +581,7 @@ selects a file name that already exists.</p>
 
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150176">gtk-3.0/gtk-3.0.d.ts:150176</a></li></ul></aside></div></li>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150576">gtk-3.0/gtk-3.0.d.ts:150576</a></li></ul></aside></div></li>
 <li>
 <div class="tsd-signature" id="preview_widget_activepreview_widget_active-1"><span class="tsd-signature-keyword">set</span> <span class="tsd-kind-set-signature">preview_widget_active</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span></div>
 <div class="tsd-description">
@@ -591,7 +591,7 @@ selects a file name that already exists.</p>
 <li><span><span class="tsd-kind-parameter">val</span>: <span class="tsd-signature-type">boolean</span></span></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150177">gtk-3.0/gtk-3.0.d.ts:150177</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150577">gtk-3.0/gtk-3.0.d.ts:150577</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="previewwidget"><span>preview<wbr/>Widget</span><a href="#previewwidget" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -600,7 +600,7 @@ selects a file name that already exists.</p>
 <div class="tsd-description">
 <h4 class="tsd-returns-title">Returns <a href="../modules/Gtk-3.0.Gtk.html" class="tsd-signature-type tsd-kind-namespace">Gtk</a><span class="tsd-signature-symbol">.</span><a href="../classes/Gtk-3.0.Gtk.Widget.html" class="tsd-signature-type tsd-kind-class">Widget</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150170">gtk-3.0/gtk-3.0.d.ts:150170</a></li></ul></aside></div></li>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150570">gtk-3.0/gtk-3.0.d.ts:150570</a></li></ul></aside></div></li>
 <li>
 <div class="tsd-signature" id="previewwidgetpreviewwidget-1"><span class="tsd-signature-keyword">set</span> <span class="tsd-kind-set-signature">previewWidget</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">:</span> <a href="../modules/Gtk-3.0.Gtk.html" class="tsd-signature-type tsd-kind-namespace">Gtk</a><span class="tsd-signature-symbol">.</span><a href="../classes/Gtk-3.0.Gtk.Widget.html" class="tsd-signature-type tsd-kind-class">Widget</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span></div>
 <div class="tsd-description">
@@ -610,7 +610,7 @@ selects a file name that already exists.</p>
 <li><span><span class="tsd-kind-parameter">val</span>: <a href="../modules/Gtk-3.0.Gtk.html" class="tsd-signature-type tsd-kind-namespace">Gtk</a><span class="tsd-signature-symbol">.</span><a href="../classes/Gtk-3.0.Gtk.Widget.html" class="tsd-signature-type tsd-kind-class">Widget</a></span></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150171">gtk-3.0/gtk-3.0.d.ts:150171</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150571">gtk-3.0/gtk-3.0.d.ts:150571</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="previewwidgetactive"><span>preview<wbr/>Widget<wbr/>Active</span><a href="#previewwidgetactive" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -625,7 +625,7 @@ selects a file name that already exists.</p>
 
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150182">gtk-3.0/gtk-3.0.d.ts:150182</a></li></ul></aside></div></li>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150582">gtk-3.0/gtk-3.0.d.ts:150582</a></li></ul></aside></div></li>
 <li>
 <div class="tsd-signature" id="previewwidgetactivepreviewwidgetactive-1"><span class="tsd-signature-keyword">set</span> <span class="tsd-kind-set-signature">previewWidgetActive</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span></div>
 <div class="tsd-description">
@@ -635,7 +635,7 @@ selects a file name that already exists.</p>
 <li><span><span class="tsd-kind-parameter">val</span>: <span class="tsd-signature-type">boolean</span></span></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150183">gtk-3.0/gtk-3.0.d.ts:150183</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150583">gtk-3.0/gtk-3.0.d.ts:150583</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="select_multiple"><span>select_<wbr/>multiple</span><a href="#select_multiple" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -650,7 +650,7 @@ selects a file name that already exists.</p>
 
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150188">gtk-3.0/gtk-3.0.d.ts:150188</a></li></ul></aside></div></li>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150588">gtk-3.0/gtk-3.0.d.ts:150588</a></li></ul></aside></div></li>
 <li>
 <div class="tsd-signature" id="select_multipleselect_multiple-1"><span class="tsd-signature-keyword">set</span> <span class="tsd-kind-set-signature">select_multiple</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span></div>
 <div class="tsd-description">
@@ -660,7 +660,7 @@ selects a file name that already exists.</p>
 <li><span><span class="tsd-kind-parameter">val</span>: <span class="tsd-signature-type">boolean</span></span></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150189">gtk-3.0/gtk-3.0.d.ts:150189</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150589">gtk-3.0/gtk-3.0.d.ts:150589</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="selectmultiple"><span>select<wbr/>Multiple</span><a href="#selectmultiple" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -675,7 +675,7 @@ selects a file name that already exists.</p>
 
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150194">gtk-3.0/gtk-3.0.d.ts:150194</a></li></ul></aside></div></li>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150594">gtk-3.0/gtk-3.0.d.ts:150594</a></li></ul></aside></div></li>
 <li>
 <div class="tsd-signature" id="selectmultipleselectmultiple-1"><span class="tsd-signature-keyword">set</span> <span class="tsd-kind-set-signature">selectMultiple</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span></div>
 <div class="tsd-description">
@@ -685,7 +685,7 @@ selects a file name that already exists.</p>
 <li><span><span class="tsd-kind-parameter">val</span>: <span class="tsd-signature-type">boolean</span></span></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150195">gtk-3.0/gtk-3.0.d.ts:150195</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150595">gtk-3.0/gtk-3.0.d.ts:150595</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="show_hidden"><span>show_<wbr/>hidden</span><a href="#show_hidden" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -700,7 +700,7 @@ selects a file name that already exists.</p>
 
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150200">gtk-3.0/gtk-3.0.d.ts:150200</a></li></ul></aside></div></li>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150600">gtk-3.0/gtk-3.0.d.ts:150600</a></li></ul></aside></div></li>
 <li>
 <div class="tsd-signature" id="show_hiddenshow_hidden-1"><span class="tsd-signature-keyword">set</span> <span class="tsd-kind-set-signature">show_hidden</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span></div>
 <div class="tsd-description">
@@ -710,7 +710,7 @@ selects a file name that already exists.</p>
 <li><span><span class="tsd-kind-parameter">val</span>: <span class="tsd-signature-type">boolean</span></span></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150201">gtk-3.0/gtk-3.0.d.ts:150201</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150601">gtk-3.0/gtk-3.0.d.ts:150601</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="showhidden"><span>show<wbr/>Hidden</span><a href="#showhidden" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -725,7 +725,7 @@ selects a file name that already exists.</p>
 
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150206">gtk-3.0/gtk-3.0.d.ts:150206</a></li></ul></aside></div></li>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150606">gtk-3.0/gtk-3.0.d.ts:150606</a></li></ul></aside></div></li>
 <li>
 <div class="tsd-signature" id="showhiddenshowhidden-1"><span class="tsd-signature-keyword">set</span> <span class="tsd-kind-set-signature">showHidden</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span></div>
 <div class="tsd-description">
@@ -735,7 +735,7 @@ selects a file name that already exists.</p>
 <li><span><span class="tsd-kind-parameter">val</span>: <span class="tsd-signature-type">boolean</span></span></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150207">gtk-3.0/gtk-3.0.d.ts:150207</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150607">gtk-3.0/gtk-3.0.d.ts:150607</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="use_preview_label"><span>use_<wbr/>preview_<wbr/>label</span><a href="#use_preview_label" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -750,7 +750,7 @@ selects a file name that already exists.</p>
 
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150212">gtk-3.0/gtk-3.0.d.ts:150212</a></li></ul></aside></div></li>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150612">gtk-3.0/gtk-3.0.d.ts:150612</a></li></ul></aside></div></li>
 <li>
 <div class="tsd-signature" id="use_preview_labeluse_preview_label-1"><span class="tsd-signature-keyword">set</span> <span class="tsd-kind-set-signature">use_preview_label</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span></div>
 <div class="tsd-description">
@@ -760,7 +760,7 @@ selects a file name that already exists.</p>
 <li><span><span class="tsd-kind-parameter">val</span>: <span class="tsd-signature-type">boolean</span></span></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150213">gtk-3.0/gtk-3.0.d.ts:150213</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150613">gtk-3.0/gtk-3.0.d.ts:150613</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="usepreviewlabel"><span>use<wbr/>Preview<wbr/>Label</span><a href="#usepreviewlabel" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -775,7 +775,7 @@ selects a file name that already exists.</p>
 
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150218">gtk-3.0/gtk-3.0.d.ts:150218</a></li></ul></aside></div></li>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150618">gtk-3.0/gtk-3.0.d.ts:150618</a></li></ul></aside></div></li>
 <li>
 <div class="tsd-signature" id="usepreviewlabelusepreviewlabel-1"><span class="tsd-signature-keyword">set</span> <span class="tsd-kind-set-signature">usePreviewLabel</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">val</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span></div>
 <div class="tsd-description">
@@ -785,7 +785,7 @@ selects a file name that already exists.</p>
 <li><span><span class="tsd-kind-parameter">val</span>: <span class="tsd-signature-type">boolean</span></span></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150219">gtk-3.0/gtk-3.0.d.ts:150219</a></li></ul></aside></div></li></ul></section></section></details>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150619">gtk-3.0/gtk-3.0.d.ts:150619</a></li></ul></aside></div></li></ul></section></section></details>
 <details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Methods"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
 <h2 class="tsd-anchor-link" id="methods-1">Methods<a href="#methods-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2></summary>
 <section>
@@ -823,7 +823,7 @@ using <code>gtk_file_chooser_get_choice()</code>.</p>
 <h4 class="tsd-anchor-link" id="since-4">Since<a href="#since-4" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>3.22</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150236">gtk-3.0/gtk-3.0.d.ts:150236</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150636">gtk-3.0/gtk-3.0.d.ts:150636</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="add_filter"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>add_<wbr/>filter</span><a href="#add_filter" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -848,7 +848,7 @@ ref and sink it if you want to keep a reference.</p>
 <h4 class="tsd-anchor-link" id="since-5">Since<a href="#since-5" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150248">gtk-3.0/gtk-3.0.d.ts:150248</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150648">gtk-3.0/gtk-3.0.d.ts:150648</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="add_shortcut_folder"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>add_<wbr/>shortcut_<wbr/>folder</span><a href="#add_shortcut_folder" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -871,9 +871,12 @@ application.  For example, you can use this to add a
 <div class="tsd-comment tsd-typography">
 <div class="tsd-tag-since">
 <h4 class="tsd-anchor-link" id="since-6">Since<a href="#since-6" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
+</div>
+<div class="tsd-tag-throws">
+<h4 class="tsd-anchor-link" id="throws">Throws<a href="#throws" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>GLib.Error</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150259">gtk-3.0/gtk-3.0.d.ts:150259</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150660">gtk-3.0/gtk-3.0.d.ts:150660</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="add_shortcut_folder_uri"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>add_<wbr/>shortcut_<wbr/>folder_<wbr/>uri</span><a href="#add_shortcut_folder_uri" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -896,9 +899,12 @@ by the application.  For example, you can use this to add a
 <div class="tsd-comment tsd-typography">
 <div class="tsd-tag-since">
 <h4 class="tsd-anchor-link" id="since-7">Since<a href="#since-7" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
+</div>
+<div class="tsd-tag-throws">
+<h4 class="tsd-anchor-link" id="throws-1">Throws<a href="#throws-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>GLib.Error</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150270">gtk-3.0/gtk-3.0.d.ts:150270</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150672">gtk-3.0/gtk-3.0.d.ts:150672</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_action"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>get_<wbr/>action</span><a href="#get_action" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -915,7 +921,7 @@ by the application.  For example, you can use this to add a
 <h4 class="tsd-anchor-link" id="since-8">Since<a href="#since-8" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150278">gtk-3.0/gtk-3.0.d.ts:150278</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150680">gtk-3.0/gtk-3.0.d.ts:150680</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_choice"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 3.22</code><span>get_<wbr/>choice</span><a href="#get_choice" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -937,7 +943,7 @@ by the application.  For example, you can use this to add a
 <h4 class="tsd-anchor-link" id="since-9">Since<a href="#since-9" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>3.22</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150286">gtk-3.0/gtk-3.0.d.ts:150286</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150688">gtk-3.0/gtk-3.0.d.ts:150688</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_create_folders"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.18</code><span>get_<wbr/>create_<wbr/>folders</span><a href="#get_create_folders" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -954,7 +960,7 @@ See <code>gtk_file_chooser_set_create_folders()</code>.</p>
 <h4 class="tsd-anchor-link" id="since-10">Since<a href="#since-10" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.18</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150294">gtk-3.0/gtk-3.0.d.ts:150294</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150696">gtk-3.0/gtk-3.0.d.ts:150696</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_current_folder"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>get_<wbr/>current_<wbr/>folder</span><a href="#get_current_folder" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -978,7 +984,7 @@ usual way to get the selection.</p>
 <h4 class="tsd-anchor-link" id="since-11">Since<a href="#since-11" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150310">gtk-3.0/gtk-3.0.d.ts:150310</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150712">gtk-3.0/gtk-3.0.d.ts:150712</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_current_folder_file"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.14</code><span>get_<wbr/>current_<wbr/>folder_<wbr/>file</span><a href="#get_current_folder_file" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -995,7 +1001,7 @@ See <code>gtk_file_chooser_get_current_folder_uri()</code>.</p>
 <h4 class="tsd-anchor-link" id="since-12">Since<a href="#since-12" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.14</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150318">gtk-3.0/gtk-3.0.d.ts:150318</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150720">gtk-3.0/gtk-3.0.d.ts:150720</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_current_folder_uri"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>get_<wbr/>current_<wbr/>folder_<wbr/>uri</span><a href="#get_current_folder_uri" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1019,7 +1025,7 @@ usual way to get the selection.</p>
 <h4 class="tsd-anchor-link" id="since-13">Since<a href="#since-13" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150334">gtk-3.0/gtk-3.0.d.ts:150334</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150736">gtk-3.0/gtk-3.0.d.ts:150736</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_current_name"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 3.10</code><span>get_<wbr/>current_<wbr/>name</span><a href="#get_current_name" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1041,7 +1047,7 @@ from “.jpg” to “.png”.</p>
 <h4 class="tsd-anchor-link" id="since-14">Since<a href="#since-14" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>3.10</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150348">gtk-3.0/gtk-3.0.d.ts:150348</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150750">gtk-3.0/gtk-3.0.d.ts:150750</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_do_overwrite_confirmation"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.8</code><span>get_<wbr/>do_<wbr/>overwrite_<wbr/>confirmation</span><a href="#get_do_overwrite_confirmation" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1058,7 +1064,7 @@ types a file name that already exists.</p>
 <h4 class="tsd-anchor-link" id="since-15">Since<a href="#since-15" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.8</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150356">gtk-3.0/gtk-3.0.d.ts:150356</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150758">gtk-3.0/gtk-3.0.d.ts:150758</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_extra_widget"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>get_<wbr/>extra_<wbr/>widget</span><a href="#get_extra_widget" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1075,7 +1081,7 @@ types a file name that already exists.</p>
 <h4 class="tsd-anchor-link" id="since-16">Since<a href="#since-16" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150364">gtk-3.0/gtk-3.0.d.ts:150364</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150766">gtk-3.0/gtk-3.0.d.ts:150766</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_file"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.14</code><span>get_<wbr/>file</span><a href="#get_file" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1095,7 +1101,7 @@ folder.</p>
 <h4 class="tsd-anchor-link" id="since-17">Since<a href="#since-17" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.14</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150376">gtk-3.0/gtk-3.0.d.ts:150376</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150778">gtk-3.0/gtk-3.0.d.ts:150778</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_filename"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>get_<wbr/>filename</span><a href="#get_filename" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1116,7 +1122,7 @@ folder.</p>
 <h4 class="tsd-anchor-link" id="since-18">Since<a href="#since-18" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150389">gtk-3.0/gtk-3.0.d.ts:150389</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150791">gtk-3.0/gtk-3.0.d.ts:150791</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_filenames"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>get_<wbr/>filenames</span><a href="#get_filenames" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1135,7 +1141,7 @@ folder cannot be represented as local filenames they will be ignored. (See
 <h4 class="tsd-anchor-link" id="since-19">Since<a href="#since-19" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150399">gtk-3.0/gtk-3.0.d.ts:150399</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150801">gtk-3.0/gtk-3.0.d.ts:150801</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_files"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.14</code><span>get_<wbr/>files</span><a href="#get_files" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1152,7 +1158,7 @@ as <a href="../variables/Gio-2.0.Gio.File.html" class="tsd-kind-variable">Gio.Fi
 <h4 class="tsd-anchor-link" id="since-20">Since<a href="#since-20" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.14</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150407">gtk-3.0/gtk-3.0.d.ts:150407</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150809">gtk-3.0/gtk-3.0.d.ts:150809</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_filter"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>get_<wbr/>filter</span><a href="#get_filter" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1168,7 +1174,7 @@ as <a href="../variables/Gio-2.0.Gio.File.html" class="tsd-kind-variable">Gio.Fi
 <h4 class="tsd-anchor-link" id="since-21">Since<a href="#since-21" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150414">gtk-3.0/gtk-3.0.d.ts:150414</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150816">gtk-3.0/gtk-3.0.d.ts:150816</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_local_only"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>get_<wbr/>local_<wbr/>only</span><a href="#get_local_only" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1185,7 +1191,7 @@ file selector. See <code>gtk_file_chooser_set_local_only()</code></p>
 <h4 class="tsd-anchor-link" id="since-22">Since<a href="#since-22" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150422">gtk-3.0/gtk-3.0.d.ts:150422</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150824">gtk-3.0/gtk-3.0.d.ts:150824</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_preview_file"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.14</code><span>get_<wbr/>preview_<wbr/>file</span><a href="#get_preview_file" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1202,7 +1208,7 @@ Internal function, see <code>gtk_file_chooser_get_preview_uri()</code>.</p>
 <h4 class="tsd-anchor-link" id="since-23">Since<a href="#since-23" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.14</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150430">gtk-3.0/gtk-3.0.d.ts:150430</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150832">gtk-3.0/gtk-3.0.d.ts:150832</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_preview_filename"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>get_<wbr/>preview_<wbr/>filename</span><a href="#get_preview_filename" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1219,7 +1225,7 @@ widget. See <code>gtk_file_chooser_set_preview_widget()</code>.</p>
 <h4 class="tsd-anchor-link" id="since-24">Since<a href="#since-24" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150438">gtk-3.0/gtk-3.0.d.ts:150438</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150840">gtk-3.0/gtk-3.0.d.ts:150840</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_preview_uri"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>get_<wbr/>preview_<wbr/>uri</span><a href="#get_preview_uri" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1236,7 +1242,7 @@ widget. See <code>gtk_file_chooser_set_preview_widget()</code>.</p>
 <h4 class="tsd-anchor-link" id="since-25">Since<a href="#since-25" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150446">gtk-3.0/gtk-3.0.d.ts:150446</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150848">gtk-3.0/gtk-3.0.d.ts:150848</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_preview_widget"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>get_<wbr/>preview_<wbr/>widget</span><a href="#get_preview_widget" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1253,7 +1259,7 @@ widget. See <code>gtk_file_chooser_set_preview_widget()</code>.</p>
 <h4 class="tsd-anchor-link" id="since-26">Since<a href="#since-26" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150454">gtk-3.0/gtk-3.0.d.ts:150454</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150856">gtk-3.0/gtk-3.0.d.ts:150856</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_preview_widget_active"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>get_<wbr/>preview_<wbr/>widget_<wbr/>active</span><a href="#get_preview_widget_active" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1271,7 +1277,7 @@ should be shown for the current filename. See
 <h4 class="tsd-anchor-link" id="since-27">Since<a href="#since-27" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150463">gtk-3.0/gtk-3.0.d.ts:150463</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150865">gtk-3.0/gtk-3.0.d.ts:150865</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_select_multiple"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>get_<wbr/>select_<wbr/>multiple</span><a href="#get_select_multiple" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1288,7 +1294,7 @@ selector. See <code>gtk_file_chooser_set_select_multiple()</code>.</p>
 <h4 class="tsd-anchor-link" id="since-28">Since<a href="#since-28" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150471">gtk-3.0/gtk-3.0.d.ts:150471</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150873">gtk-3.0/gtk-3.0.d.ts:150873</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_show_hidden"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.6</code><span>get_<wbr/>show_<wbr/>hidden</span><a href="#get_show_hidden" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1305,7 +1311,7 @@ See <code>gtk_file_chooser_set_show_hidden()</code>.</p>
 <h4 class="tsd-anchor-link" id="since-29">Since<a href="#since-29" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.6</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150479">gtk-3.0/gtk-3.0.d.ts:150479</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150881">gtk-3.0/gtk-3.0.d.ts:150881</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_uri"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>get_<wbr/>uri</span><a href="#get_uri" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1325,7 +1331,7 @@ folder.</p>
 <h4 class="tsd-anchor-link" id="since-30">Since<a href="#since-30" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150491">gtk-3.0/gtk-3.0.d.ts:150491</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150893">gtk-3.0/gtk-3.0.d.ts:150893</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_uris"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>get_<wbr/>uris</span><a href="#get_uris" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1342,7 +1348,7 @@ folder.</p>
 <h4 class="tsd-anchor-link" id="since-31">Since<a href="#since-31" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150499">gtk-3.0/gtk-3.0.d.ts:150499</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150901">gtk-3.0/gtk-3.0.d.ts:150901</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_use_preview_label"><span>get_<wbr/>use_<wbr/>preview_<wbr/>label</span><a href="#get_use_preview_label" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1355,7 +1361,7 @@ file.  See <code>gtk_file_chooser_set_use_preview_label()</code>.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><p><code>true</code> if the file chooser is set to display a label with the name of the previewed file, <code>false</code> otherwise.</p>
 <aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150506">gtk-3.0/gtk-3.0.d.ts:150506</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150908">gtk-3.0/gtk-3.0.d.ts:150908</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="list_filters"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>list_<wbr/>filters</span><a href="#list_filters" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1372,7 +1378,7 @@ file.  See <code>gtk_file_chooser_set_use_preview_label()</code>.</p>
 <h4 class="tsd-anchor-link" id="since-32">Since<a href="#since-32" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150514">gtk-3.0/gtk-3.0.d.ts:150514</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150916">gtk-3.0/gtk-3.0.d.ts:150916</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="list_shortcut_folder_uris"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>list_<wbr/>shortcut_<wbr/>folder_<wbr/>uris</span><a href="#list_shortcut_folder_uris" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1389,7 +1395,7 @@ file.  See <code>gtk_file_chooser_set_use_preview_label()</code>.</p>
 <h4 class="tsd-anchor-link" id="since-33">Since<a href="#since-33" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150522">gtk-3.0/gtk-3.0.d.ts:150522</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150924">gtk-3.0/gtk-3.0.d.ts:150924</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="list_shortcut_folders"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>list_<wbr/>shortcut_<wbr/>folders</span><a href="#list_shortcut_folders" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1406,7 +1412,7 @@ file.  See <code>gtk_file_chooser_set_use_preview_label()</code>.</p>
 <h4 class="tsd-anchor-link" id="since-34">Since<a href="#since-34" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150530">gtk-3.0/gtk-3.0.d.ts:150530</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150932">gtk-3.0/gtk-3.0.d.ts:150932</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="remove_choice"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 3.22</code><span>remove_<wbr/>choice</span><a href="#remove_choice" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1427,7 +1433,7 @@ file.  See <code>gtk_file_chooser_set_use_preview_label()</code>.</p>
 <h4 class="tsd-anchor-link" id="since-35">Since<a href="#since-35" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>3.22</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150537">gtk-3.0/gtk-3.0.d.ts:150537</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150939">gtk-3.0/gtk-3.0.d.ts:150939</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="remove_filter"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>remove_<wbr/>filter</span><a href="#remove_filter" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1448,7 +1454,7 @@ file.  See <code>gtk_file_chooser_set_use_preview_label()</code>.</p>
 <h4 class="tsd-anchor-link" id="since-36">Since<a href="#since-36" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150544">gtk-3.0/gtk-3.0.d.ts:150544</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150946">gtk-3.0/gtk-3.0.d.ts:150946</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="remove_shortcut_folder"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>remove_<wbr/>shortcut_<wbr/>folder</span><a href="#remove_shortcut_folder" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1468,9 +1474,12 @@ file.  See <code>gtk_file_chooser_set_use_preview_label()</code>.</p>
 <div class="tsd-comment tsd-typography">
 <div class="tsd-tag-since">
 <h4 class="tsd-anchor-link" id="since-37">Since<a href="#since-37" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
+</div>
+<div class="tsd-tag-throws">
+<h4 class="tsd-anchor-link" id="throws-2">Throws<a href="#throws-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>GLib.Error</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150552">gtk-3.0/gtk-3.0.d.ts:150552</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150955">gtk-3.0/gtk-3.0.d.ts:150955</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="remove_shortcut_folder_uri"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>remove_<wbr/>shortcut_<wbr/>folder_<wbr/>uri</span><a href="#remove_shortcut_folder_uri" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1490,9 +1499,12 @@ file.  See <code>gtk_file_chooser_set_use_preview_label()</code>.</p>
 <div class="tsd-comment tsd-typography">
 <div class="tsd-tag-since">
 <h4 class="tsd-anchor-link" id="since-38">Since<a href="#since-38" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
+</div>
+<div class="tsd-tag-throws">
+<h4 class="tsd-anchor-link" id="throws-3">Throws<a href="#throws-3" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>GLib.Error</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150560">gtk-3.0/gtk-3.0.d.ts:150560</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150964">gtk-3.0/gtk-3.0.d.ts:150964</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="select_all"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>select_<wbr/>all</span><a href="#select_all" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1507,7 +1519,7 @@ file.  See <code>gtk_file_chooser_set_use_preview_label()</code>.</p>
 <h4 class="tsd-anchor-link" id="since-39">Since<a href="#since-39" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150566">gtk-3.0/gtk-3.0.d.ts:150566</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150970">gtk-3.0/gtk-3.0.d.ts:150970</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="select_file"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.14</code><span>select_<wbr/>file</span><a href="#select_file" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1528,9 +1540,12 @@ _gtk_file_chooser_select_uri().</p>
 <div class="tsd-comment tsd-typography">
 <div class="tsd-tag-since">
 <h4 class="tsd-anchor-link" id="since-40">Since<a href="#since-40" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.14</p>
+</div>
+<div class="tsd-tag-throws">
+<h4 class="tsd-anchor-link" id="throws-4">Throws<a href="#throws-4" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>GLib.Error</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150575">gtk-3.0/gtk-3.0.d.ts:150575</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150980">gtk-3.0/gtk-3.0.d.ts:150980</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="select_filename"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>select_<wbr/>filename</span><a href="#select_filename" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1554,7 +1569,7 @@ be changed to the folder containing <code>filename</code>.</p>
 <h4 class="tsd-anchor-link" id="since-41">Since<a href="#since-41" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150585">gtk-3.0/gtk-3.0.d.ts:150585</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150990">gtk-3.0/gtk-3.0.d.ts:150990</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="select_uri"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>select_<wbr/>uri</span><a href="#select_uri" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1578,7 +1593,7 @@ file in the current folder of <code>chooser</code>, then the current folder of
 <h4 class="tsd-anchor-link" id="since-42">Since<a href="#since-42" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150595">gtk-3.0/gtk-3.0.d.ts:150595</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L151000">gtk-3.0/gtk-3.0.d.ts:151000</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="set_action"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>set_<wbr/>action</span><a href="#set_action" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1603,7 +1618,7 @@ an option to create a new folder might be shown if the action is
 <h4 class="tsd-anchor-link" id="since-43">Since<a href="#since-43" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150606">gtk-3.0/gtk-3.0.d.ts:150606</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L151011">gtk-3.0/gtk-3.0.d.ts:151011</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="set_choice"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 3.22</code><span>set_<wbr/>choice</span><a href="#set_choice" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1629,7 +1644,7 @@ possible options are &quot;true&quot; and &quot;false&quot;.</p>
 <h4 class="tsd-anchor-link" id="since-44">Since<a href="#since-44" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>3.22</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150616">gtk-3.0/gtk-3.0.d.ts:150616</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L151021">gtk-3.0/gtk-3.0.d.ts:151021</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="set_create_folders"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.18</code><span>set_<wbr/>create_<wbr/>folders</span><a href="#set_create_folders" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1652,7 +1667,7 @@ This is only relevant if the action is not set to be
 <h4 class="tsd-anchor-link" id="since-45">Since<a href="#since-45" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.18</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150625">gtk-3.0/gtk-3.0.d.ts:150625</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L151030">gtk-3.0/gtk-3.0.d.ts:151030</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="set_current_folder"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>set_<wbr/>current_<wbr/>folder</span><a href="#set_current_folder" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1679,7 +1694,7 @@ for the rationale behind this.</p>
 <h4 class="tsd-anchor-link" id="since-46">Since<a href="#since-46" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150639">gtk-3.0/gtk-3.0.d.ts:150639</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L151044">gtk-3.0/gtk-3.0.d.ts:151044</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="set_current_folder_file"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.14</code><span>set_<wbr/>current_<wbr/>folder_<wbr/>file</span><a href="#set_current_folder_file" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1700,9 +1715,12 @@ Internal function, see <code>gtk_file_chooser_set_current_folder_uri()</code>.</
 <div class="tsd-comment tsd-typography">
 <div class="tsd-tag-since">
 <h4 class="tsd-anchor-link" id="since-47">Since<a href="#since-47" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.14</p>
+</div>
+<div class="tsd-tag-throws">
+<h4 class="tsd-anchor-link" id="throws-5">Throws<a href="#throws-5" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>GLib.Error</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150648">gtk-3.0/gtk-3.0.d.ts:150648</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L151054">gtk-3.0/gtk-3.0.d.ts:151054</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="set_current_folder_uri"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>set_<wbr/>current_<wbr/>folder_<wbr/>uri</span><a href="#set_current_folder_uri" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1729,7 +1747,7 @@ for the rationale behind this.</p>
 <h4 class="tsd-anchor-link" id="since-48">Since<a href="#since-48" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150662">gtk-3.0/gtk-3.0.d.ts:150662</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L151068">gtk-3.0/gtk-3.0.d.ts:151068</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="set_current_name"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>set_<wbr/>current_<wbr/>name</span><a href="#set_current_name" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1758,7 +1776,7 @@ Please see the documentation for those functions for an example of using
 <h4 class="tsd-anchor-link" id="since-49">Since<a href="#since-49" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150678">gtk-3.0/gtk-3.0.d.ts:150678</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L151084">gtk-3.0/gtk-3.0.d.ts:151084</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="set_do_overwrite_confirmation"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.8</code><span>set_<wbr/>do_<wbr/>overwrite_<wbr/>confirmation</span><a href="#set_do_overwrite_confirmation" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1787,7 +1805,7 @@ for the details.</p>
 <h4 class="tsd-anchor-link" id="since-50">Since<a href="#since-50" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.8</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150695">gtk-3.0/gtk-3.0.d.ts:150695</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L151101">gtk-3.0/gtk-3.0.d.ts:151101</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="set_extra_widget"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>set_<wbr/>extra_<wbr/>widget</span><a href="#set_extra_widget" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1808,7 +1826,7 @@ for the details.</p>
 <h4 class="tsd-anchor-link" id="since-51">Since<a href="#since-51" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150702">gtk-3.0/gtk-3.0.d.ts:150702</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L151108">gtk-3.0/gtk-3.0.d.ts:151108</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="set_file"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.14</code><span>set_<wbr/>file</span><a href="#set_file" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1832,7 +1850,7 @@ does Save As...  If you don’t have
 a file name already — for example, if the user just created a new
 file and is saving it for the first time, do not call this function.
 Instead, use something similar to this:</p>
-<pre><code class="c"><span class="hl-4">if</span><span class="hl-1"> (document_is_new)</span><br/><span class="hl-1">  {</span><br/><span class="hl-1">    </span><span class="hl-10">// the user just created a new document</span><br/><span class="hl-1">    </span><span class="hl-0">gtk_file_chooser_set_current_folder_file</span><span class="hl-1"> (chooser, default_file_for_saving);</span><br/><span class="hl-1">    </span><span class="hl-0">gtk_file_chooser_set_current_name</span><span class="hl-1"> (chooser, </span><span class="hl-2">&quot;Untitled document&quot;</span><span class="hl-1">);</span><br/><span class="hl-1">  }</span><br/><span class="hl-4">else</span><br/><span class="hl-1">  {</span><br/><span class="hl-1">    </span><span class="hl-10">// the user edited an existing document</span><br/><span class="hl-1">    </span><span class="hl-0">gtk_file_chooser_set_file</span><span class="hl-1"> (chooser, existing_file);</span><br/><span class="hl-1">  }</span>
+<pre><code class="c"><span class="hl-4">if</span><span class="hl-1"> (document_is_new)</span><br/><span class="hl-1">  {</span><br/><span class="hl-1">    </span><span class="hl-9">// the user just created a new document</span><br/><span class="hl-1">    </span><span class="hl-0">gtk_file_chooser_set_current_folder_file</span><span class="hl-1"> (chooser, default_file_for_saving);</span><br/><span class="hl-1">    </span><span class="hl-0">gtk_file_chooser_set_current_name</span><span class="hl-1"> (chooser, </span><span class="hl-2">&quot;Untitled document&quot;</span><span class="hl-1">);</span><br/><span class="hl-1">  }</span><br/><span class="hl-4">else</span><br/><span class="hl-1">  {</span><br/><span class="hl-1">    </span><span class="hl-9">// the user edited an existing document</span><br/><span class="hl-1">    </span><span class="hl-0">gtk_file_chooser_set_file</span><span class="hl-1"> (chooser, existing_file);</span><br/><span class="hl-1">  }</span>
 </code><button type="button">Copy</button></pre>
 
 </div>
@@ -1847,9 +1865,12 @@ Instead, use something similar to this:</p>
 <div class="tsd-comment tsd-typography">
 <div class="tsd-tag-since">
 <h4 class="tsd-anchor-link" id="since-52">Since<a href="#since-52" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.14</p>
+</div>
+<div class="tsd-tag-throws">
+<h4 class="tsd-anchor-link" id="throws-6">Throws<a href="#throws-6" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>GLib.Error</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150744">gtk-3.0/gtk-3.0.d.ts:150744</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L151151">gtk-3.0/gtk-3.0.d.ts:151151</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="set_filename"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>set_<wbr/>filename</span><a href="#set_filename" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1870,7 +1891,7 @@ then does Save As... to save a copy or
 a modified version.  If you don’t have a file name already — for
 example, if the user just created a new file and is saving it for the first
 time, do not call this function.  Instead, use something similar to this:</p>
-<pre><code class="c"><span class="hl-4">if</span><span class="hl-1"> (document_is_new)</span><br/><span class="hl-1">  {</span><br/><span class="hl-1">    </span><span class="hl-10">// the user just created a new document</span><br/><span class="hl-1">    </span><span class="hl-0">gtk_file_chooser_set_current_name</span><span class="hl-1"> (chooser, </span><span class="hl-2">&quot;Untitled document&quot;</span><span class="hl-1">);</span><br/><span class="hl-1">  }</span><br/><span class="hl-4">else</span><br/><span class="hl-1">  {</span><br/><span class="hl-1">    </span><span class="hl-10">// the user edited an existing document</span><br/><span class="hl-1">    </span><span class="hl-0">gtk_file_chooser_set_filename</span><span class="hl-1"> (chooser, existing_filename);</span><br/><span class="hl-1">  }</span>
+<pre><code class="c"><span class="hl-4">if</span><span class="hl-1"> (document_is_new)</span><br/><span class="hl-1">  {</span><br/><span class="hl-1">    </span><span class="hl-9">// the user just created a new document</span><br/><span class="hl-1">    </span><span class="hl-0">gtk_file_chooser_set_current_name</span><span class="hl-1"> (chooser, </span><span class="hl-2">&quot;Untitled document&quot;</span><span class="hl-1">);</span><br/><span class="hl-1">  }</span><br/><span class="hl-4">else</span><br/><span class="hl-1">  {</span><br/><span class="hl-1">    </span><span class="hl-9">// the user edited an existing document</span><br/><span class="hl-1">    </span><span class="hl-0">gtk_file_chooser_set_filename</span><span class="hl-1"> (chooser, existing_filename);</span><br/><span class="hl-1">  }</span>
 </code><button type="button">Copy</button></pre>
 
 <p>In the first case, the file chooser will present the user with useful suggestions
@@ -1890,7 +1911,7 @@ is already known, so the file chooser will use it.</p>
 <h4 class="tsd-anchor-link" id="since-53">Since<a href="#since-53" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150785">gtk-3.0/gtk-3.0.d.ts:150785</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L151192">gtk-3.0/gtk-3.0.d.ts:151192</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="set_filter"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>set_<wbr/>filter</span><a href="#set_filter" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1916,7 +1937,7 @@ set of files without letting the user change it.</p>
 <h4 class="tsd-anchor-link" id="since-54">Since<a href="#since-54" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150797">gtk-3.0/gtk-3.0.d.ts:150797</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L151204">gtk-3.0/gtk-3.0.d.ts:151204</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="set_local_only"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>set_<wbr/>local_<wbr/>only</span><a href="#set_local_only" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1948,7 +1969,7 @@ filesystem (FUSE).</p>
 <h4 class="tsd-anchor-link" id="since-55">Since<a href="#since-55" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150816">gtk-3.0/gtk-3.0.d.ts:150816</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L151223">gtk-3.0/gtk-3.0.d.ts:151223</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="set_preview_widget"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>set_<wbr/>preview_<wbr/>widget</span><a href="#set_preview_widget" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1979,7 +2000,7 @@ will display no preview at all.</p>
 <h4 class="tsd-anchor-link" id="since-56">Since<a href="#since-56" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150834">gtk-3.0/gtk-3.0.d.ts:150834</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L151241">gtk-3.0/gtk-3.0.d.ts:151241</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="set_preview_widget_active"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>set_<wbr/>preview_<wbr/>widget_<wbr/>active</span><a href="#set_preview_widget_active" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -2005,7 +2026,7 @@ or it may display no preview at all. See
 <h4 class="tsd-anchor-link" id="since-57">Since<a href="#since-57" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150846">gtk-3.0/gtk-3.0.d.ts:150846</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L151253">gtk-3.0/gtk-3.0.d.ts:151253</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="set_select_multiple"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>set_<wbr/>select_<wbr/>multiple</span><a href="#set_select_multiple" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -2028,7 +2049,7 @@ only relevant if the action is set to be <a href="../enums/Gtk-3.0.Gtk.FileChoos
 <h4 class="tsd-anchor-link" id="since-58">Since<a href="#since-58" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150855">gtk-3.0/gtk-3.0.d.ts:150855</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L151262">gtk-3.0/gtk-3.0.d.ts:151262</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="set_show_hidden"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.6</code><span>set_<wbr/>show_<wbr/>hidden</span><a href="#set_show_hidden" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -2049,7 +2070,7 @@ only relevant if the action is set to be <a href="../enums/Gtk-3.0.Gtk.FileChoos
 <h4 class="tsd-anchor-link" id="since-59">Since<a href="#since-59" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.6</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150862">gtk-3.0/gtk-3.0.d.ts:150862</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L151269">gtk-3.0/gtk-3.0.d.ts:151269</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="set_uri"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>set_<wbr/>uri</span><a href="#set_uri" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -2069,7 +2090,7 @@ does Save As... to save a copy or a
 modified version.  If you don’t have a file name already — for example,
 if the user just created a new file and is saving it for the first time, do
 not call this function.  Instead, use something similar to this:</p>
-<pre><code class="c"><span class="hl-4">if</span><span class="hl-1"> (document_is_new)</span><br/><span class="hl-1">  {</span><br/><span class="hl-1">    </span><span class="hl-10">// the user just created a new document</span><br/><span class="hl-1">    </span><span class="hl-0">gtk_file_chooser_set_current_name</span><span class="hl-1"> (chooser, </span><span class="hl-2">&quot;Untitled document&quot;</span><span class="hl-1">);</span><br/><span class="hl-1">  }</span><br/><span class="hl-4">else</span><br/><span class="hl-1">  {</span><br/><span class="hl-1">    </span><span class="hl-10">// the user edited an existing document</span><br/><span class="hl-1">    </span><span class="hl-0">gtk_file_chooser_set_uri</span><span class="hl-1"> (chooser, existing_uri);</span><br/><span class="hl-1">  }</span>
+<pre><code class="c"><span class="hl-4">if</span><span class="hl-1"> (document_is_new)</span><br/><span class="hl-1">  {</span><br/><span class="hl-1">    </span><span class="hl-9">// the user just created a new document</span><br/><span class="hl-1">    </span><span class="hl-0">gtk_file_chooser_set_current_name</span><span class="hl-1"> (chooser, </span><span class="hl-2">&quot;Untitled document&quot;</span><span class="hl-1">);</span><br/><span class="hl-1">  }</span><br/><span class="hl-4">else</span><br/><span class="hl-1">  {</span><br/><span class="hl-1">    </span><span class="hl-9">// the user edited an existing document</span><br/><span class="hl-1">    </span><span class="hl-0">gtk_file_chooser_set_uri</span><span class="hl-1"> (chooser, existing_uri);</span><br/><span class="hl-1">  }</span>
 </code><button type="button">Copy</button></pre>
 
 <p>In the first case, the file chooser will present the user with useful suggestions
@@ -2089,7 +2110,7 @@ is already known, so the file chooser will use it.</p>
 <h4 class="tsd-anchor-link" id="since-60">Since<a href="#since-60" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150903">gtk-3.0/gtk-3.0.d.ts:150903</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L151310">gtk-3.0/gtk-3.0.d.ts:151310</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="set_use_preview_label"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>set_<wbr/>use_<wbr/>preview_<wbr/>label</span><a href="#set_use_preview_label" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -2114,7 +2135,7 @@ display the name themselves in their preview widget.</p>
 <h4 class="tsd-anchor-link" id="since-61">Since<a href="#since-61" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150915">gtk-3.0/gtk-3.0.d.ts:150915</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L151322">gtk-3.0/gtk-3.0.d.ts:151322</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="unselect_all"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>unselect_<wbr/>all</span><a href="#unselect_all" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -2129,7 +2150,7 @@ display the name themselves in their preview widget.</p>
 <h4 class="tsd-anchor-link" id="since-62">Since<a href="#since-62" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150921">gtk-3.0/gtk-3.0.d.ts:150921</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L151328">gtk-3.0/gtk-3.0.d.ts:151328</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="unselect_file"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.14</code><span>unselect_<wbr/>file</span><a href="#unselect_file" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -2151,7 +2172,7 @@ directory, does not exist, or is otherwise not currently selected, does nothing.
 <h4 class="tsd-anchor-link" id="since-63">Since<a href="#since-63" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.14</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150929">gtk-3.0/gtk-3.0.d.ts:150929</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L151336">gtk-3.0/gtk-3.0.d.ts:151336</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="unselect_filename"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>unselect_<wbr/>filename</span><a href="#unselect_filename" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -2174,7 +2195,7 @@ is otherwise not currently selected, does nothing.</p>
 <h4 class="tsd-anchor-link" id="since-64">Since<a href="#since-64" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150938">gtk-3.0/gtk-3.0.d.ts:150938</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L151345">gtk-3.0/gtk-3.0.d.ts:151345</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="unselect_uri"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>unselect_<wbr/>uri</span><a href="#unselect_uri" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -2197,7 +2218,7 @@ is otherwise not currently selected, does nothing.</p>
 <h4 class="tsd-anchor-link" id="since-65">Since<a href="#since-65" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150947">gtk-3.0/gtk-3.0.d.ts:150947</a></li></ul></aside></div></li></ul></section></section></details>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L151354">gtk-3.0/gtk-3.0.d.ts:151354</a></li></ul></aside></div></li></ul></section></section></details>
 <details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Methods - Inherited from GObject.Object"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
 <h2 class="tsd-anchor-link" id="methods-inherited-from-gobjectobject-1">Methods - Inherited from GObject.Object<a href="#methods-inherited-from-gobjectobject-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2></summary>
 <section>
@@ -2214,7 +2235,7 @@ is otherwise not currently selected, does nothing.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#_init">_init</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3667">gobject-2.0/gobject-2.0.d.ts:3667</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3688">gobject-2.0/gobject-2.0.d.ts:3688</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="bind_property"><span>bind_<wbr/>property</span><a href="#bind_property" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -2225,7 +2246,7 @@ is otherwise not currently selected, does nothing.</p>
 on <code>target</code>.</p>
 <p>Whenever the <code>source_property</code> is changed the <code>target_property</code> is
 updated using the same value. For instance:</p>
-<pre><code class="c"><span class="hl-1">  </span><span class="hl-0">g_object_bind_property</span><span class="hl-1"> (action, </span><span class="hl-2">&quot;active&quot;</span><span class="hl-1">, widget, </span><span class="hl-2">&quot;sensitive&quot;</span><span class="hl-1">, </span><span class="hl-9">0</span><span class="hl-1">);</span>
+<pre><code class="c"><span class="hl-1">  </span><span class="hl-0">g_object_bind_property</span><span class="hl-1"> (action, </span><span class="hl-2">&quot;active&quot;</span><span class="hl-1">, widget, </span><span class="hl-2">&quot;sensitive&quot;</span><span class="hl-1">, </span><span class="hl-8">0</span><span class="hl-1">);</span>
 </code><button type="button">Copy</button></pre>
 
 <p>Will result in the &quot;sensitive&quot; property of the widget <a href="../classes/GObject-2.0.GObject.Object.html" class="tsd-kind-class">GObject.Object</a> instance to be
@@ -2269,7 +2290,7 @@ use <code>g_binding_unbind()</code> instead to be on the safe side.</p>
 </div></div><aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#bind_property">bind_property</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3887">gobject-2.0/gobject-2.0.d.ts:3887</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3908">gobject-2.0/gobject-2.0.d.ts:3908</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="bind_property_full"><span>bind_<wbr/>property_<wbr/>full</span><a href="#bind_property_full" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -2312,7 +2333,7 @@ function pointers.</p>
 </div></div><aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#bind_property_full">bind_property_full</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3906">gobject-2.0/gobject-2.0.d.ts:3906</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3927">gobject-2.0/gobject-2.0.d.ts:3927</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="block_signal_handler"><span>block_<wbr/>signal_<wbr/>handler</span><a href="#block_signal_handler" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -2330,7 +2351,7 @@ function pointers.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#block_signal_handler">block_signal_handler</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4205">gobject-2.0/gobject-2.0.d.ts:4205</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4226">gobject-2.0/gobject-2.0.d.ts:4226</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="connect"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-signal">Signal</code><span>connect</span><a href="#connect" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -2349,7 +2370,7 @@ function pointers.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#connect">connect</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3673">gobject-2.0/gobject-2.0.d.ts:3673</a></li></ul></aside></div></li>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3694">gobject-2.0/gobject-2.0.d.ts:3694</a></li></ul></aside></div></li>
 <li class="tsd-is-inherited">
 <div class="tsd-signature tsd-anchor-link" id="connect-2"><span class="tsd-kind-call-signature">connect</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">signal</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">,</span> <span class="tsd-kind-parameter">callback</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span><span class="tsd-kind-parameter">args</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span> <span class="tsd-signature-symbol">=&gt;</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><a href="#connect-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div>
 <div class="tsd-description">
@@ -2361,7 +2382,7 @@ function pointers.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#connect">connect</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3674">gobject-2.0/gobject-2.0.d.ts:3674</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3695">gobject-2.0/gobject-2.0.d.ts:3695</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="connect_after"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-signal">Signal</code><span>connect_<wbr/>after</span><a href="#connect_after" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -2380,7 +2401,7 @@ function pointers.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#connect_after">connect_after</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3677">gobject-2.0/gobject-2.0.d.ts:3677</a></li></ul></aside></div></li>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3698">gobject-2.0/gobject-2.0.d.ts:3698</a></li></ul></aside></div></li>
 <li class="tsd-is-inherited">
 <div class="tsd-signature tsd-anchor-link" id="connect_after-2"><span class="tsd-kind-call-signature">connect_after</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">signal</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">,</span> <span class="tsd-kind-parameter">callback</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span><span class="tsd-kind-parameter">args</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span> <span class="tsd-signature-symbol">=&gt;</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><a href="#connect_after-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div>
 <div class="tsd-description">
@@ -2392,7 +2413,7 @@ function pointers.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#connect_after">connect_after</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3678">gobject-2.0/gobject-2.0.d.ts:3678</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3699">gobject-2.0/gobject-2.0.d.ts:3699</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="disconnect"><span>disconnect</span><a href="#disconnect" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -2410,7 +2431,7 @@ function pointers.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#disconnect">disconnect</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4193">gobject-2.0/gobject-2.0.d.ts:4193</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4214">gobject-2.0/gobject-2.0.d.ts:4214</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="emit"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-signal">Signal</code><span>emit</span><a href="#emit" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -2429,7 +2450,7 @@ function pointers.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#emit">emit</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3681">gobject-2.0/gobject-2.0.d.ts:3681</a></li></ul></aside></div></li>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3702">gobject-2.0/gobject-2.0.d.ts:3702</a></li></ul></aside></div></li>
 <li class="tsd-is-inherited">
 <div class="tsd-signature tsd-anchor-link" id="emit-2"><span class="tsd-kind-call-signature">emit</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">signal</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">,</span> <span class="tsd-signature-symbol">...</span><span class="tsd-kind-parameter">args</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span><a href="#emit-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div>
 <div class="tsd-description">
@@ -2441,7 +2462,7 @@ function pointers.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#emit">emit</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3682">gobject-2.0/gobject-2.0.d.ts:3682</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3703">gobject-2.0/gobject-2.0.d.ts:3703</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="force_floating"><span>force_<wbr/>floating</span><a href="#force_floating" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -2460,7 +2481,7 @@ which usually just needs to be sunken by calling <code>g_object_ref_sink()</code
 </div></div><aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#force_floating">force_floating</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3915">gobject-2.0/gobject-2.0.d.ts:3915</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3936">gobject-2.0/gobject-2.0.d.ts:3936</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="freeze_notify"><span>freeze_<wbr/>notify</span><a href="#freeze_notify" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -2479,7 +2500,7 @@ premature notification while the object is still being modified.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#freeze_notify">freeze_notify</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3928">gobject-2.0/gobject-2.0.d.ts:3928</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3949">gobject-2.0/gobject-2.0.d.ts:3949</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="get_data"><span>get_<wbr/>data</span><a href="#get_data" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -2498,7 +2519,7 @@ premature notification while the object is still being modified.</p>
 <aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#get_data">get_data</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3935">gobject-2.0/gobject-2.0.d.ts:3935</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3956">gobject-2.0/gobject-2.0.d.ts:3956</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="get_property"><span>get_<wbr/>property</span><a href="#get_property" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -2527,7 +2548,7 @@ premature notification while the object is still being modified.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#get_property">get_property</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3951">gobject-2.0/gobject-2.0.d.ts:3951</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3972">gobject-2.0/gobject-2.0.d.ts:3972</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="get_qdata"><span>get_<wbr/>qdata</span><a href="#get_qdata" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -2547,7 +2568,7 @@ premature notification while the object is still being modified.</p>
 <aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#get_qdata">get_qdata</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3959">gobject-2.0/gobject-2.0.d.ts:3959</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3980">gobject-2.0/gobject-2.0.d.ts:3980</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="getv"><span>getv</span><a href="#getv" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -2575,7 +2596,7 @@ properties are passed in.</p>
 </div></div><aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#getv">getv</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3970">gobject-2.0/gobject-2.0.d.ts:3970</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3991">gobject-2.0/gobject-2.0.d.ts:3991</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="is_floating"><span>is_<wbr/>floating</span><a href="#is_floating" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -2592,7 +2613,7 @@ properties are passed in.</p>
 </div></div><aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#is_floating">is_floating</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3977">gobject-2.0/gobject-2.0.d.ts:3977</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3998">gobject-2.0/gobject-2.0.d.ts:3998</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="notify"><span>notify</span><a href="#notify" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -2617,7 +2638,7 @@ called.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#notify">notify</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3992">gobject-2.0/gobject-2.0.d.ts:3992</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4013">gobject-2.0/gobject-2.0.d.ts:4013</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="notify_by_pspec"><span>notify_<wbr/>by_<wbr/>pspec</span><a href="#notify_by_pspec" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -2631,7 +2652,7 @@ called.</p>
 class that registered the properties, and using <code>g_object_notify_by_pspec()</code>
 instead, is to store the GParamSpec used with
 <code>g_object_class_install_property()</code> inside a static array, e.g.:</p>
-<pre><code class="c"><span class="hl-1">  </span><span class="hl-3">typedef</span><span class="hl-1"> </span><span class="hl-3">enum</span><br/><span class="hl-1">  {</span><br/><span class="hl-1">    PROP_FOO = </span><span class="hl-9">1</span><span class="hl-1">,</span><br/><span class="hl-1">    PROP_LAST</span><br/><span class="hl-1">  } MyObjectProperty;</span><br/><br/><span class="hl-1">  </span><span class="hl-3">static</span><span class="hl-1"> GParamSpec *</span><span class="hl-5">properties</span><span class="hl-1">[PROP_LAST];</span><br/><br/><span class="hl-1">  </span><span class="hl-3">static</span><span class="hl-1"> </span><span class="hl-3">void</span><br/><span class="hl-1">  </span><span class="hl-0">my_object_class_init</span><span class="hl-1"> (MyObjectClass *</span><span class="hl-5">klass</span><span class="hl-1">)</span><br/><span class="hl-1">  {</span><br/><span class="hl-1">    </span><span class="hl-5">properties</span><span class="hl-1">[PROP_FOO] = </span><span class="hl-0">g_param_spec_int</span><span class="hl-1"> (</span><span class="hl-2">&quot;foo&quot;</span><span class="hl-1">, </span><span class="hl-3">NULL</span><span class="hl-1">, </span><span class="hl-3">NULL</span><span class="hl-1">,</span><br/><span class="hl-1">                                             </span><span class="hl-9">0</span><span class="hl-1">, </span><span class="hl-9">100</span><span class="hl-1">,</span><br/><span class="hl-1">                                             </span><span class="hl-9">50</span><span class="hl-1">,</span><br/><span class="hl-1">                                             G_PARAM_READWRITE | G_PARAM_STATIC_STRINGS);</span><br/><span class="hl-1">    </span><span class="hl-0">g_object_class_install_property</span><span class="hl-1"> (gobject_class,</span><br/><span class="hl-1">                                     PROP_FOO,</span><br/><span class="hl-1">                                     </span><span class="hl-5">properties</span><span class="hl-1">[PROP_FOO]);</span><br/><span class="hl-1">  }</span>
+<pre><code class="c"><span class="hl-1">  </span><span class="hl-3">typedef</span><span class="hl-1"> </span><span class="hl-3">enum</span><br/><span class="hl-1">  {</span><br/><span class="hl-1">    PROP_FOO = </span><span class="hl-8">1</span><span class="hl-1">,</span><br/><span class="hl-1">    PROP_LAST</span><br/><span class="hl-1">  } MyObjectProperty;</span><br/><br/><span class="hl-1">  </span><span class="hl-3">static</span><span class="hl-1"> GParamSpec *</span><span class="hl-5">properties</span><span class="hl-1">[PROP_LAST];</span><br/><br/><span class="hl-1">  </span><span class="hl-3">static</span><span class="hl-1"> </span><span class="hl-3">void</span><br/><span class="hl-1">  </span><span class="hl-0">my_object_class_init</span><span class="hl-1"> (MyObjectClass *</span><span class="hl-5">klass</span><span class="hl-1">)</span><br/><span class="hl-1">  {</span><br/><span class="hl-1">    </span><span class="hl-5">properties</span><span class="hl-1">[PROP_FOO] = </span><span class="hl-0">g_param_spec_int</span><span class="hl-1"> (</span><span class="hl-2">&quot;foo&quot;</span><span class="hl-1">, </span><span class="hl-3">NULL</span><span class="hl-1">, </span><span class="hl-3">NULL</span><span class="hl-1">,</span><br/><span class="hl-1">                                             </span><span class="hl-8">0</span><span class="hl-1">, </span><span class="hl-8">100</span><span class="hl-1">,</span><br/><span class="hl-1">                                             </span><span class="hl-8">50</span><span class="hl-1">,</span><br/><span class="hl-1">                                             G_PARAM_READWRITE | G_PARAM_STATIC_STRINGS);</span><br/><span class="hl-1">    </span><span class="hl-0">g_object_class_install_property</span><span class="hl-1"> (gobject_class,</span><br/><span class="hl-1">                                     PROP_FOO,</span><br/><span class="hl-1">                                     </span><span class="hl-5">properties</span><span class="hl-1">[PROP_FOO]);</span><br/><span class="hl-1">  }</span>
 </code><button type="button">Copy</button></pre>
 
 <p>and then notify a change on the &quot;foo&quot; property with:</p>
@@ -2652,7 +2673,7 @@ instead, is to store the GParamSpec used with
 </div></div><aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#notify_by_pspec">notify_by_pspec</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4039">gobject-2.0/gobject-2.0.d.ts:4039</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4060">gobject-2.0/gobject-2.0.d.ts:4060</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="ref"><span>ref</span><a href="#ref" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -2669,7 +2690,7 @@ explicit.</p>
 <aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#ref">ref</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4050">gobject-2.0/gobject-2.0.d.ts:4050</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4071">gobject-2.0/gobject-2.0.d.ts:4071</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="ref_sink"><span>ref_<wbr/>sink</span><a href="#ref_sink" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -2694,7 +2715,7 @@ under the same conditions as for <code>g_object_ref()</code>.</p>
 </div></div><aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#ref_sink">ref_sink</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4067">gobject-2.0/gobject-2.0.d.ts:4067</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4088">gobject-2.0/gobject-2.0.d.ts:4088</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="run_dispose"><span>run_<wbr/>dispose</span><a href="#run_dispose" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -2708,7 +2729,7 @@ reference cycles.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#run_dispose">run_dispose</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4075">gobject-2.0/gobject-2.0.d.ts:4075</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4096">gobject-2.0/gobject-2.0.d.ts:4096</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="set"><span>set</span><a href="#set" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -2726,7 +2747,7 @@ reference cycles.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#set">set</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4199">gobject-2.0/gobject-2.0.d.ts:4199</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4220">gobject-2.0/gobject-2.0.d.ts:4220</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="set_data"><span>set_<wbr/>data</span><a href="#set_data" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -2754,7 +2775,7 @@ for <code>key</code> in your program, to avoid the <a href="../types/GLib-2.0.GL
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#set_data">set_data</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4091">gobject-2.0/gobject-2.0.d.ts:4091</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4112">gobject-2.0/gobject-2.0.d.ts:4112</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="set_property"><span>set_<wbr/>property</span><a href="#set_property" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -2775,7 +2796,7 @@ for <code>key</code> in your program, to avoid the <a href="../types/GLib-2.0.GL
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#set_property">set_property</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4098">gobject-2.0/gobject-2.0.d.ts:4098</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4119">gobject-2.0/gobject-2.0.d.ts:4119</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="steal_data"><span>steal_<wbr/>data</span><a href="#steal_data" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -2795,7 +2816,7 @@ without invoking the association's destroy handler.</p>
 <aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#steal_data">steal_data</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4106">gobject-2.0/gobject-2.0.d.ts:4106</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4127">gobject-2.0/gobject-2.0.d.ts:4127</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="steal_qdata"><span>steal_<wbr/>qdata</span><a href="#steal_qdata" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -2808,7 +2829,7 @@ without invoking its <code>destroy()</code> function (if any was
 set).
 Usually, calling this function is only required to update
 user data pointers with a destroy notifier, for example:</p>
-<pre><code class="c"><span class="hl-3">void</span><br/><span class="hl-0">object_add_to_user_list</span><span class="hl-1"> (GObject     *</span><span class="hl-5">object</span><span class="hl-1">,</span><br/><span class="hl-1">                         </span><span class="hl-3">const</span><span class="hl-1"> gchar *</span><span class="hl-5">new_string</span><span class="hl-1">)</span><br/><span class="hl-1">{</span><br/><span class="hl-1">  </span><span class="hl-10">// the quark, naming the object data</span><br/><span class="hl-1">  GQuark quark_string_list = </span><span class="hl-0">g_quark_from_static_string</span><span class="hl-1"> (</span><span class="hl-2">&quot;my-string-list&quot;</span><span class="hl-1">);</span><br/><span class="hl-1">  </span><span class="hl-10">// retrieve the old string list</span><br/><span class="hl-1">  GList *list = </span><span class="hl-0">g_object_steal_qdata</span><span class="hl-1"> (object, quark_string_list);</span><br/><br/><span class="hl-1">  </span><span class="hl-10">// prepend new string</span><br/><span class="hl-1">  list = </span><span class="hl-0">g_list_prepend</span><span class="hl-1"> (list, </span><span class="hl-0">g_strdup</span><span class="hl-1"> (new_string));</span><br/><span class="hl-1">  </span><span class="hl-10">// this changed &#39;list&#39;, so we need to set it again</span><br/><span class="hl-1">  </span><span class="hl-0">g_object_set_qdata_full</span><span class="hl-1"> (object, quark_string_list, list, free_string_list);</span><br/><span class="hl-1">}</span><br/><span class="hl-3">static</span><span class="hl-1"> </span><span class="hl-3">void</span><br/><span class="hl-0">free_string_list</span><span class="hl-1"> (gpointer </span><span class="hl-5">data</span><span class="hl-1">)</span><br/><span class="hl-1">{</span><br/><span class="hl-1">  GList *node, *list = data;</span><br/><br/><span class="hl-1">  </span><span class="hl-4">for</span><span class="hl-1"> (node = list; node; node = </span><span class="hl-5">node</span><span class="hl-1">-&gt;</span><span class="hl-5">next</span><span class="hl-1">)</span><br/><span class="hl-1">    </span><span class="hl-0">g_free</span><span class="hl-1"> (</span><span class="hl-5">node</span><span class="hl-1">-&gt;</span><span class="hl-5">data</span><span class="hl-1">);</span><br/><span class="hl-1">  </span><span class="hl-0">g_list_free</span><span class="hl-1"> (list);</span><br/><span class="hl-1">}</span>
+<pre><code class="c"><span class="hl-3">void</span><br/><span class="hl-0">object_add_to_user_list</span><span class="hl-1"> (GObject     *</span><span class="hl-5">object</span><span class="hl-1">,</span><br/><span class="hl-1">                         </span><span class="hl-3">const</span><span class="hl-1"> gchar *</span><span class="hl-5">new_string</span><span class="hl-1">)</span><br/><span class="hl-1">{</span><br/><span class="hl-1">  </span><span class="hl-9">// the quark, naming the object data</span><br/><span class="hl-1">  GQuark quark_string_list = </span><span class="hl-0">g_quark_from_static_string</span><span class="hl-1"> (</span><span class="hl-2">&quot;my-string-list&quot;</span><span class="hl-1">);</span><br/><span class="hl-1">  </span><span class="hl-9">// retrieve the old string list</span><br/><span class="hl-1">  GList *list = </span><span class="hl-0">g_object_steal_qdata</span><span class="hl-1"> (object, quark_string_list);</span><br/><br/><span class="hl-1">  </span><span class="hl-9">// prepend new string</span><br/><span class="hl-1">  list = </span><span class="hl-0">g_list_prepend</span><span class="hl-1"> (list, </span><span class="hl-0">g_strdup</span><span class="hl-1"> (new_string));</span><br/><span class="hl-1">  </span><span class="hl-9">// this changed &#39;list&#39;, so we need to set it again</span><br/><span class="hl-1">  </span><span class="hl-0">g_object_set_qdata_full</span><span class="hl-1"> (object, quark_string_list, list, free_string_list);</span><br/><span class="hl-1">}</span><br/><span class="hl-3">static</span><span class="hl-1"> </span><span class="hl-3">void</span><br/><span class="hl-0">free_string_list</span><span class="hl-1"> (gpointer </span><span class="hl-5">data</span><span class="hl-1">)</span><br/><span class="hl-1">{</span><br/><span class="hl-1">  GList *node, *list = data;</span><br/><br/><span class="hl-1">  </span><span class="hl-4">for</span><span class="hl-1"> (node = list; node; node = </span><span class="hl-5">node</span><span class="hl-1">-&gt;</span><span class="hl-5">next</span><span class="hl-1">)</span><br/><span class="hl-1">    </span><span class="hl-0">g_free</span><span class="hl-1"> (</span><span class="hl-5">node</span><span class="hl-1">-&gt;</span><span class="hl-5">data</span><span class="hl-1">);</span><br/><span class="hl-1">  </span><span class="hl-0">g_list_free</span><span class="hl-1"> (list);</span><br/><span class="hl-1">}</span>
 </code><button type="button">Copy</button></pre>
 
 <p>Using <code>g_object_get_qdata()</code> in the above example, instead of
@@ -2826,7 +2847,7 @@ and thus the partial string list would have been freed upon
 <aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#steal_qdata">steal_qdata</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4149">gobject-2.0/gobject-2.0.d.ts:4149</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4170">gobject-2.0/gobject-2.0.d.ts:4170</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="stop_emission_by_name"><span>stop_<wbr/>emission_<wbr/>by_<wbr/>name</span><a href="#stop_emission_by_name" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -2844,7 +2865,7 @@ and thus the partial string list would have been freed upon
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#stop_emission_by_name">stop_emission_by_name</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4217">gobject-2.0/gobject-2.0.d.ts:4217</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4238">gobject-2.0/gobject-2.0.d.ts:4238</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="thaw_notify"><span>thaw_<wbr/>notify</span><a href="#thaw_notify" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -2862,7 +2883,7 @@ in which they have been queued.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#thaw_notify">thaw_notify</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4162">gobject-2.0/gobject-2.0.d.ts:4162</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4183">gobject-2.0/gobject-2.0.d.ts:4183</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="unblock_signal_handler"><span>unblock_<wbr/>signal_<wbr/>handler</span><a href="#unblock_signal_handler" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -2880,7 +2901,7 @@ in which they have been queued.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#unblock_signal_handler">unblock_signal_handler</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4211">gobject-2.0/gobject-2.0.d.ts:4211</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4232">gobject-2.0/gobject-2.0.d.ts:4232</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="unref"><span>unref</span><a href="#unref" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -2897,7 +2918,7 @@ invalid <a href="../classes/GObject-2.0.GObject.Object.html" class="tsd-kind-cla
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#unref">unref</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4173">gobject-2.0/gobject-2.0.d.ts:4173</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4194">gobject-2.0/gobject-2.0.d.ts:4194</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="vfunc_constructed"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>constructed</span><a href="#vfunc_constructed" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -2915,7 +2936,7 @@ to complete its initialisation.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#vfunc_constructed">vfunc_constructed</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3776">gobject-2.0/gobject-2.0.d.ts:3776</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3797">gobject-2.0/gobject-2.0.d.ts:3797</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="vfunc_dispatch_properties_changed"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>dispatch_<wbr/>properties_<wbr/>changed</span><a href="#vfunc_dispatch_properties_changed" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -2934,7 +2955,7 @@ needed.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#vfunc_dispatch_properties_changed">vfunc_dispatch_properties_changed</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3786">gobject-2.0/gobject-2.0.d.ts:3786</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3807">gobject-2.0/gobject-2.0.d.ts:3807</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="vfunc_dispose"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>dispose</span><a href="#vfunc_dispose" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -2950,7 +2971,7 @@ of the parent class.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#vfunc_dispose">vfunc_dispose</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3796">gobject-2.0/gobject-2.0.d.ts:3796</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3817">gobject-2.0/gobject-2.0.d.ts:3817</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="vfunc_finalize"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>finalize</span><a href="#vfunc_finalize" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -2964,7 +2985,7 @@ parent class.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#vfunc_finalize">vfunc_finalize</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3804">gobject-2.0/gobject-2.0.d.ts:3804</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3825">gobject-2.0/gobject-2.0.d.ts:3825</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="vfunc_get_property"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>get_<wbr/>property</span><a href="#vfunc_get_property" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -2983,7 +3004,7 @@ overridden for every type with properties.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#vfunc_get_property">vfunc_get_property</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3814">gobject-2.0/gobject-2.0.d.ts:3814</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3835">gobject-2.0/gobject-2.0.d.ts:3835</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="vfunc_notify"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>notify</span><a href="#vfunc_notify" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -3006,7 +3027,7 @@ called.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#vfunc_notify">vfunc_notify</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3830">gobject-2.0/gobject-2.0.d.ts:3830</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3851">gobject-2.0/gobject-2.0.d.ts:3851</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="vfunc_set_property"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>set_<wbr/>property</span><a href="#vfunc_set_property" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -3028,7 +3049,7 @@ emitted explicitly, the type system will not emit it a second time.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#vfunc_set_property">vfunc_set_property</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3843">gobject-2.0/gobject-2.0.d.ts:3843</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3864">gobject-2.0/gobject-2.0.d.ts:3864</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="watch_closure"><span>watch_<wbr/>closure</span><a href="#watch_closure" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -3054,7 +3075,7 @@ use this <code>object</code> as closure data.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="../classes/GObject-2.0.GObject.Object.html">Object</a>.<a href="../classes/GObject-2.0.GObject.Object.html#watch_closure">watch_closure</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4187">gobject-2.0/gobject-2.0.d.ts:4187</a></li></ul></aside></div></li></ul></section></section></details>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4208">gobject-2.0/gobject-2.0.d.ts:4208</a></li></ul></aside></div></li></ul></section></section></details>
 <details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Interfaces"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
 <h2>Interfaces</h2></summary><dl class="tsd-member-summaries"><dt class="tsd-member-summary" id="constructorprops"><span class="tsd-member-summary-name"><a href="Gtk-3.0.Gtk.FileChooser.ConstructorProps.html">ConstructorProps</a><a href="#constructorprops" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></span></dt><dd class="tsd-member-summary"></dd></dl></details></div></section>
 <nav id="gi-docgen-toc">

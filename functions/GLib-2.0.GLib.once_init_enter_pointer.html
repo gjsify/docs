@@ -28,7 +28,7 @@
 <li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div>
 <div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
 <div class="gi-docgen-generator">
-<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.4.0</p></div></nav>
+<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.5.0</p></div></nav>
 <section id="gi-docgen-main">
 <div class="gi-docgen-content">
 <div class="gi-docgen-page-title"><span class="gi-docgen-object-type">Function</span>
@@ -40,7 +40,7 @@
 <div class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>This functions behaves in the same way as <code>g_once_init_enter()</code>, but can
 can be used to initialize pointers (or <code>guintptr</code>) instead of <code>gsize</code>.</p>
-<pre><code class="c"><span class="hl-1">  </span><span class="hl-3">static</span><span class="hl-1"> MyStruct *interesting_struct = </span><span class="hl-3">NULL</span><span class="hl-1">;</span><br/><br/><span class="hl-1">  </span><span class="hl-4">if</span><span class="hl-1"> (</span><span class="hl-0">g_once_init_enter_pointer</span><span class="hl-1"> (&amp;</span><span class="hl-5">interesting_struct</span><span class="hl-1">))</span><br/><span class="hl-1">    {</span><br/><span class="hl-1">      MyStruct *setup_value = </span><span class="hl-0">allocate_my_struct</span><span class="hl-1"> ();</span><span class="hl-10"> // initialization code here</span><br/><br/><span class="hl-1">      </span><span class="hl-0">g_once_init_leave_pointer</span><span class="hl-1"> (&amp;interesting_struct, </span><span class="hl-0">g_steal_pointer</span><span class="hl-1"> (&amp;setup_value));</span><br/><span class="hl-1">    }</span><br/><br/><span class="hl-1">  </span><span class="hl-10">// use interesting_struct here</span>
+<pre><code class="c"><span class="hl-1">  </span><span class="hl-3">static</span><span class="hl-1"> MyStruct *interesting_struct = </span><span class="hl-3">NULL</span><span class="hl-1">;</span><br/><br/><span class="hl-1">  </span><span class="hl-4">if</span><span class="hl-1"> (</span><span class="hl-0">g_once_init_enter_pointer</span><span class="hl-1"> (&amp;</span><span class="hl-5">interesting_struct</span><span class="hl-1">))</span><br/><span class="hl-1">    {</span><br/><span class="hl-1">      MyStruct *setup_value = </span><span class="hl-0">allocate_my_struct</span><span class="hl-1"> ();</span><span class="hl-9"> // initialization code here</span><br/><br/><span class="hl-1">      </span><span class="hl-0">g_once_init_leave_pointer</span><span class="hl-1"> (&amp;interesting_struct, </span><span class="hl-0">g_steal_pointer</span><span class="hl-1"> (&amp;setup_value));</span><br/><span class="hl-1">    }</span><br/><br/><span class="hl-1">  </span><span class="hl-9">// use interesting_struct here</span>
 </code><button type="button">Copy</button></pre>
 
 </div>
@@ -57,6 +57,6 @@ can be used to initialize pointers (or <code>guintptr</code>) instead of <code>g
 <h4 class="tsd-anchor-link" id="since">Since<a href="#since" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.80</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L10024">glib-2.0/glib-2.0.d.ts:10024</a></li></ul></aside></div></li></ul></section></div></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L10286">glib-2.0/glib-2.0.d.ts:10286</a></li></ul></aside></div></li></ul></section></div></section>
 <nav id="gi-docgen-toc"></nav></div>
 <div class="overlay"></div></body></html>

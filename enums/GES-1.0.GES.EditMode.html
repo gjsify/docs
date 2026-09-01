@@ -36,7 +36,7 @@
 <li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div>
 <div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
 <div class="gi-docgen-generator">
-<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.4.0</p></div></nav>
+<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.5.0</p></div></nav>
 <section id="gi-docgen-main">
 <div class="gi-docgen-content">
 <div class="gi-docgen-page-title"><span class="gi-docgen-object-type">Enumeration (GI Enum)</span>
@@ -159,7 +159,7 @@ and <a href="http://pitivi.org/manual/usingclips.html">clip management</a>.</p>
 <section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="edit_normal"><span>EDIT_<wbr/>NORMAL</span><a href="#edit_normal" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">EDIT_NORMAL</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">EDIT_NORMAL</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">0</span></div>
 <div class="tsd-comment tsd-typography"><p>The element is edited the normal way (default).
 If acting on the element as a whole (#GES_EDGE_NONE), this will MOVE
 the element by MOVING its toplevel. When acting on the start of the
@@ -174,7 +174,7 @@ leaving its toplevel unchanged.</p>
 <li>Defined in <a href="https://github.com/gjsify/types/blob/main/ges-1.0.d.ts#L225">ges-1.0/ges-1.0.d.ts:225</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="edit_ripple"><span>EDIT_<wbr/>RIPPLE</span><a href="#edit_ripple" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">EDIT_RIPPLE</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">EDIT_RIPPLE</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">1</span></div>
 <div class="tsd-comment tsd-typography"><p>The element is edited in ripple mode: moving
 itself as well as later elements, keeping their relative times. This
 edits the element the same as #GES_EDIT_MODE_NORMAL. In addition, if
@@ -192,7 +192,7 @@ the same shift in layers as the edited element.</p>
 <li>Defined in <a href="https://github.com/gjsify/types/blob/main/ges-1.0.d.ts#L252">ges-1.0/ges-1.0.d.ts:252</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="edit_roll"><span>EDIT_<wbr/>ROLL</span><a href="#edit_roll" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">EDIT_ROLL</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">EDIT_ROLL</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">2</span></div>
 <div class="tsd-comment tsd-typography"><p>The element is edited in roll mode: swapping its
 content for its neighbour's, or vis versa, in the timeline output.
 This edits the element the same as #GES_EDIT_MODE_TRIM. In addition,
@@ -214,7 +214,7 @@ layers under this mode.</p>
 <li>Defined in <a href="https://github.com/gjsify/types/blob/main/ges-1.0.d.ts#L286">ges-1.0/ges-1.0.d.ts:286</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="edit_slide"><span>EDIT_<wbr/>SLIDE</span><a href="#edit_slide" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">EDIT_SLIDE</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">EDIT_SLIDE</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">4</span></div>
 <div class="tsd-comment tsd-typography"><p>The element is edited in slide mode (not yet
 implemented): moving the element replacing or consuming content on
 each end. When acting on the element as a whole, this will MOVE the
@@ -231,7 +231,7 @@ not shift layers under this mode.</p>
 <li>Defined in <a href="https://github.com/gjsify/types/blob/main/ges-1.0.d.ts#L333">ges-1.0/ges-1.0.d.ts:333</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="edit_trim"><span>EDIT_<wbr/>TRIM</span><a href="#edit_trim" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">EDIT_TRIM</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">EDIT_TRIM</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">3</span></div>
 <div class="tsd-comment tsd-typography"><p>The element is edited in trim mode. When acting
 on the start of the element, this will START-TRIM it. When acting on
 the end of the element, this will END-TRIM it. Acting on the element
@@ -241,7 +241,7 @@ as a whole (#GES_EDGE_NONE) is not defined.</p>
 <li>Defined in <a href="https://github.com/gjsify/types/blob/main/ges-1.0.d.ts#L312">ges-1.0/ges-1.0.d.ts:312</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="normal"><span>NORMAL</span><a href="#normal" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">NORMAL</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">NORMAL</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">0</span></div>
 <div class="tsd-comment tsd-typography"><p>The element is edited the normal way (default).
 If acting on the element as a whole (#GES_EDGE_NONE), this will MOVE
 the element by MOVING its toplevel. When acting on the start of the
@@ -256,7 +256,7 @@ leaving its toplevel unchanged.</p>
 <li>Defined in <a href="https://github.com/gjsify/types/blob/main/ges-1.0.d.ts#L237">ges-1.0/ges-1.0.d.ts:237</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="ripple"><span>RIPPLE</span><a href="#ripple" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">RIPPLE</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">RIPPLE</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">1</span></div>
 <div class="tsd-comment tsd-typography"><p>The element is edited in ripple mode: moving
 itself as well as later elements, keeping their relative times. This
 edits the element the same as #GES_EDIT_MODE_NORMAL. In addition, if
@@ -274,7 +274,7 @@ the same shift in layers as the edited element.</p>
 <li>Defined in <a href="https://github.com/gjsify/types/blob/main/ges-1.0.d.ts#L267">ges-1.0/ges-1.0.d.ts:267</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="roll"><span>ROLL</span><a href="#roll" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">ROLL</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">ROLL</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">2</span></div>
 <div class="tsd-comment tsd-typography"><p>The element is edited in roll mode: swapping its
 content for its neighbour's, or vis versa, in the timeline output.
 This edits the element the same as #GES_EDIT_MODE_TRIM. In addition,
@@ -296,7 +296,7 @@ layers under this mode.</p>
 <li>Defined in <a href="https://github.com/gjsify/types/blob/main/ges-1.0.d.ts#L305">ges-1.0/ges-1.0.d.ts:305</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="slide"><span>SLIDE</span><a href="#slide" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">SLIDE</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">SLIDE</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">4</span></div>
 <div class="tsd-comment tsd-typography"><p>The element is edited in slide mode (not yet
 implemented): moving the element replacing or consuming content on
 each end. When acting on the element as a whole, this will MOVE the
@@ -313,7 +313,7 @@ not shift layers under this mode.</p>
 <li>Defined in <a href="https://github.com/gjsify/types/blob/main/ges-1.0.d.ts#L347">ges-1.0/ges-1.0.d.ts:347</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="trim"><span>TRIM</span><a href="#trim" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">TRIM</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">TRIM</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">3</span></div>
 <div class="tsd-comment tsd-typography"><p>The element is edited in trim mode. When acting
 on the start of the element, this will START-TRIM it. When acting on
 the end of the element, this will END-TRIM it. Acting on the element

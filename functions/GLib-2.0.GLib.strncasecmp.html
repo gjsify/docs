@@ -28,7 +28,7 @@
 <li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div>
 <div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
 <div class="gi-docgen-generator">
-<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.4.0</p></div></nav>
+<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.5.0</p></div></nav>
 <section id="gi-docgen-main">
 <div class="gi-docgen-content">
 <div class="gi-docgen-page-title"><span class="gi-docgen-object-type">Function</span>
@@ -62,6 +62,6 @@ the strings.</p>
 <h4 class="tsd-anchor-link" id="deprecated">Deprecated<a href="#deprecated" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>since 2.2: The problem with <code>g_strncasecmp()</code> is that it does   the comparison by calling <code>toupper()</code>/<code>tolower()</code>. These functions   are locale-specific and operate on single bytes. However, it is   impossible to handle things correctly from an internationalization   standpoint by operating on bytes, since characters may be multibyte.   Thus <code>g_strncasecmp()</code> is broken if your string is guaranteed to be   ASCII, since it is locale-sensitive, and it's broken if your string   is localized, since it doesn't work on many encodings at all,   including UTF-8, EUC-JP, etc.   There are therefore two replacement techniques: <a href="GLib-2.0.GLib.ascii_strncasecmp.html" class="tsd-kind-function">GLib.ascii_strncasecmp</a>,   which only works on ASCII and is not locale-sensitive, and   <a href="GLib-2.0.GLib.utf8_casefold.html" class="tsd-kind-function">GLib.utf8_casefold</a> followed by <code>strcmp()</code> on the resulting strings,   which is good for case-insensitive sorting of UTF-8.</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L12222">glib-2.0/glib-2.0.d.ts:12222</a></li></ul></aside></div></li></ul></section></div></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L12496">glib-2.0/glib-2.0.d.ts:12496</a></li></ul></aside></div></li></ul></section></div></section>
 <nav id="gi-docgen-toc"></nav></div>
 <div class="overlay"></div></body></html>

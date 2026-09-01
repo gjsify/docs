@@ -34,7 +34,7 @@
 <li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div>
 <div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
 <div class="gi-docgen-generator">
-<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.4.0</p></div></nav>
+<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.5.0</p></div></nav>
 <section id="gi-docgen-main">
 <div class="gi-docgen-content">
 <div class="gi-docgen-page-title"><span class="gi-docgen-object-type">Class (GI Struct)</span>
@@ -52,10 +52,10 @@ set a required type.</p>
 <a href="../types/GObject-2.0.GObject.Type.html" class="tsd-kind-type-alias">GObject.Type</a> that implements the functionality. Additionally, each
 implementation of an extension point has a name, and a priority. Use
 <a href="#implement" class="tsd-kind-method">Gio.IOExtensionPoint.implement</a> to implement an extension point.</p>
-<pre><code class="c"><span class="hl-1">GIOExtensionPoint *ep;</span><br/><br/><span class="hl-10">// Register an extension point</span><br/><span class="hl-1">ep = </span><span class="hl-0">g_io_extension_point_register</span><span class="hl-1"> (</span><span class="hl-2">&quot;my-extension-point&quot;</span><span class="hl-1">);</span><br/><span class="hl-0">g_io_extension_point_set_required_type</span><span class="hl-1"> (ep, MY_TYPE_EXAMPLE);</span>
+<pre><code class="c"><span class="hl-1">GIOExtensionPoint *ep;</span><br/><br/><span class="hl-9">// Register an extension point</span><br/><span class="hl-1">ep = </span><span class="hl-0">g_io_extension_point_register</span><span class="hl-1"> (</span><span class="hl-2">&quot;my-extension-point&quot;</span><span class="hl-1">);</span><br/><span class="hl-0">g_io_extension_point_set_required_type</span><span class="hl-1"> (ep, MY_TYPE_EXAMPLE);</span>
 </code><button type="button">Copy</button></pre>
 
-<pre><code class="c"><span class="hl-10">// Implement an extension point</span><br/><span class="hl-0">G_DEFINE_TYPE</span><span class="hl-1"> (MyExampleImpl, my_example_impl, MY_TYPE_EXAMPLE)</span><br/><span class="hl-0">g_io_extension_point_implement</span><span class="hl-1"> (</span><span class="hl-2">&quot;my-extension-point&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">                                </span><span class="hl-0">my_example_impl_get_type</span><span class="hl-1"> (),</span><br/><span class="hl-1">                                </span><span class="hl-2">&quot;my-example&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">                                </span><span class="hl-9">10</span><span class="hl-1">);</span>
+<pre><code class="c"><span class="hl-9">// Implement an extension point</span><br/><span class="hl-0">G_DEFINE_TYPE</span><span class="hl-1"> (MyExampleImpl, my_example_impl, MY_TYPE_EXAMPLE)</span><br/><span class="hl-0">g_io_extension_point_implement</span><span class="hl-1"> (</span><span class="hl-2">&quot;my-extension-point&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">                                </span><span class="hl-0">my_example_impl_get_type</span><span class="hl-1"> (),</span><br/><span class="hl-1">                                </span><span class="hl-2">&quot;my-example&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">                                </span><span class="hl-8">10</span><span class="hl-1">);</span>
 </code><button type="button">Copy</button></pre>
 
 <p>It is up to the code that registered the extension point how
@@ -77,7 +77,7 @@ directories are specified GIO will load modules from the built-in
 directory last.</p>
 </div></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gio-2.0.d.ts#L48770">gio-2.0/gio-2.0.d.ts:48770</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gio-2.0.d.ts#L49196">gio-2.0/gio-2.0.d.ts:49196</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-accordion" open><summary class="tsd-accordion-summary tsd-index-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
@@ -118,7 +118,7 @@ directory last.</p>
 <h3 class="tsd-anchor-link" id="gtype"><code class="tsd-tag">Static</code><span>$gtype</span><a href="#gtype" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">$gtype</span><span class="tsd-signature-symbol">:</span> <a href="../types/GObject-2.0.GObject.GType.html" class="tsd-signature-type tsd-kind-type-alias">GType</a><span class="tsd-signature-symbol">&lt;</span><a href="" class="tsd-signature-type tsd-kind-class">IOExtensionPoint</a><span class="tsd-signature-symbol">&gt;</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gio-2.0.d.ts#L48771">gio-2.0/gio-2.0.d.ts:48771</a></li></ul></aside></section></section></details>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gio-2.0.d.ts#L49197">gio-2.0/gio-2.0.d.ts:49197</a></li></ul></aside></section></section></details>
 <details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Methods"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
 <h2 class="tsd-anchor-link" id="methods-1">Methods<a href="#methods-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2></summary>
 <section>
@@ -139,7 +139,7 @@ directory last.</p>
 <h4 class="tsd-returns-title">Returns <a href="Gio-2.0.Gio.IOExtension.html" class="tsd-signature-type tsd-kind-class">IOExtension</a></h4><p>the <a href="Gio-2.0.Gio.IOExtension.html" class="tsd-kind-class">Gio.IOExtension</a> for <code>extension_point</code> that has the    given name, or <code>null</code> if there is no extension with that name</p>
 <aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gio-2.0.d.ts#L48805">gio-2.0/gio-2.0.d.ts:48805</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gio-2.0.d.ts#L49231">gio-2.0/gio-2.0.d.ts:49231</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_extensions"><span>get_<wbr/>extensions</span><a href="#get_extensions" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -152,7 +152,7 @@ The list is sorted by priority, beginning with the highest priority.</p>
 <h4 class="tsd-returns-title">Returns <a href="Gio-2.0.Gio.IOExtension.html" class="tsd-signature-type tsd-kind-class">IOExtension</a><span class="tsd-signature-symbol">[]</span></h4><p>a <a href="GLib-2.0.GLib.List.html" class="tsd-kind-class">GLib.List</a> of     <code>GIOExtensions</code>. The list is owned by GIO and should not be     modified.</p>
 <aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gio-2.0.d.ts#L48812">gio-2.0/gio-2.0.d.ts:48812</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gio-2.0.d.ts#L49238">gio-2.0/gio-2.0.d.ts:49238</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_required_type"><span>get_<wbr/>required_<wbr/>type</span><a href="#get_required_type" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -164,7 +164,7 @@ The list is sorted by priority, beginning with the highest priority.</p>
 <h4 class="tsd-returns-title">Returns <a href="../types/GObject-2.0.GObject.GType.html" class="tsd-signature-type tsd-kind-type-alias">GType</a></h4><p>the <a href="../types/GObject-2.0.GObject.GType.html" class="tsd-kind-type-alias">GObject.GType</a> that all implementations must have,   or <code>G_TYPE_INVALID</code> if the extension point has no required type</p>
 <aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gio-2.0.d.ts#L48818">gio-2.0/gio-2.0.d.ts:48818</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gio-2.0.d.ts#L49244">gio-2.0/gio-2.0.d.ts:49244</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="set_required_type"><span>set_<wbr/>required_<wbr/>type</span><a href="#set_required_type" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -182,7 +182,7 @@ All implementations must henceforth have this type.</p>
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gio-2.0.d.ts#L48825">gio-2.0/gio-2.0.d.ts:48825</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gio-2.0.d.ts#L49251">gio-2.0/gio-2.0.d.ts:49251</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="implement"><code class="tsd-tag">Static</code><span>implement</span><a href="#implement" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -211,7 +211,7 @@ extension point, the existing <a href="Gio-2.0.Gio.IOExtension.html" class="tsd-
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="Gio-2.0.Gio.IOExtension.html" class="tsd-signature-type tsd-kind-class">IOExtension</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gio-2.0.d.ts#L48785">gio-2.0/gio-2.0.d.ts:48785</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gio-2.0.d.ts#L49211">gio-2.0/gio-2.0.d.ts:49211</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="lookup"><code class="tsd-tag">Static</code><span>lookup</span><a href="#lookup" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -228,7 +228,7 @@ extension point, the existing <a href="Gio-2.0.Gio.IOExtension.html" class="tsd-
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="" class="tsd-signature-type tsd-kind-class">IOExtensionPoint</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gio-2.0.d.ts#L48791">gio-2.0/gio-2.0.d.ts:48791</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gio-2.0.d.ts#L49217">gio-2.0/gio-2.0.d.ts:49217</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="register"><code class="tsd-tag">Static</code><span>register</span><a href="#register" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -245,7 +245,7 @@ extension point, the existing <a href="Gio-2.0.Gio.IOExtension.html" class="tsd-
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="" class="tsd-signature-type tsd-kind-class">IOExtensionPoint</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gio-2.0.d.ts#L48797">gio-2.0/gio-2.0.d.ts:48797</a></li></ul></aside></div></li></ul></section></section></details></div></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gio-2.0.d.ts#L49223">gio-2.0/gio-2.0.d.ts:49223</a></li></ul></aside></div></li></ul></section></section></details></div></section>
 <nav id="gi-docgen-toc">
 <div class="tsd-page-navigation">
 <h3>Content</h3>

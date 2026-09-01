@@ -34,7 +34,7 @@
 <li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div>
 <div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
 <div class="gi-docgen-generator">
-<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.4.0</p></div></nav>
+<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.5.0</p></div></nav>
 <section id="gi-docgen-main">
 <div class="gi-docgen-content">
 <div class="gi-docgen-page-title"><span class="gi-docgen-object-type">Class (GI Class)</span>
@@ -61,7 +61,7 @@ a <code>&lt;mime-type&gt;</code> or <code>&lt;pattern&gt;</code> has the same ef
 <code>gtk_file_filter_add_mime_type()</code> or <code>gtk_file_filter_add_pattern()</code>.</p>
 <p>An example of a UI definition fragment specifying GtkFileFilter
 rules:</p>
-<pre><code class="xml"><span class="hl-11">&lt;</span><span class="hl-12">object</span><span class="hl-1"> </span><span class="hl-13">class</span><span class="hl-1">=</span><span class="hl-14">&quot;GtkFileFilter&quot;</span><span class="hl-11">&gt;</span><br/><span class="hl-1">  </span><span class="hl-11">&lt;</span><span class="hl-12">mime-types</span><span class="hl-11">&gt;</span><br/><span class="hl-1">    </span><span class="hl-11">&lt;</span><span class="hl-12">mime-type</span><span class="hl-11">&gt;</span><span class="hl-1">text/plain</span><span class="hl-11">&lt;/</span><span class="hl-12">mime-type</span><span class="hl-11">&gt;</span><br/><span class="hl-1">    </span><span class="hl-11">&lt;</span><span class="hl-12">mime-type</span><span class="hl-11">&gt;</span><span class="hl-1">image/ *</span><span class="hl-11">&lt;/</span><span class="hl-12">mime-type</span><span class="hl-11">&gt;</span><br/><span class="hl-1">  </span><span class="hl-11">&lt;/</span><span class="hl-12">mime-types</span><span class="hl-11">&gt;</span><br/><span class="hl-1">  </span><span class="hl-11">&lt;</span><span class="hl-12">patterns</span><span class="hl-11">&gt;</span><br/><span class="hl-1">    </span><span class="hl-11">&lt;</span><span class="hl-12">pattern</span><span class="hl-11">&gt;</span><span class="hl-1">*.txt</span><span class="hl-11">&lt;/</span><span class="hl-12">pattern</span><span class="hl-11">&gt;</span><br/><span class="hl-1">    </span><span class="hl-11">&lt;</span><span class="hl-12">pattern</span><span class="hl-11">&gt;</span><span class="hl-1">*.png</span><span class="hl-11">&lt;/</span><span class="hl-12">pattern</span><span class="hl-11">&gt;</span><br/><span class="hl-1">  </span><span class="hl-11">&lt;/</span><span class="hl-12">patterns</span><span class="hl-11">&gt;</span><br/><span class="hl-11">&lt;/</span><span class="hl-12">object</span><span class="hl-11">&gt;</span>
+<pre><code class="xml"><span class="hl-10">&lt;</span><span class="hl-11">object</span><span class="hl-1"> </span><span class="hl-12">class</span><span class="hl-1">=</span><span class="hl-13">&quot;GtkFileFilter&quot;</span><span class="hl-10">&gt;</span><br/><span class="hl-1">  </span><span class="hl-10">&lt;</span><span class="hl-11">mime-types</span><span class="hl-10">&gt;</span><br/><span class="hl-1">    </span><span class="hl-10">&lt;</span><span class="hl-11">mime-type</span><span class="hl-10">&gt;</span><span class="hl-1">text/plain</span><span class="hl-10">&lt;/</span><span class="hl-11">mime-type</span><span class="hl-10">&gt;</span><br/><span class="hl-1">    </span><span class="hl-10">&lt;</span><span class="hl-11">mime-type</span><span class="hl-10">&gt;</span><span class="hl-1">image/ *</span><span class="hl-10">&lt;/</span><span class="hl-11">mime-type</span><span class="hl-10">&gt;</span><br/><span class="hl-1">  </span><span class="hl-10">&lt;/</span><span class="hl-11">mime-types</span><span class="hl-10">&gt;</span><br/><span class="hl-1">  </span><span class="hl-10">&lt;</span><span class="hl-11">patterns</span><span class="hl-10">&gt;</span><br/><span class="hl-1">    </span><span class="hl-10">&lt;</span><span class="hl-11">pattern</span><span class="hl-10">&gt;</span><span class="hl-1">*.txt</span><span class="hl-10">&lt;/</span><span class="hl-11">pattern</span><span class="hl-10">&gt;</span><br/><span class="hl-1">    </span><span class="hl-10">&lt;</span><span class="hl-11">pattern</span><span class="hl-10">&gt;</span><span class="hl-1">*.png</span><span class="hl-10">&lt;/</span><span class="hl-11">pattern</span><span class="hl-10">&gt;</span><br/><span class="hl-1">  </span><span class="hl-10">&lt;/</span><span class="hl-11">patterns</span><span class="hl-10">&gt;</span><br/><span class="hl-10">&lt;/</span><span class="hl-11">object</span><span class="hl-10">&gt;</span>
 </code><button type="button">Copy</button></pre>
 
 </div></section>
@@ -76,8 +76,8 @@ rules:</p>
 <ul class="tsd-hierarchy">
 <li><a href="../modules/Gtk-3.0.Gtk.html" class="tsd-signature-type tsd-kind-namespace">Gtk</a><span class="tsd-signature-symbol">.</span><a href="../interfaces/Gtk-3.0.Gtk.Buildable.html" class="tsd-signature-type tsd-kind-interface">Buildable</a></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49479">gtk-3.0/gtk-3.0.d.ts:49479</a></li>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49531">gtk-3.0/gtk-3.0.d.ts:49531</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49842">gtk-3.0/gtk-3.0.d.ts:49842</a></li>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49894">gtk-3.0/gtk-3.0.d.ts:49894</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-accordion" open><summary class="tsd-accordion-summary tsd-index-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
@@ -192,7 +192,7 @@ rules:</p>
 <h4 class="tsd-returns-title">Returns <a href="../modules/Gtk-3.0.Gtk.html" class="tsd-signature-type tsd-kind-namespace">Gtk</a><span class="tsd-signature-symbol">.</span><a href="" class="tsd-signature-type tsd-kind-class">FileFilter</a></h4><aside class="tsd-sources">
 <p>Overrides <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#constructor">constructor</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49544">gtk-3.0/gtk-3.0.d.ts:49544</a></li></ul></aside></div></li></ul></section></section></details>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49907">gtk-3.0/gtk-3.0.d.ts:49907</a></li></ul></aside></div></li></ul></section></section></details>
 <details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Properties"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
 <h2 class="tsd-anchor-link" id="properties-1">Properties<a href="#properties-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2></summary>
 <section>
@@ -206,13 +206,13 @@ It is not defined at runtime and should not be accessed in JS code.</p>
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#signals">$signals</a></p>
 <p>Overrides <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#signals">$signals</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49541">gtk-3.0/gtk-3.0.d.ts:49541</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49904">gtk-3.0/gtk-3.0.d.ts:49904</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="gtype"><code class="tsd-tag">Static</code><span>$gtype</span><a href="#gtype" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">$gtype</span><span class="tsd-signature-symbol">:</span> <a href="../types/GObject-2.0.GObject.GType.html" class="tsd-signature-type tsd-kind-type-alias">GType</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/Gtk-3.0.Gtk.html" class="tsd-signature-type tsd-kind-namespace">Gtk</a><span class="tsd-signature-symbol">.</span><a href="" class="tsd-signature-type tsd-kind-class">FileFilter</a><span class="tsd-signature-symbol">&gt;</span></div><aside class="tsd-sources">
 <p>Overrides <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#gtype">$gtype</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49532">gtk-3.0/gtk-3.0.d.ts:49532</a></li></ul></aside></section></section></details>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49895">gtk-3.0/gtk-3.0.d.ts:49895</a></li></ul></aside></section></section></details>
 <details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Methods"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
 <h2 class="tsd-anchor-link" id="methods-1">Methods<a href="#methods-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2></summary>
 <section>
@@ -230,7 +230,7 @@ It is not defined at runtime and should not be accessed in JS code.</p>
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#_init">_init</a></p>
 <p>Overrides <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#_init">_init</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49546">gtk-3.0/gtk-3.0.d.ts:49546</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49909">gtk-3.0/gtk-3.0.d.ts:49909</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="add_child"><span>add_<wbr/>child</span><a href="#add_child" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -259,7 +259,7 @@ describing how the child should be added.</p>
 </div></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#add_child">add_child</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49668">gtk-3.0/gtk-3.0.d.ts:49668</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L50031">gtk-3.0/gtk-3.0.d.ts:50031</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="add_custom"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>add_<wbr/>custom</span><a href="#add_custom" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -287,7 +287,7 @@ it isn’t needed by the filter.</p>
 <h4 class="tsd-anchor-link" id="since-1">Since<a href="#since-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49576">gtk-3.0/gtk-3.0.d.ts:49576</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49939">gtk-3.0/gtk-3.0.d.ts:49939</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="add_mime_type"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>add_<wbr/>mime_<wbr/>type</span><a href="#add_mime_type" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -308,7 +308,7 @@ it isn’t needed by the filter.</p>
 <h4 class="tsd-anchor-link" id="since-2">Since<a href="#since-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49583">gtk-3.0/gtk-3.0.d.ts:49583</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49946">gtk-3.0/gtk-3.0.d.ts:49946</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="add_pattern"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>add_<wbr/>pattern</span><a href="#add_pattern" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -329,7 +329,7 @@ it isn’t needed by the filter.</p>
 <h4 class="tsd-anchor-link" id="since-3">Since<a href="#since-3" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49590">gtk-3.0/gtk-3.0.d.ts:49590</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49953">gtk-3.0/gtk-3.0.d.ts:49953</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="add_pixbuf_formats"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.6</code><span>add_<wbr/>pixbuf_<wbr/>formats</span><a href="#add_pixbuf_formats" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -345,7 +345,7 @@ by GdkPixbuf.</p>
 <h4 class="tsd-anchor-link" id="since-4">Since<a href="#since-4" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.6</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49597">gtk-3.0/gtk-3.0.d.ts:49597</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49960">gtk-3.0/gtk-3.0.d.ts:49960</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="connect"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-signal">Signal</code><span>connect</span><a href="#connect" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -365,7 +365,7 @@ by GdkPixbuf.</p>
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#connect">connect</a></p>
 <p>Overrides <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#connect">connect</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49554">gtk-3.0/gtk-3.0.d.ts:49554</a></li></ul></aside></div></li>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49917">gtk-3.0/gtk-3.0.d.ts:49917</a></li></ul></aside></div></li>
 <li class="">
 <div class="tsd-signature tsd-anchor-link" id="connect-2"><span class="tsd-kind-call-signature">connect</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">signal</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">,</span> <span class="tsd-kind-parameter">callback</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span><span class="tsd-kind-parameter">args</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span> <span class="tsd-signature-symbol">=&gt;</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><a href="#connect-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div>
 <div class="tsd-description">
@@ -378,7 +378,7 @@ by GdkPixbuf.</p>
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#connect">connect</a></p>
 <p>Overrides <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#connect">connect</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49555">gtk-3.0/gtk-3.0.d.ts:49555</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49918">gtk-3.0/gtk-3.0.d.ts:49918</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="connect_after"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-signal">Signal</code><span>connect_<wbr/>after</span><a href="#connect_after" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -398,7 +398,7 @@ by GdkPixbuf.</p>
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#connect_after">connect_after</a></p>
 <p>Overrides <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#connect_after">connect_after</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49558">gtk-3.0/gtk-3.0.d.ts:49558</a></li></ul></aside></div></li>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49921">gtk-3.0/gtk-3.0.d.ts:49921</a></li></ul></aside></div></li>
 <li class="">
 <div class="tsd-signature tsd-anchor-link" id="connect_after-2"><span class="tsd-kind-call-signature">connect_after</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">signal</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">,</span> <span class="tsd-kind-parameter">callback</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span><span class="tsd-kind-parameter">args</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span> <span class="tsd-signature-symbol">=&gt;</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><a href="#connect_after-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div>
 <div class="tsd-description">
@@ -411,7 +411,7 @@ by GdkPixbuf.</p>
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#connect_after">connect_after</a></p>
 <p>Overrides <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#connect_after">connect_after</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49559">gtk-3.0/gtk-3.0.d.ts:49559</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49922">gtk-3.0/gtk-3.0.d.ts:49922</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="construct_child"><span>construct_<wbr/>child</span><a href="#construct_child" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -443,7 +443,7 @@ specified in the UI definition.</p>
 </div></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#construct_child">construct_child</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49680">gtk-3.0/gtk-3.0.d.ts:49680</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L50043">gtk-3.0/gtk-3.0.d.ts:50043</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="custom_finished"><span>custom_<wbr/>finished</span><a href="#custom_finished" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -475,7 +475,7 @@ called once for each custom tag handled by the <code>buildable</code>.</p>
 </div></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#custom_finished">custom_finished</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49691">gtk-3.0/gtk-3.0.d.ts:49691</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L50054">gtk-3.0/gtk-3.0.d.ts:50054</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="custom_tag_end"><span>custom_<wbr/>tag_<wbr/>end</span><a href="#custom_tag_end" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -507,7 +507,7 @@ the buildable.</p>
 </div></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#custom_tag_end">custom_tag_end</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49702">gtk-3.0/gtk-3.0.d.ts:49702</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L50065">gtk-3.0/gtk-3.0.d.ts:50065</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="custom_tag_start"><span>custom_<wbr/>tag_<wbr/>start</span><a href="#custom_tag_start" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -536,7 +536,7 @@ the buildable.</p>
 </div></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#custom_tag_start">custom_tag_start</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49712">gtk-3.0/gtk-3.0.d.ts:49712</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L50075">gtk-3.0/gtk-3.0.d.ts:50075</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="emit"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-signal">Signal</code><span>emit</span><a href="#emit" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -556,7 +556,7 @@ the buildable.</p>
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#emit">emit</a></p>
 <p>Overrides <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#emit">emit</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49562">gtk-3.0/gtk-3.0.d.ts:49562</a></li></ul></aside></div></li>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49925">gtk-3.0/gtk-3.0.d.ts:49925</a></li></ul></aside></div></li>
 <li class="">
 <div class="tsd-signature tsd-anchor-link" id="emit-2"><span class="tsd-kind-call-signature">emit</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">signal</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">,</span> <span class="tsd-signature-symbol">...</span><span class="tsd-kind-parameter">args</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span><a href="#emit-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div>
 <div class="tsd-description">
@@ -569,7 +569,7 @@ the buildable.</p>
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#emit">emit</a></p>
 <p>Overrides <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#emit">emit</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49563">gtk-3.0/gtk-3.0.d.ts:49563</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49926">gtk-3.0/gtk-3.0.d.ts:49926</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="filter"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>filter</span><a href="#filter" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -596,7 +596,7 @@ is intended principally for use in the implementation of
 <h4 class="tsd-anchor-link" id="since-9">Since<a href="#since-9" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49611">gtk-3.0/gtk-3.0.d.ts:49611</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49974">gtk-3.0/gtk-3.0.d.ts:49974</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_internal_child"><span>get_<wbr/>internal_<wbr/>child</span><a href="#get_internal_child" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -626,7 +626,7 @@ is intended principally for use in the implementation of
 </div></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#get_internal_child">get_internal_child</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49721">gtk-3.0/gtk-3.0.d.ts:49721</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L50084">gtk-3.0/gtk-3.0.d.ts:50084</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_name"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>get_<wbr/>name</span><a href="#get_name" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -643,7 +643,7 @@ is intended principally for use in the implementation of
 </div></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#get_name">get_name</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49618">gtk-3.0/gtk-3.0.d.ts:49618</a></li></ul></aside></div></li>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49981">gtk-3.0/gtk-3.0.d.ts:49981</a></li></ul></aside></div></li>
 <li class="">
 <div class="tsd-signature tsd-anchor-link" id="get_name-2"><span class="tsd-kind-call-signature">get_name</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span><span class="tsd-kind-parameter">args</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><a href="#get_name-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div>
 <div class="tsd-description">
@@ -654,7 +654,7 @@ is intended principally for use in the implementation of
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4><aside class="tsd-sources">
 <p>Implementation of Buildable.get_name</p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49624">gtk-3.0/gtk-3.0.d.ts:49624</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49987">gtk-3.0/gtk-3.0.d.ts:49987</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_needed"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>get_<wbr/>needed</span><a href="#get_needed" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -674,7 +674,7 @@ is intended principally for use in the implementation of
 <h4 class="tsd-anchor-link" id="since-12">Since<a href="#since-12" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.4</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49636">gtk-3.0/gtk-3.0.d.ts:49636</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49999">gtk-3.0/gtk-3.0.d.ts:49999</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="parser_finished"><span>parser_<wbr/>finished</span><a href="#parser_finished" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -700,7 +700,7 @@ is called on a builder.</p>
 </div></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#parser_finished">parser_finished</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49732">gtk-3.0/gtk-3.0.d.ts:49732</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L50095">gtk-3.0/gtk-3.0.d.ts:50095</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="set_buildable_property"><span>set_<wbr/>buildable_<wbr/>property</span><a href="#set_buildable_property" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -728,7 +728,7 @@ is called on a builder.</p>
 </div></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#set_buildable_property">set_buildable_property</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49741">gtk-3.0/gtk-3.0.d.ts:49741</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L50104">gtk-3.0/gtk-3.0.d.ts:50104</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="set_name"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.4</code><span>set_<wbr/>name</span><a href="#set_name" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -752,7 +752,7 @@ there is a selectable list of filters.</p>
 </div></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#set_name">set_name</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49645">gtk-3.0/gtk-3.0.d.ts:49645</a></li></ul></aside></div></li>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L50008">gtk-3.0/gtk-3.0.d.ts:50008</a></li></ul></aside></div></li>
 <li class="">
 <div class="tsd-signature tsd-anchor-link" id="set_name-2"><span class="tsd-kind-call-signature">set_name</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span><span class="tsd-kind-parameter">args</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><a href="#set_name-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></div>
 <div class="tsd-description">
@@ -763,7 +763,7 @@ there is a selectable list of filters.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4><aside class="tsd-sources">
 <p>Implementation of Buildable.set_name</p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49651">gtk-3.0/gtk-3.0.d.ts:49651</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L50014">gtk-3.0/gtk-3.0.d.ts:50014</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="to_gvariant"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 3.22</code><span>to_<wbr/>gvariant</span><a href="#to_gvariant" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -779,7 +779,7 @@ there is a selectable list of filters.</p>
 <h4 class="tsd-anchor-link" id="since-16">Since<a href="#since-16" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>3.22</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49658">gtk-3.0/gtk-3.0.d.ts:49658</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L50021">gtk-3.0/gtk-3.0.d.ts:50021</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="vfunc_add_child"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>add_<wbr/>child</span><a href="#vfunc_add_child" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -808,7 +808,7 @@ describing how the child should be added.</p>
 </div></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#vfunc_add_child">vfunc_add_child</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49752">gtk-3.0/gtk-3.0.d.ts:49752</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L50115">gtk-3.0/gtk-3.0.d.ts:50115</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="vfunc_construct_child"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>construct_<wbr/>child</span><a href="#vfunc_construct_child" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -839,7 +839,7 @@ specified in the UI definition.</p>
 </div></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#vfunc_construct_child">vfunc_construct_child</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49764">gtk-3.0/gtk-3.0.d.ts:49764</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L50127">gtk-3.0/gtk-3.0.d.ts:50127</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="vfunc_custom_finished"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>custom_<wbr/>finished</span><a href="#vfunc_custom_finished" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -871,7 +871,7 @@ called once for each custom tag handled by the <code>buildable</code>.</p>
 </div></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#vfunc_custom_finished">vfunc_custom_finished</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49776">gtk-3.0/gtk-3.0.d.ts:49776</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L50139">gtk-3.0/gtk-3.0.d.ts:50139</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="vfunc_custom_tag_end"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>custom_<wbr/>tag_<wbr/>end</span><a href="#vfunc_custom_tag_end" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -903,7 +903,7 @@ the buildable.</p>
 </div></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#vfunc_custom_tag_end">vfunc_custom_tag_end</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49788">gtk-3.0/gtk-3.0.d.ts:49788</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L50151">gtk-3.0/gtk-3.0.d.ts:50151</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="vfunc_custom_tag_start"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>custom_<wbr/>tag_<wbr/>start</span><a href="#vfunc_custom_tag_start" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -931,7 +931,7 @@ the buildable.</p>
 </div></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#vfunc_custom_tag_start">vfunc_custom_tag_start</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49798">gtk-3.0/gtk-3.0.d.ts:49798</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L50161">gtk-3.0/gtk-3.0.d.ts:50161</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="vfunc_get_internal_child"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>get_<wbr/>internal_<wbr/>child</span><a href="#vfunc_get_internal_child" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -960,7 +960,7 @@ the buildable.</p>
 </div></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#vfunc_get_internal_child">vfunc_get_internal_child</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49807">gtk-3.0/gtk-3.0.d.ts:49807</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L50170">gtk-3.0/gtk-3.0.d.ts:50170</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="vfunc_get_name"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>get_<wbr/>name</span><a href="#vfunc_get_name" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -979,7 +979,7 @@ used to construct the <code>buildable</code>.</p>
 </div></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#vfunc_get_name">vfunc_get_name</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49818">gtk-3.0/gtk-3.0.d.ts:49818</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L50181">gtk-3.0/gtk-3.0.d.ts:50181</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="vfunc_parser_finished"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>parser_<wbr/>finished</span><a href="#vfunc_parser_finished" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1005,7 +1005,7 @@ is called on a builder.</p>
 </div></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#vfunc_parser_finished">vfunc_parser_finished</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49830">gtk-3.0/gtk-3.0.d.ts:49830</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L50193">gtk-3.0/gtk-3.0.d.ts:50193</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="vfunc_set_buildable_property"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>set_<wbr/>buildable_<wbr/>property</span><a href="#vfunc_set_buildable_property" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1033,7 +1033,7 @@ is called on a builder.</p>
 </div></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#vfunc_set_buildable_property">vfunc_set_buildable_property</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49840">gtk-3.0/gtk-3.0.d.ts:49840</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L50203">gtk-3.0/gtk-3.0.d.ts:50203</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="vfunc_set_name"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>set_<wbr/>name</span><a href="#vfunc_set_name" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1055,7 +1055,7 @@ is called on a builder.</p>
 </div></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#vfunc_set_name">vfunc_set_name</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49848">gtk-3.0/gtk-3.0.d.ts:49848</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L50211">gtk-3.0/gtk-3.0.d.ts:50211</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="new"><code class="tsd-tag">Static</code><span>new</span><a href="#new" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1064,7 +1064,7 @@ is called on a builder.</p>
 <div class="tsd-description">
 <h4 class="tsd-returns-title">Returns <a href="../modules/Gtk-3.0.Gtk.html" class="tsd-signature-type tsd-kind-namespace">Gtk</a><span class="tsd-signature-symbol">.</span><a href="" class="tsd-signature-type tsd-kind-class">FileFilter</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49548">gtk-3.0/gtk-3.0.d.ts:49548</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49911">gtk-3.0/gtk-3.0.d.ts:49911</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="new_from_gvariant"><code class="tsd-tag">Static</code><span>new_<wbr/>from_<wbr/>gvariant</span><a href="#new_from_gvariant" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1077,7 +1077,7 @@ is called on a builder.</p>
 <li><span><span class="tsd-kind-parameter">variant</span>: <a href="../modules/GLib-2.0.GLib.html" class="tsd-signature-type tsd-kind-namespace">GLib</a><span class="tsd-signature-symbol">.</span><a href="GLib-2.0.GLib.Variant.html" class="tsd-signature-type tsd-kind-class">Variant</a></span></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="../modules/Gtk-3.0.Gtk.html" class="tsd-signature-type tsd-kind-namespace">Gtk</a><span class="tsd-signature-symbol">.</span><a href="" class="tsd-signature-type tsd-kind-class">FileFilter</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49550">gtk-3.0/gtk-3.0.d.ts:49550</a></li></ul></aside></div></li></ul></section></section></details>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L49913">gtk-3.0/gtk-3.0.d.ts:49913</a></li></ul></aside></div></li></ul></section></section></details>
 <details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Methods - Inherited from GObject.InitiallyUnowned"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
 <h2 class="tsd-anchor-link" id="methods-inherited-from-gobjectinitiallyunowned-1">Methods - Inherited from GObject.InitiallyUnowned<a href="#methods-inherited-from-gobjectinitiallyunowned-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2></summary>
 <section>
@@ -1091,7 +1091,7 @@ is called on a builder.</p>
 on <code>target</code>.</p>
 <p>Whenever the <code>source_property</code> is changed the <code>target_property</code> is
 updated using the same value. For instance:</p>
-<pre><code class="c"><span class="hl-1">  </span><span class="hl-0">g_object_bind_property</span><span class="hl-1"> (action, </span><span class="hl-2">&quot;active&quot;</span><span class="hl-1">, widget, </span><span class="hl-2">&quot;sensitive&quot;</span><span class="hl-1">, </span><span class="hl-9">0</span><span class="hl-1">);</span>
+<pre><code class="c"><span class="hl-1">  </span><span class="hl-0">g_object_bind_property</span><span class="hl-1"> (action, </span><span class="hl-2">&quot;active&quot;</span><span class="hl-1">, widget, </span><span class="hl-2">&quot;sensitive&quot;</span><span class="hl-1">, </span><span class="hl-8">0</span><span class="hl-1">);</span>
 </code><button type="button">Copy</button></pre>
 
 <p>Will result in the &quot;sensitive&quot; property of the widget <a href="GObject-2.0.GObject.Object.html" class="tsd-kind-class">GObject.Object</a> instance to be
@@ -1136,7 +1136,7 @@ use <code>g_binding_unbind()</code> instead to be on the safe side.</p>
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#bind_property">bind_property</a></p>
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#bind_property">bind_property</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3887">gobject-2.0/gobject-2.0.d.ts:3887</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3908">gobject-2.0/gobject-2.0.d.ts:3908</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="bind_property_full"><span>bind_<wbr/>property_<wbr/>full</span><a href="#bind_property_full" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1180,7 +1180,7 @@ function pointers.</p>
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#bind_property_full">bind_property_full</a></p>
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#bind_property_full">bind_property_full</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3906">gobject-2.0/gobject-2.0.d.ts:3906</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3927">gobject-2.0/gobject-2.0.d.ts:3927</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="block_signal_handler"><span>block_<wbr/>signal_<wbr/>handler</span><a href="#block_signal_handler" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1199,7 +1199,7 @@ function pointers.</p>
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#block_signal_handler">block_signal_handler</a></p>
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#block_signal_handler">block_signal_handler</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4205">gobject-2.0/gobject-2.0.d.ts:4205</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4226">gobject-2.0/gobject-2.0.d.ts:4226</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="disconnect"><span>disconnect</span><a href="#disconnect" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1218,7 +1218,7 @@ function pointers.</p>
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#disconnect">disconnect</a></p>
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#disconnect">disconnect</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4193">gobject-2.0/gobject-2.0.d.ts:4193</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4214">gobject-2.0/gobject-2.0.d.ts:4214</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="force_floating"><span>force_<wbr/>floating</span><a href="#force_floating" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1238,7 +1238,7 @@ which usually just needs to be sunken by calling <code>g_object_ref_sink()</code
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#force_floating">force_floating</a></p>
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#force_floating">force_floating</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3915">gobject-2.0/gobject-2.0.d.ts:3915</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3936">gobject-2.0/gobject-2.0.d.ts:3936</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="freeze_notify"><span>freeze_<wbr/>notify</span><a href="#freeze_notify" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1258,7 +1258,7 @@ premature notification while the object is still being modified.</p>
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#freeze_notify">freeze_notify</a></p>
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#freeze_notify">freeze_notify</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3928">gobject-2.0/gobject-2.0.d.ts:3928</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3949">gobject-2.0/gobject-2.0.d.ts:3949</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="get_data"><span>get_<wbr/>data</span><a href="#get_data" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1278,7 +1278,7 @@ premature notification while the object is still being modified.</p>
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#get_data">get_data</a></p>
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#get_data">get_data</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3935">gobject-2.0/gobject-2.0.d.ts:3935</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3956">gobject-2.0/gobject-2.0.d.ts:3956</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="get_property"><span>get_<wbr/>property</span><a href="#get_property" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1308,7 +1308,7 @@ premature notification while the object is still being modified.</p>
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#get_property">get_property</a></p>
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#get_property">get_property</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3951">gobject-2.0/gobject-2.0.d.ts:3951</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3972">gobject-2.0/gobject-2.0.d.ts:3972</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="get_qdata"><span>get_<wbr/>qdata</span><a href="#get_qdata" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1329,7 +1329,7 @@ premature notification while the object is still being modified.</p>
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#get_qdata">get_qdata</a></p>
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#get_qdata">get_qdata</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3959">gobject-2.0/gobject-2.0.d.ts:3959</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3980">gobject-2.0/gobject-2.0.d.ts:3980</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="getv"><span>getv</span><a href="#getv" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1358,7 +1358,7 @@ properties are passed in.</p>
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#getv">getv</a></p>
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#getv">getv</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3970">gobject-2.0/gobject-2.0.d.ts:3970</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3991">gobject-2.0/gobject-2.0.d.ts:3991</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="is_floating"><span>is_<wbr/>floating</span><a href="#is_floating" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1376,7 +1376,7 @@ properties are passed in.</p>
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#is_floating">is_floating</a></p>
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#is_floating">is_floating</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3977">gobject-2.0/gobject-2.0.d.ts:3977</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3998">gobject-2.0/gobject-2.0.d.ts:3998</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="notify"><span>notify</span><a href="#notify" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1402,7 +1402,7 @@ called.</p>
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#notify">notify</a></p>
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#notify">notify</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3992">gobject-2.0/gobject-2.0.d.ts:3992</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4013">gobject-2.0/gobject-2.0.d.ts:4013</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="notify_by_pspec"><span>notify_<wbr/>by_<wbr/>pspec</span><a href="#notify_by_pspec" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1416,7 +1416,7 @@ called.</p>
 class that registered the properties, and using <code>g_object_notify_by_pspec()</code>
 instead, is to store the GParamSpec used with
 <code>g_object_class_install_property()</code> inside a static array, e.g.:</p>
-<pre><code class="c"><span class="hl-1">  </span><span class="hl-3">typedef</span><span class="hl-1"> </span><span class="hl-3">enum</span><br/><span class="hl-1">  {</span><br/><span class="hl-1">    PROP_FOO = </span><span class="hl-9">1</span><span class="hl-1">,</span><br/><span class="hl-1">    PROP_LAST</span><br/><span class="hl-1">  } MyObjectProperty;</span><br/><br/><span class="hl-1">  </span><span class="hl-3">static</span><span class="hl-1"> GParamSpec *</span><span class="hl-5">properties</span><span class="hl-1">[PROP_LAST];</span><br/><br/><span class="hl-1">  </span><span class="hl-3">static</span><span class="hl-1"> </span><span class="hl-3">void</span><br/><span class="hl-1">  </span><span class="hl-0">my_object_class_init</span><span class="hl-1"> (MyObjectClass *</span><span class="hl-5">klass</span><span class="hl-1">)</span><br/><span class="hl-1">  {</span><br/><span class="hl-1">    </span><span class="hl-5">properties</span><span class="hl-1">[PROP_FOO] = </span><span class="hl-0">g_param_spec_int</span><span class="hl-1"> (</span><span class="hl-2">&quot;foo&quot;</span><span class="hl-1">, </span><span class="hl-3">NULL</span><span class="hl-1">, </span><span class="hl-3">NULL</span><span class="hl-1">,</span><br/><span class="hl-1">                                             </span><span class="hl-9">0</span><span class="hl-1">, </span><span class="hl-9">100</span><span class="hl-1">,</span><br/><span class="hl-1">                                             </span><span class="hl-9">50</span><span class="hl-1">,</span><br/><span class="hl-1">                                             G_PARAM_READWRITE | G_PARAM_STATIC_STRINGS);</span><br/><span class="hl-1">    </span><span class="hl-0">g_object_class_install_property</span><span class="hl-1"> (gobject_class,</span><br/><span class="hl-1">                                     PROP_FOO,</span><br/><span class="hl-1">                                     </span><span class="hl-5">properties</span><span class="hl-1">[PROP_FOO]);</span><br/><span class="hl-1">  }</span>
+<pre><code class="c"><span class="hl-1">  </span><span class="hl-3">typedef</span><span class="hl-1"> </span><span class="hl-3">enum</span><br/><span class="hl-1">  {</span><br/><span class="hl-1">    PROP_FOO = </span><span class="hl-8">1</span><span class="hl-1">,</span><br/><span class="hl-1">    PROP_LAST</span><br/><span class="hl-1">  } MyObjectProperty;</span><br/><br/><span class="hl-1">  </span><span class="hl-3">static</span><span class="hl-1"> GParamSpec *</span><span class="hl-5">properties</span><span class="hl-1">[PROP_LAST];</span><br/><br/><span class="hl-1">  </span><span class="hl-3">static</span><span class="hl-1"> </span><span class="hl-3">void</span><br/><span class="hl-1">  </span><span class="hl-0">my_object_class_init</span><span class="hl-1"> (MyObjectClass *</span><span class="hl-5">klass</span><span class="hl-1">)</span><br/><span class="hl-1">  {</span><br/><span class="hl-1">    </span><span class="hl-5">properties</span><span class="hl-1">[PROP_FOO] = </span><span class="hl-0">g_param_spec_int</span><span class="hl-1"> (</span><span class="hl-2">&quot;foo&quot;</span><span class="hl-1">, </span><span class="hl-3">NULL</span><span class="hl-1">, </span><span class="hl-3">NULL</span><span class="hl-1">,</span><br/><span class="hl-1">                                             </span><span class="hl-8">0</span><span class="hl-1">, </span><span class="hl-8">100</span><span class="hl-1">,</span><br/><span class="hl-1">                                             </span><span class="hl-8">50</span><span class="hl-1">,</span><br/><span class="hl-1">                                             G_PARAM_READWRITE | G_PARAM_STATIC_STRINGS);</span><br/><span class="hl-1">    </span><span class="hl-0">g_object_class_install_property</span><span class="hl-1"> (gobject_class,</span><br/><span class="hl-1">                                     PROP_FOO,</span><br/><span class="hl-1">                                     </span><span class="hl-5">properties</span><span class="hl-1">[PROP_FOO]);</span><br/><span class="hl-1">  }</span>
 </code><button type="button">Copy</button></pre>
 
 <p>and then notify a change on the &quot;foo&quot; property with:</p>
@@ -1438,7 +1438,7 @@ instead, is to store the GParamSpec used with
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#notify_by_pspec">notify_by_pspec</a></p>
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#notify_by_pspec">notify_by_pspec</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4039">gobject-2.0/gobject-2.0.d.ts:4039</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4060">gobject-2.0/gobject-2.0.d.ts:4060</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="ref"><span>ref</span><a href="#ref" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1456,7 +1456,7 @@ explicit.</p>
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#ref">ref</a></p>
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#ref">ref</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4050">gobject-2.0/gobject-2.0.d.ts:4050</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4071">gobject-2.0/gobject-2.0.d.ts:4071</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="ref_sink"><span>ref_<wbr/>sink</span><a href="#ref_sink" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1482,7 +1482,7 @@ under the same conditions as for <code>g_object_ref()</code>.</p>
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#ref_sink">ref_sink</a></p>
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#ref_sink">ref_sink</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4067">gobject-2.0/gobject-2.0.d.ts:4067</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4088">gobject-2.0/gobject-2.0.d.ts:4088</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="run_dispose"><span>run_<wbr/>dispose</span><a href="#run_dispose" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1497,7 +1497,7 @@ reference cycles.</p>
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#run_dispose">run_dispose</a></p>
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#run_dispose">run_dispose</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4075">gobject-2.0/gobject-2.0.d.ts:4075</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4096">gobject-2.0/gobject-2.0.d.ts:4096</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="set"><span>set</span><a href="#set" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1516,7 +1516,7 @@ reference cycles.</p>
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#set">set</a></p>
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#set">set</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4199">gobject-2.0/gobject-2.0.d.ts:4199</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4220">gobject-2.0/gobject-2.0.d.ts:4220</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="set_data"><span>set_<wbr/>data</span><a href="#set_data" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1545,7 +1545,7 @@ for <code>key</code> in your program, to avoid the <a href="../types/GLib-2.0.GL
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#set_data">set_data</a></p>
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#set_data">set_data</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4091">gobject-2.0/gobject-2.0.d.ts:4091</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4112">gobject-2.0/gobject-2.0.d.ts:4112</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="set_property"><span>set_<wbr/>property</span><a href="#set_property" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1567,7 +1567,7 @@ for <code>key</code> in your program, to avoid the <a href="../types/GLib-2.0.GL
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#set_property">set_property</a></p>
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#set_property">set_property</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4098">gobject-2.0/gobject-2.0.d.ts:4098</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4119">gobject-2.0/gobject-2.0.d.ts:4119</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="steal_data"><span>steal_<wbr/>data</span><a href="#steal_data" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1588,7 +1588,7 @@ without invoking the association's destroy handler.</p>
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#steal_data">steal_data</a></p>
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#steal_data">steal_data</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4106">gobject-2.0/gobject-2.0.d.ts:4106</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4127">gobject-2.0/gobject-2.0.d.ts:4127</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="steal_qdata"><span>steal_<wbr/>qdata</span><a href="#steal_qdata" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1601,7 +1601,7 @@ without invoking its <code>destroy()</code> function (if any was
 set).
 Usually, calling this function is only required to update
 user data pointers with a destroy notifier, for example:</p>
-<pre><code class="c"><span class="hl-3">void</span><br/><span class="hl-0">object_add_to_user_list</span><span class="hl-1"> (GObject     *</span><span class="hl-5">object</span><span class="hl-1">,</span><br/><span class="hl-1">                         </span><span class="hl-3">const</span><span class="hl-1"> gchar *</span><span class="hl-5">new_string</span><span class="hl-1">)</span><br/><span class="hl-1">{</span><br/><span class="hl-1">  </span><span class="hl-10">// the quark, naming the object data</span><br/><span class="hl-1">  GQuark quark_string_list = </span><span class="hl-0">g_quark_from_static_string</span><span class="hl-1"> (</span><span class="hl-2">&quot;my-string-list&quot;</span><span class="hl-1">);</span><br/><span class="hl-1">  </span><span class="hl-10">// retrieve the old string list</span><br/><span class="hl-1">  GList *list = </span><span class="hl-0">g_object_steal_qdata</span><span class="hl-1"> (object, quark_string_list);</span><br/><br/><span class="hl-1">  </span><span class="hl-10">// prepend new string</span><br/><span class="hl-1">  list = </span><span class="hl-0">g_list_prepend</span><span class="hl-1"> (list, </span><span class="hl-0">g_strdup</span><span class="hl-1"> (new_string));</span><br/><span class="hl-1">  </span><span class="hl-10">// this changed &#39;list&#39;, so we need to set it again</span><br/><span class="hl-1">  </span><span class="hl-0">g_object_set_qdata_full</span><span class="hl-1"> (object, quark_string_list, list, free_string_list);</span><br/><span class="hl-1">}</span><br/><span class="hl-3">static</span><span class="hl-1"> </span><span class="hl-3">void</span><br/><span class="hl-0">free_string_list</span><span class="hl-1"> (gpointer </span><span class="hl-5">data</span><span class="hl-1">)</span><br/><span class="hl-1">{</span><br/><span class="hl-1">  GList *node, *list = data;</span><br/><br/><span class="hl-1">  </span><span class="hl-4">for</span><span class="hl-1"> (node = list; node; node = </span><span class="hl-5">node</span><span class="hl-1">-&gt;</span><span class="hl-5">next</span><span class="hl-1">)</span><br/><span class="hl-1">    </span><span class="hl-0">g_free</span><span class="hl-1"> (</span><span class="hl-5">node</span><span class="hl-1">-&gt;</span><span class="hl-5">data</span><span class="hl-1">);</span><br/><span class="hl-1">  </span><span class="hl-0">g_list_free</span><span class="hl-1"> (list);</span><br/><span class="hl-1">}</span>
+<pre><code class="c"><span class="hl-3">void</span><br/><span class="hl-0">object_add_to_user_list</span><span class="hl-1"> (GObject     *</span><span class="hl-5">object</span><span class="hl-1">,</span><br/><span class="hl-1">                         </span><span class="hl-3">const</span><span class="hl-1"> gchar *</span><span class="hl-5">new_string</span><span class="hl-1">)</span><br/><span class="hl-1">{</span><br/><span class="hl-1">  </span><span class="hl-9">// the quark, naming the object data</span><br/><span class="hl-1">  GQuark quark_string_list = </span><span class="hl-0">g_quark_from_static_string</span><span class="hl-1"> (</span><span class="hl-2">&quot;my-string-list&quot;</span><span class="hl-1">);</span><br/><span class="hl-1">  </span><span class="hl-9">// retrieve the old string list</span><br/><span class="hl-1">  GList *list = </span><span class="hl-0">g_object_steal_qdata</span><span class="hl-1"> (object, quark_string_list);</span><br/><br/><span class="hl-1">  </span><span class="hl-9">// prepend new string</span><br/><span class="hl-1">  list = </span><span class="hl-0">g_list_prepend</span><span class="hl-1"> (list, </span><span class="hl-0">g_strdup</span><span class="hl-1"> (new_string));</span><br/><span class="hl-1">  </span><span class="hl-9">// this changed &#39;list&#39;, so we need to set it again</span><br/><span class="hl-1">  </span><span class="hl-0">g_object_set_qdata_full</span><span class="hl-1"> (object, quark_string_list, list, free_string_list);</span><br/><span class="hl-1">}</span><br/><span class="hl-3">static</span><span class="hl-1"> </span><span class="hl-3">void</span><br/><span class="hl-0">free_string_list</span><span class="hl-1"> (gpointer </span><span class="hl-5">data</span><span class="hl-1">)</span><br/><span class="hl-1">{</span><br/><span class="hl-1">  GList *node, *list = data;</span><br/><br/><span class="hl-1">  </span><span class="hl-4">for</span><span class="hl-1"> (node = list; node; node = </span><span class="hl-5">node</span><span class="hl-1">-&gt;</span><span class="hl-5">next</span><span class="hl-1">)</span><br/><span class="hl-1">    </span><span class="hl-0">g_free</span><span class="hl-1"> (</span><span class="hl-5">node</span><span class="hl-1">-&gt;</span><span class="hl-5">data</span><span class="hl-1">);</span><br/><span class="hl-1">  </span><span class="hl-0">g_list_free</span><span class="hl-1"> (list);</span><br/><span class="hl-1">}</span>
 </code><button type="button">Copy</button></pre>
 
 <p>Using <code>g_object_get_qdata()</code> in the above example, instead of
@@ -1620,7 +1620,7 @@ and thus the partial string list would have been freed upon
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#steal_qdata">steal_qdata</a></p>
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#steal_qdata">steal_qdata</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4149">gobject-2.0/gobject-2.0.d.ts:4149</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4170">gobject-2.0/gobject-2.0.d.ts:4170</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="stop_emission_by_name"><span>stop_<wbr/>emission_<wbr/>by_<wbr/>name</span><a href="#stop_emission_by_name" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1639,7 +1639,7 @@ and thus the partial string list would have been freed upon
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#stop_emission_by_name">stop_emission_by_name</a></p>
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#stop_emission_by_name">stop_emission_by_name</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4217">gobject-2.0/gobject-2.0.d.ts:4217</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4238">gobject-2.0/gobject-2.0.d.ts:4238</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="thaw_notify"><span>thaw_<wbr/>notify</span><a href="#thaw_notify" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1658,7 +1658,7 @@ in which they have been queued.</p>
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#thaw_notify">thaw_notify</a></p>
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#thaw_notify">thaw_notify</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4162">gobject-2.0/gobject-2.0.d.ts:4162</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4183">gobject-2.0/gobject-2.0.d.ts:4183</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="unblock_signal_handler"><span>unblock_<wbr/>signal_<wbr/>handler</span><a href="#unblock_signal_handler" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1677,7 +1677,7 @@ in which they have been queued.</p>
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#unblock_signal_handler">unblock_signal_handler</a></p>
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#unblock_signal_handler">unblock_signal_handler</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4211">gobject-2.0/gobject-2.0.d.ts:4211</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4232">gobject-2.0/gobject-2.0.d.ts:4232</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="unref"><span>unref</span><a href="#unref" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1695,7 +1695,7 @@ invalid <a href="GObject-2.0.GObject.Object.html" class="tsd-kind-class">GObject
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#unref">unref</a></p>
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#unref">unref</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4173">gobject-2.0/gobject-2.0.d.ts:4173</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4194">gobject-2.0/gobject-2.0.d.ts:4194</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="vfunc_constructed"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>constructed</span><a href="#vfunc_constructed" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1714,7 +1714,7 @@ to complete its initialisation.</p>
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#vfunc_constructed">vfunc_constructed</a></p>
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#vfunc_constructed">vfunc_constructed</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3776">gobject-2.0/gobject-2.0.d.ts:3776</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3797">gobject-2.0/gobject-2.0.d.ts:3797</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="vfunc_dispatch_properties_changed"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>dispatch_<wbr/>properties_<wbr/>changed</span><a href="#vfunc_dispatch_properties_changed" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1734,7 +1734,7 @@ needed.</p>
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#vfunc_dispatch_properties_changed">vfunc_dispatch_properties_changed</a></p>
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#vfunc_dispatch_properties_changed">vfunc_dispatch_properties_changed</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3786">gobject-2.0/gobject-2.0.d.ts:3786</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3807">gobject-2.0/gobject-2.0.d.ts:3807</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="vfunc_dispose"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>dispose</span><a href="#vfunc_dispose" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1751,7 +1751,7 @@ of the parent class.</p>
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#vfunc_dispose">vfunc_dispose</a></p>
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#vfunc_dispose">vfunc_dispose</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3796">gobject-2.0/gobject-2.0.d.ts:3796</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3817">gobject-2.0/gobject-2.0.d.ts:3817</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="vfunc_finalize"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>finalize</span><a href="#vfunc_finalize" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1766,7 +1766,7 @@ parent class.</p>
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#vfunc_finalize">vfunc_finalize</a></p>
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#vfunc_finalize">vfunc_finalize</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3804">gobject-2.0/gobject-2.0.d.ts:3804</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3825">gobject-2.0/gobject-2.0.d.ts:3825</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="vfunc_get_property"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>get_<wbr/>property</span><a href="#vfunc_get_property" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1786,7 +1786,7 @@ overridden for every type with properties.</p>
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#vfunc_get_property">vfunc_get_property</a></p>
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#vfunc_get_property">vfunc_get_property</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3814">gobject-2.0/gobject-2.0.d.ts:3814</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3835">gobject-2.0/gobject-2.0.d.ts:3835</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="vfunc_notify"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>notify</span><a href="#vfunc_notify" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1810,7 +1810,7 @@ called.</p>
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#vfunc_notify">vfunc_notify</a></p>
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#vfunc_notify">vfunc_notify</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3830">gobject-2.0/gobject-2.0.d.ts:3830</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3851">gobject-2.0/gobject-2.0.d.ts:3851</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="vfunc_set_property"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>set_<wbr/>property</span><a href="#vfunc_set_property" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1833,7 +1833,7 @@ emitted explicitly, the type system will not emit it a second time.</p>
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#vfunc_set_property">vfunc_set_property</a></p>
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#vfunc_set_property">vfunc_set_property</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3843">gobject-2.0/gobject-2.0.d.ts:3843</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3864">gobject-2.0/gobject-2.0.d.ts:3864</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="watch_closure"><span>watch_<wbr/>closure</span><a href="#watch_closure" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1860,7 +1860,7 @@ use this <code>object</code> as closure data.</p>
 <p>Implementation of <a href="../interfaces/Gtk-3.0.Gtk.Buildable.html">Buildable</a>.<a href="../interfaces/Gtk-3.0.Gtk.Buildable.html#watch_closure">watch_closure</a></p>
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#watch_closure">watch_closure</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4187">gobject-2.0/gobject-2.0.d.ts:4187</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L4208">gobject-2.0/gobject-2.0.d.ts:4208</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="_classinit"><code class="tsd-tag">Static</code><span>_<wbr/>class<wbr/>Init</span><a href="#_classinit" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1874,7 +1874,7 @@ use this <code>object</code> as closure data.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#_classinit">_classInit</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3763">gobject-2.0/gobject-2.0.d.ts:3763</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3784">gobject-2.0/gobject-2.0.d.ts:3784</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="compat_control"><code class="tsd-tag">Static</code><span>compat_<wbr/>control</span><a href="#compat_control" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1889,7 +1889,7 @@ use this <code>object</code> as closure data.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#compat_control">compat_control</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3689">gobject-2.0/gobject-2.0.d.ts:3689</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3710">gobject-2.0/gobject-2.0.d.ts:3710</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="find_property"><code class="tsd-tag">Static</code><span>find_<wbr/>property</span><a href="#find_property" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1905,7 +1905,7 @@ use this <code>object</code> as closure data.</p>
 <h4 class="tsd-returns-title">Returns <a href="../modules/GObject-2.0.GObject.html" class="tsd-signature-type tsd-kind-namespace">GObject</a><span class="tsd-signature-symbol">.</span><a href="GObject-2.0.GObject.ParamSpec.html" class="tsd-signature-type tsd-kind-class">ParamSpec</a></h4><aside class="tsd-sources">
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#find_property">find_property</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3739">gobject-2.0/gobject-2.0.d.ts:3739</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3760">gobject-2.0/gobject-2.0.d.ts:3760</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="install_properties"><code class="tsd-tag">Static</code><span>install_<wbr/>properties</span><a href="#install_properties" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1921,7 +1921,7 @@ use this <code>object</code> as closure data.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#install_properties">install_properties</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3744">gobject-2.0/gobject-2.0.d.ts:3744</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3765">gobject-2.0/gobject-2.0.d.ts:3765</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="install_property"><code class="tsd-tag">Static</code><span>install_<wbr/>property</span><a href="#install_property" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1940,7 +1940,7 @@ use this <code>object</code> as closure data.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#install_property">install_property</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3750">gobject-2.0/gobject-2.0.d.ts:3750</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3771">gobject-2.0/gobject-2.0.d.ts:3771</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="interface_find_property"><code class="tsd-tag">Static</code><span>interface_<wbr/>find_<wbr/>property</span><a href="#interface_find_property" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -1969,7 +1969,7 @@ if you know the interface has already been loaded,
 </div></div><aside class="tsd-sources">
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#interface_find_property">interface_find_property</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3701">gobject-2.0/gobject-2.0.d.ts:3701</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3722">gobject-2.0/gobject-2.0.d.ts:3722</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="interface_install_property"><code class="tsd-tag">Static</code><span>interface_<wbr/>install_<wbr/>property</span><a href="#interface_install_property" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -2007,7 +2007,7 @@ been called for any object types implementing this interface.</p>
 </div></div><aside class="tsd-sources">
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#interface_install_property">interface_install_property</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3724">gobject-2.0/gobject-2.0.d.ts:3724</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3745">gobject-2.0/gobject-2.0.d.ts:3745</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="interface_list_properties"><code class="tsd-tag">Static</code><span>interface_<wbr/>list_<wbr/>properties</span><a href="#interface_list_properties" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -2032,7 +2032,7 @@ already been loaded, <code>g_type_default_interface_peek()</code>.</p>
 </div></div><aside class="tsd-sources">
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#interface_list_properties">interface_list_properties</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3734">gobject-2.0/gobject-2.0.d.ts:3734</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3755">gobject-2.0/gobject-2.0.d.ts:3755</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="list_properties"><code class="tsd-tag">Static</code><span>list_<wbr/>properties</span><a href="#list_properties" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -2042,7 +2042,7 @@ already been loaded, <code>g_type_default_interface_peek()</code>.</p>
 <h4 class="tsd-returns-title">Returns <a href="../modules/GObject-2.0.GObject.html" class="tsd-signature-type tsd-kind-namespace">GObject</a><span class="tsd-signature-symbol">.</span><a href="GObject-2.0.GObject.ParamSpec.html" class="tsd-signature-type tsd-kind-class">ParamSpec</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#list_properties">list_properties</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3752">gobject-2.0/gobject-2.0.d.ts:3752</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3773">gobject-2.0/gobject-2.0.d.ts:3773</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="newv"><code class="tsd-tag">Static</code><span>newv</span><a href="#newv" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -2057,7 +2057,7 @@ already been loaded, <code>g_type_default_interface_peek()</code>.</p>
 <h4 class="tsd-returns-title">Returns <a href="../modules/GObject-2.0.GObject.html" class="tsd-signature-type tsd-kind-namespace">GObject</a><span class="tsd-signature-symbol">.</span><a href="GObject-2.0.GObject.Object.html" class="tsd-signature-type tsd-kind-class">Object</a></h4><aside class="tsd-sources">
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#newv">newv</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3669">gobject-2.0/gobject-2.0.d.ts:3669</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3690">gobject-2.0/gobject-2.0.d.ts:3690</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="override_property"><code class="tsd-tag">Static</code><span>override_<wbr/>property</span><a href="#override_property" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -2076,7 +2076,7 @@ already been loaded, <code>g_type_default_interface_peek()</code>.</p>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="GObject-2.0.GObject.InitiallyUnowned.html">InitiallyUnowned</a>.<a href="GObject-2.0.GObject.InitiallyUnowned.html#override_property">override_property</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3758">gobject-2.0/gobject-2.0.d.ts:3758</a></li></ul></aside></div></li></ul></section></section></details>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/../gobject-2.0/gobject-2.0.d.ts#L3779">gobject-2.0/gobject-2.0.d.ts:3779</a></li></ul></aside></div></li></ul></section></section></details>
 <details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Interfaces"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
 <h2>Interfaces</h2></summary><dl class="tsd-member-summaries"><dt class="tsd-member-summary" id="constructorprops"><span class="tsd-member-summary-name"><a href="../interfaces/Gtk-3.0.Gtk.FileFilter.ConstructorProps.html">ConstructorProps</a><a href="#constructorprops" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></span></dt><dd class="tsd-member-summary"></dd><dt class="tsd-member-summary" id="signalsignatures"><span class="tsd-member-summary-name"><a href="../interfaces/Gtk-3.0.Gtk.FileFilter.SignalSignatures.html">SignalSignatures</a><a href="#signalsignatures" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></span></dt><dd class="tsd-member-summary"></dd></dl></details></div></section>
 <nav id="gi-docgen-toc">

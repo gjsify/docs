@@ -28,7 +28,7 @@
 <li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div>
 <div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
 <div class="gi-docgen-generator">
-<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.4.0</p></div></nav>
+<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.5.0</p></div></nav>
 <section id="gi-docgen-main">
 <div class="gi-docgen-content">
 <div class="gi-docgen-page-title"><span class="gi-docgen-object-type">Enumeration (GI Flags)</span>
@@ -37,7 +37,7 @@
 <div class="tsd-comment tsd-typography"><p>Flags to modify the format of the string returned by <code>g_format_size_full()</code>.</p>
 </div></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L15449">glib-2.0/glib-2.0.d.ts:15449</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L15738">glib-2.0/glib-2.0.d.ts:15738</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-accordion" open><summary class="tsd-accordion-summary tsd-index-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
@@ -57,55 +57,63 @@
 <section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="bits"><span>BITS</span><a href="#bits" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">BITS</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">BITS</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">4</span></div>
 <div class="tsd-comment tsd-typography"><p>set the size as a quantity in bits, rather than
 bytes, and return units in bits. For example, ‘Mbit’ rather than ‘MB’.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L15470">glib-2.0/glib-2.0.d.ts:15470</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L15759">glib-2.0/glib-2.0.d.ts:15759</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="default"><span>DEFAULT</span><a href="#default" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">DEFAULT</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">DEFAULT</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">0</span></div>
 <div class="tsd-comment tsd-typography"><p>behave the same as <code>g_format_size()</code></p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L15453">glib-2.0/glib-2.0.d.ts:15453</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L15742">glib-2.0/glib-2.0.d.ts:15742</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="iec_units"><span>IEC_<wbr/>UNITS</span><a href="#iec_units" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">IEC_UNITS</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">IEC_UNITS</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">2</span></div>
 <div class="tsd-comment tsd-typography"><p>use IEC (base 1024) units with &quot;KiB&quot;-style
 suffixes. IEC units should only be used for reporting things with
 a strong &quot;power of 2&quot; basis, like RAM sizes or RAID stripe sizes.
 Network and storage sizes should be reported in the normal SI units.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L15465">glib-2.0/glib-2.0.d.ts:15465</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L15754">glib-2.0/glib-2.0.d.ts:15754</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="long_format"><span>LONG_<wbr/>FORMAT</span><a href="#long_format" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">LONG_FORMAT</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">LONG_FORMAT</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">1</span></div>
 <div class="tsd-comment tsd-typography"><p>include the exact number of bytes as part
 of the returned string.  For example, &quot;45.6 kB (45,612 bytes)&quot;.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L15458">glib-2.0/glib-2.0.d.ts:15458</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L15747">glib-2.0/glib-2.0.d.ts:15747</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="only_unit"><span>ONLY_<wbr/>UNIT</span><a href="#only_unit" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">ONLY_UNIT</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">ONLY_UNIT</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">16</span></div>
 <div class="tsd-comment tsd-typography"><p>Returns only the unit, without a value.</p>
 <p>This should not be used together with <code>G_FORMAT_SIZE_LONG_FORMAT</code> nor
 <code>G_FORMAT_SIZE_ONLY_VALUE</code>.</p>
-</div><aside class="tsd-sources">
+</div>
+<div class="tsd-comment tsd-typography">
+<div class="tsd-tag-since">
+<h4 class="tsd-anchor-link" id="since">Since<a href="#since" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.74</p>
+</div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L15484">glib-2.0/glib-2.0.d.ts:15484</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L15775">glib-2.0/glib-2.0.d.ts:15775</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="only_value"><span>ONLY_<wbr/>VALUE</span><a href="#only_value" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">ONLY_VALUE</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">ONLY_VALUE</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">8</span></div>
 <div class="tsd-comment tsd-typography"><p>Returns only the value, without a unit.</p>
 <p>This should not be used together with <code>G_FORMAT_SIZE_LONG_FORMAT</code> nor
 <code>G_FORMAT_SIZE_ONLY_UNIT</code>.</p>
-</div><aside class="tsd-sources">
+</div>
+<div class="tsd-comment tsd-typography">
+<div class="tsd-tag-since">
+<h4 class="tsd-anchor-link" id="since-1">Since<a href="#since-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.74</p>
+</div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L15477">glib-2.0/glib-2.0.d.ts:15477</a></li></ul></aside></section></section></details></div></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L15767">glib-2.0/glib-2.0.d.ts:15767</a></li></ul></aside></section></section></details></div></section>
 <nav id="gi-docgen-toc">
 <div class="tsd-page-navigation">
 <h3>Content</h3>

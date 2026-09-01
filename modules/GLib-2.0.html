@@ -28,7 +28,7 @@
 <li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div>
 <div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
 <div class="gi-docgen-generator">
-<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.4.0</p></div></nav>
+<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.5.0</p></div></nav>
 <section id="gi-docgen-main">
 <div class="gi-docgen-content">
 <div class="gi-docgen-page-title"><span class="gi-docgen-object-type">Module</span>
@@ -44,51 +44,74 @@
 <section class="tsd-panel tsd-typography"><h1 id="glib-20" class="tsd-anchor-link">GLib-2.0<a href="#glib-20" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h1>
 <p><img src="https://img.shields.io/npm/v/@girs/glib-2.0" alt="version">
 <img src="https://img.shields.io/npm/dw/@girs/glib-2.0" alt="downloads/week"></p>
-<p>GJS TypeScript type definitions for GLib-2.0, generated from library version 2.89.4 using <a href="https://github.com/gjsify/ts-for-gir">ts-for-gir</a> v4.4.0.</p>
+<p>GJS TypeScript type definitions for GLib-2.0, generated from library version 2.89.4 using <a href="https://github.com/gjsify/ts-for-gir">ts-for-gir</a> v4.5.0.</p>
+<p>This package contains type declarations only. It ships no runtime code, so it adds
+nothing to your program and works with any bundler or none at all.</p>
 <h2 id="install" class="tsd-anchor-link">Install<a href="#install" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2>
-<p>Install the type definitions with npm:</p>
 <pre><code class="bash"><span class="hl-0">npm</span><span class="hl-1"> </span><span class="hl-2">install</span><span class="hl-1"> </span><span class="hl-2">@girs/glib-2.0</span>
 </code><button type="button">Copy</button></pre>
 
-<h2 id="usage" class="tsd-anchor-link">Usage<a href="#usage" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2>
-<p>Import it like any other module:</p>
+<p>Any package manager works. The package has no dependencies beyond other <code>@girs/*</code>
+type packages.</p>
+<h2 id="what-it-exports" class="tsd-anchor-link">What it exports<a href="#what-it-exports" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2>
+<table>
+<thead>
+<tr>
+<th>Import</th>
+<th>What you get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>@girs/glib-2.0</code></td>
+<td>the namespace as a default export, plus the ambient and global declarations</td>
+</tr>
+<tr>
+<td><code>@girs/glib-2.0/ambient</code></td>
+<td>only the <code>gi://</code> module declarations</td>
+</tr>
+<tr>
+<td><code>@girs/glib-2.0/import</code></td>
+<td>only the <code>imports.gi</code> declarations</td>
+</tr>
+<tr>
+<td><code>@girs/glib-2.0/glib-2.0</code></td>
+<td>the namespace, without the side-effecting declarations</td>
+</tr>
+</tbody>
+</table>
+<h2 id="three-ways-to-import" class="tsd-anchor-link">Three ways to import<a href="#three-ways-to-import" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2>
+<p>Which one you use depends on how you write imports elsewhere, not on your toolchain.</p>
+<h3 id="as-a-module" class="tsd-anchor-link">As a module<a href="#as-a-module" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <pre><code class="ts"><span class="hl-4">import</span><span class="hl-1"> </span><span class="hl-5">GLib</span><span class="hl-1"> </span><span class="hl-4">from</span><span class="hl-1"> </span><span class="hl-2">&#39;@girs/glib-2.0&#39;</span><span class="hl-1">;</span>
 </code><button type="button">Copy</button></pre>
 
-<h3 id="ambient-modules" class="tsd-anchor-link">Ambient Modules<a href="#ambient-modules" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<p><a href="https://github.com/gjsify/ts-for-gir/tree/main/packages/cli#ambient-modules">Ambient modules</a> let you write the same import you would in plain JavaScript.
-For this you need to include <code>@girs/glib-2.0</code> or <code>@girs/glib-2.0/ambient</code> in your <code>tsconfig</code> or entry point Typescript file:</p>
-<p><code>index.ts</code>:</p>
-<pre><code class="ts"><span class="hl-4">import</span><span class="hl-1"> </span><span class="hl-2">&#39;@girs/glib-2.0&#39;</span>
+<h3 id="as" class="tsd-anchor-link">As <code>gi://</code><a href="#as" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<p>GJS resolves <code>gi://</code> at runtime. To give it types, reference the package once, either
+from your entry point or from <code>tsconfig.json</code>:</p>
+<pre><code class="ts"><span class="hl-4">import</span><span class="hl-1"> </span><span class="hl-2">&#39;@girs/glib-2.0&#39;</span><span class="hl-1">;</span>
 </code><button type="button">Copy</button></pre>
 
-<p><code>tsconfig.json</code>:</p>
-<pre><code class="json"><span class="hl-1">{</span><br/><span class="hl-1">  </span><span class="hl-7">&quot;compilerOptions&quot;</span><span class="hl-1">: {</span><br/><span class="hl-1">    </span><span class="hl-8">...</span><br/><span class="hl-1">  },</span><br/><span class="hl-1">  </span><span class="hl-7">&quot;include&quot;</span><span class="hl-1">: [</span><span class="hl-2">&quot;@girs/glib-2.0&quot;</span><span class="hl-1">],</span><br/><span class="hl-1">  </span><span class="hl-8">...</span><br/><span class="hl-1">}</span>
+<pre><code class="json"><span class="hl-1">{ </span><span class="hl-7">&quot;include&quot;</span><span class="hl-1">: [</span><span class="hl-2">&quot;@girs/glib-2.0&quot;</span><span class="hl-1">] }</span>
 </code><button type="button">Copy</button></pre>
 
-<p>The ambient module now resolves with types:</p>
+<p>Then the runtime spelling type-checks:</p>
 <pre><code class="ts"><span class="hl-4">import</span><span class="hl-1"> </span><span class="hl-5">GLib</span><span class="hl-1"> </span><span class="hl-4">from</span><span class="hl-1"> </span><span class="hl-2">&#39;gi://GLib?version=2.0&#39;</span><span class="hl-1">;</span>
 </code><button type="button">Copy</button></pre>
 
-<h3 id="global-import" class="tsd-anchor-link">Global import<a href="#global-import" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<p>GJS's global <code>imports.gi</code> works too, with types.
-For this you need to include <code>@girs/glib-2.0</code> or <code>@girs/glib-2.0/import</code> in your <code>tsconfig</code> or entry point Typescript file:</p>
-<p><code>index.ts</code>:</p>
-<pre><code class="ts"><span class="hl-4">import</span><span class="hl-1"> </span><span class="hl-2">&#39;@girs/glib-2.0&#39;</span>
-</code><button type="button">Copy</button></pre>
-
-<p><code>tsconfig.json</code>:</p>
-<pre><code class="json"><span class="hl-1">{</span><br/><span class="hl-1">  </span><span class="hl-7">&quot;compilerOptions&quot;</span><span class="hl-1">: {</span><br/><span class="hl-1">    </span><span class="hl-8">...</span><br/><span class="hl-1">  },</span><br/><span class="hl-1">  </span><span class="hl-7">&quot;include&quot;</span><span class="hl-1">: [</span><span class="hl-2">&quot;@girs/glib-2.0&quot;</span><span class="hl-1">],</span><br/><span class="hl-1">  </span><span class="hl-8">...</span><br/><span class="hl-1">}</span>
-</code><button type="button">Copy</button></pre>
-
-<p>That form carries types as well:</p>
+<p>Referencing <code>@girs/glib-2.0/ambient</code> instead pulls in these declarations
+alone. See <a href="https://github.com/gjsify/ts-for-gir/tree/main/packages/cli#ambient-modules">ambient modules</a>.</p>
+<h3 id="as-1" class="tsd-anchor-link">As <code>imports.gi</code><a href="#as-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<p>GJS's global object works the same way, via <code>@girs/glib-2.0/import</code>:</p>
 <pre><code class="ts"><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-6">GLib</span><span class="hl-1"> = </span><span class="hl-5">imports</span><span class="hl-1">.</span><span class="hl-5">gi</span><span class="hl-1">.</span><span class="hl-5">GLib</span><span class="hl-1">;</span>
 </code><button type="button">Copy</button></pre>
 
-<h3 id="bundle" class="tsd-anchor-link">Bundle<a href="#bundle" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<p>Most projects want a bundler. <a href="https://esbuild.github.io/">esbuild</a> is the smallest thing that works; the <a href="https://github.com/gjsify/ts-for-gir/tree/main/examples">examples directory</a> has setups for several others.</p>
+<h2 id="building" class="tsd-anchor-link">Building<a href="#building" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2>
+<p>The declarations need no build step. If you bundle, every bundler works, since there is
+no runtime code to resolve. The <a href="https://github.com/gjsify/ts-for-gir/tree/main/examples">examples</a>
+show working setups for several.</p>
 <h2 id="other-packages" class="tsd-anchor-link">Other packages<a href="#other-packages" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2>
-<p>All existing pre-generated packages can be found on <a href="https://github.com/gjsify/types">gjsify/types</a>.</p>
+<p>Every pre-generated package is at <a href="https://github.com/gjsify/types">gjsify/types</a>.</p>
 </section></details></div></section>
 <nav id="gi-docgen-toc">
 <div class="tsd-page-navigation">
@@ -102,11 +125,13 @@ For this you need to include <code>@girs/glib-2.0</code> or <code>@girs/glib-2.0
 <div><a href="#glib-20"><span>GLib-2.0</span></a>
 <ul>
 <li><a href="#install"><span>Install</span></a></li>
-<li><a href="#usage"><span>Usage</span></a></li>
+<li><a href="#what-it-exports"><span>What it exports</span></a></li>
+<li><a href="#three-ways-to-import"><span>Three ways to import</span></a></li>
 <li>
 <ul>
-<li><a href="#ambient-modules"><span>Ambient Modules</span></a></li>
-<li><a href="#global-import"><span>Global import</span></a></li>
-<li><a href="#bundle"><span>Bundle</span></a></li></ul></li>
+<li><a href="#as-a-module"><span>As a module</span></a></li>
+<li><a href="#as"><span>As </span></a></li>
+<li><a href="#as-1"><span>As </span></a></li></ul></li>
+<li><a href="#building"><span>Building</span></a></li>
 <li><a href="#other-packages"><span>Other packages</span></a></li></ul></div></details></div></div></nav></div>
 <div class="overlay"></div></body></html>

@@ -28,7 +28,7 @@
 <li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div>
 <div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
 <div class="gi-docgen-generator">
-<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.4.0</p></div></nav>
+<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.5.0</p></div></nav>
 <section id="gi-docgen-main">
 <div class="gi-docgen-content">
 <div class="gi-docgen-page-title"><span class="gi-docgen-object-type">Class (GI Struct)</span>
@@ -112,16 +112,16 @@ Key files may also contain multiple groups with the same name; they are merged
 together. Another difference is that keys and group names in key files are not
 restricted to ASCII characters.</p>
 <p>Here is an example of loading a key file and reading a value:</p>
-<pre><code class="c"><span class="hl-0">g_autoptr</span><span class="hl-1">(GError) error = </span><span class="hl-3">NULL</span><span class="hl-1">;</span><br/><span class="hl-0">g_autoptr</span><span class="hl-1">(GKeyFile) key_file = </span><span class="hl-0">g_key_file_new</span><span class="hl-1"> ();</span><br/><br/><span class="hl-4">if</span><span class="hl-1"> (!</span><span class="hl-0">g_key_file_load_from_file</span><span class="hl-1"> (key_file, </span><span class="hl-2">&quot;key-file.ini&quot;</span><span class="hl-1">, flags, &amp;</span><span class="hl-5">error</span><span class="hl-1">))</span><br/><span class="hl-1">  {</span><br/><span class="hl-1">    </span><span class="hl-4">if</span><span class="hl-1"> (!</span><span class="hl-0">g_error_matches</span><span class="hl-1"> (error, G_FILE_ERROR, G_FILE_ERROR_NOENT))</span><br/><span class="hl-1">      </span><span class="hl-0">g_warning</span><span class="hl-1"> (</span><span class="hl-2">&quot;Error loading key file: </span><span class="hl-5">%s</span><span class="hl-2">&quot;</span><span class="hl-1">, </span><span class="hl-5">error</span><span class="hl-1">-&gt;</span><span class="hl-5">message</span><span class="hl-1">);</span><br/><span class="hl-1">    </span><span class="hl-4">return</span><span class="hl-1">;</span><br/><span class="hl-1">  }</span><br/><br/><span class="hl-1">g_autofree gchar *val = </span><span class="hl-0">g_key_file_get_string</span><span class="hl-1"> (key_file, </span><span class="hl-2">&quot;Group Name&quot;</span><span class="hl-1">, </span><span class="hl-2">&quot;SomeKey&quot;</span><span class="hl-1">, &amp;</span><span class="hl-5">error</span><span class="hl-1">);</span><br/><span class="hl-4">if</span><span class="hl-1"> (val == </span><span class="hl-3">NULL</span><span class="hl-1"> &amp;&amp;</span><br/><span class="hl-1">    !</span><span class="hl-0">g_error_matches</span><span class="hl-1"> (error, G_KEY_FILE_ERROR, G_KEY_FILE_ERROR_KEY_NOT_FOUND))</span><br/><span class="hl-1">  {</span><br/><span class="hl-1">    </span><span class="hl-0">g_warning</span><span class="hl-1"> (</span><span class="hl-2">&quot;Error finding key in key file: </span><span class="hl-5">%s</span><span class="hl-2">&quot;</span><span class="hl-1">, </span><span class="hl-5">error</span><span class="hl-1">-&gt;</span><span class="hl-5">message</span><span class="hl-1">);</span><br/><span class="hl-1">    </span><span class="hl-4">return</span><span class="hl-1">;</span><br/><span class="hl-1">  }</span><br/><span class="hl-4">else</span><span class="hl-1"> </span><span class="hl-4">if</span><span class="hl-1"> (val == </span><span class="hl-3">NULL</span><span class="hl-1">)</span><br/><span class="hl-1">  {</span><br/><span class="hl-1">    </span><span class="hl-10">// Fall back to a default value.</span><br/><span class="hl-1">    val = </span><span class="hl-0">g_strdup</span><span class="hl-1"> (</span><span class="hl-2">&quot;default-value&quot;</span><span class="hl-1">);</span><br/><span class="hl-1">  }</span>
+<pre><code class="c"><span class="hl-0">g_autoptr</span><span class="hl-1">(GError) error = </span><span class="hl-3">NULL</span><span class="hl-1">;</span><br/><span class="hl-0">g_autoptr</span><span class="hl-1">(GKeyFile) key_file = </span><span class="hl-0">g_key_file_new</span><span class="hl-1"> ();</span><br/><br/><span class="hl-4">if</span><span class="hl-1"> (!</span><span class="hl-0">g_key_file_load_from_file</span><span class="hl-1"> (key_file, </span><span class="hl-2">&quot;key-file.ini&quot;</span><span class="hl-1">, flags, &amp;</span><span class="hl-5">error</span><span class="hl-1">))</span><br/><span class="hl-1">  {</span><br/><span class="hl-1">    </span><span class="hl-4">if</span><span class="hl-1"> (!</span><span class="hl-0">g_error_matches</span><span class="hl-1"> (error, G_FILE_ERROR, G_FILE_ERROR_NOENT))</span><br/><span class="hl-1">      </span><span class="hl-0">g_warning</span><span class="hl-1"> (</span><span class="hl-2">&quot;Error loading key file: </span><span class="hl-5">%s</span><span class="hl-2">&quot;</span><span class="hl-1">, </span><span class="hl-5">error</span><span class="hl-1">-&gt;</span><span class="hl-5">message</span><span class="hl-1">);</span><br/><span class="hl-1">    </span><span class="hl-4">return</span><span class="hl-1">;</span><br/><span class="hl-1">  }</span><br/><br/><span class="hl-1">g_autofree gchar *val = </span><span class="hl-0">g_key_file_get_string</span><span class="hl-1"> (key_file, </span><span class="hl-2">&quot;Group Name&quot;</span><span class="hl-1">, </span><span class="hl-2">&quot;SomeKey&quot;</span><span class="hl-1">, &amp;</span><span class="hl-5">error</span><span class="hl-1">);</span><br/><span class="hl-4">if</span><span class="hl-1"> (val == </span><span class="hl-3">NULL</span><span class="hl-1"> &amp;&amp;</span><br/><span class="hl-1">    !</span><span class="hl-0">g_error_matches</span><span class="hl-1"> (error, G_KEY_FILE_ERROR, G_KEY_FILE_ERROR_KEY_NOT_FOUND))</span><br/><span class="hl-1">  {</span><br/><span class="hl-1">    </span><span class="hl-0">g_warning</span><span class="hl-1"> (</span><span class="hl-2">&quot;Error finding key in key file: </span><span class="hl-5">%s</span><span class="hl-2">&quot;</span><span class="hl-1">, </span><span class="hl-5">error</span><span class="hl-1">-&gt;</span><span class="hl-5">message</span><span class="hl-1">);</span><br/><span class="hl-1">    </span><span class="hl-4">return</span><span class="hl-1">;</span><br/><span class="hl-1">  }</span><br/><span class="hl-4">else</span><span class="hl-1"> </span><span class="hl-4">if</span><span class="hl-1"> (val == </span><span class="hl-3">NULL</span><span class="hl-1">)</span><br/><span class="hl-1">  {</span><br/><span class="hl-1">    </span><span class="hl-9">// Fall back to a default value.</span><br/><span class="hl-1">    val = </span><span class="hl-0">g_strdup</span><span class="hl-1"> (</span><span class="hl-2">&quot;default-value&quot;</span><span class="hl-1">);</span><br/><span class="hl-1">  }</span>
 </code><button type="button">Copy</button></pre>
 
 <p>Here is an example of creating and saving a key file:</p>
-<pre><code class="c"><span class="hl-0">g_autoptr</span><span class="hl-1">(GKeyFile) key_file = </span><span class="hl-0">g_key_file_new</span><span class="hl-1"> ();</span><br/><span class="hl-3">const</span><span class="hl-1"> gchar *val = …;</span><br/><span class="hl-0">g_autoptr</span><span class="hl-1">(GError) error = </span><span class="hl-3">NULL</span><span class="hl-1">;</span><br/><br/><span class="hl-0">g_key_file_set_string</span><span class="hl-1"> (key_file, </span><span class="hl-2">&quot;Group Name&quot;</span><span class="hl-1">, </span><span class="hl-2">&quot;SomeKey&quot;</span><span class="hl-1">, val);</span><br/><br/><span class="hl-10">// Save as a file.</span><br/><span class="hl-4">if</span><span class="hl-1"> (!</span><span class="hl-0">g_key_file_save_to_file</span><span class="hl-1"> (key_file, </span><span class="hl-2">&quot;key-file.ini&quot;</span><span class="hl-1">, &amp;</span><span class="hl-5">error</span><span class="hl-1">))</span><br/><span class="hl-1">  {</span><br/><span class="hl-1">    </span><span class="hl-0">g_warning</span><span class="hl-1"> (</span><span class="hl-2">&quot;Error saving key file: </span><span class="hl-5">%s</span><span class="hl-2">&quot;</span><span class="hl-1">, </span><span class="hl-5">error</span><span class="hl-1">-&gt;</span><span class="hl-5">message</span><span class="hl-1">);</span><br/><span class="hl-1">    </span><span class="hl-4">return</span><span class="hl-1">;</span><br/><span class="hl-1">  }</span><br/><br/><span class="hl-10">// Or store to a GBytes for use elsewhere.</span><br/><span class="hl-1">gsize data_len;</span><br/><span class="hl-1">g_autofree guint8 *data = (guint8 *) </span><span class="hl-0">g_key_file_to_data</span><span class="hl-1"> (key_file, &amp;</span><span class="hl-5">data_len</span><span class="hl-1">, &amp;</span><span class="hl-5">error</span><span class="hl-1">);</span><br/><span class="hl-4">if</span><span class="hl-1"> (data == </span><span class="hl-3">NULL</span><span class="hl-1">)</span><br/><span class="hl-1">  {</span><br/><span class="hl-1">    </span><span class="hl-0">g_warning</span><span class="hl-1"> (</span><span class="hl-2">&quot;Error saving key file: </span><span class="hl-5">%s</span><span class="hl-2">&quot;</span><span class="hl-1">, </span><span class="hl-5">error</span><span class="hl-1">-&gt;</span><span class="hl-5">message</span><span class="hl-1">);</span><br/><span class="hl-1">    </span><span class="hl-4">return</span><span class="hl-1">;</span><br/><span class="hl-1">  }</span><br/><span class="hl-0">g_autoptr</span><span class="hl-1">(GBytes) bytes = </span><span class="hl-0">g_bytes_new_take</span><span class="hl-1"> (</span><span class="hl-0">g_steal_pointer</span><span class="hl-1"> (&amp;</span><span class="hl-5">data</span><span class="hl-1">), data_len);</span>
+<pre><code class="c"><span class="hl-0">g_autoptr</span><span class="hl-1">(GKeyFile) key_file = </span><span class="hl-0">g_key_file_new</span><span class="hl-1"> ();</span><br/><span class="hl-3">const</span><span class="hl-1"> gchar *val = …;</span><br/><span class="hl-0">g_autoptr</span><span class="hl-1">(GError) error = </span><span class="hl-3">NULL</span><span class="hl-1">;</span><br/><br/><span class="hl-0">g_key_file_set_string</span><span class="hl-1"> (key_file, </span><span class="hl-2">&quot;Group Name&quot;</span><span class="hl-1">, </span><span class="hl-2">&quot;SomeKey&quot;</span><span class="hl-1">, val);</span><br/><br/><span class="hl-9">// Save as a file.</span><br/><span class="hl-4">if</span><span class="hl-1"> (!</span><span class="hl-0">g_key_file_save_to_file</span><span class="hl-1"> (key_file, </span><span class="hl-2">&quot;key-file.ini&quot;</span><span class="hl-1">, &amp;</span><span class="hl-5">error</span><span class="hl-1">))</span><br/><span class="hl-1">  {</span><br/><span class="hl-1">    </span><span class="hl-0">g_warning</span><span class="hl-1"> (</span><span class="hl-2">&quot;Error saving key file: </span><span class="hl-5">%s</span><span class="hl-2">&quot;</span><span class="hl-1">, </span><span class="hl-5">error</span><span class="hl-1">-&gt;</span><span class="hl-5">message</span><span class="hl-1">);</span><br/><span class="hl-1">    </span><span class="hl-4">return</span><span class="hl-1">;</span><br/><span class="hl-1">  }</span><br/><br/><span class="hl-9">// Or store to a GBytes for use elsewhere.</span><br/><span class="hl-1">gsize data_len;</span><br/><span class="hl-1">g_autofree guint8 *data = (guint8 *) </span><span class="hl-0">g_key_file_to_data</span><span class="hl-1"> (key_file, &amp;</span><span class="hl-5">data_len</span><span class="hl-1">, &amp;</span><span class="hl-5">error</span><span class="hl-1">);</span><br/><span class="hl-4">if</span><span class="hl-1"> (data == </span><span class="hl-3">NULL</span><span class="hl-1">)</span><br/><span class="hl-1">  {</span><br/><span class="hl-1">    </span><span class="hl-0">g_warning</span><span class="hl-1"> (</span><span class="hl-2">&quot;Error saving key file: </span><span class="hl-5">%s</span><span class="hl-2">&quot;</span><span class="hl-1">, </span><span class="hl-5">error</span><span class="hl-1">-&gt;</span><span class="hl-5">message</span><span class="hl-1">);</span><br/><span class="hl-1">    </span><span class="hl-4">return</span><span class="hl-1">;</span><br/><span class="hl-1">  }</span><br/><span class="hl-0">g_autoptr</span><span class="hl-1">(GBytes) bytes = </span><span class="hl-0">g_bytes_new_take</span><span class="hl-1"> (</span><span class="hl-0">g_steal_pointer</span><span class="hl-1"> (&amp;</span><span class="hl-5">data</span><span class="hl-1">), data_len);</span>
 </code><button type="button">Copy</button></pre>
 
 </div></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L20790">glib-2.0/glib-2.0.d.ts:20790</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21132">glib-2.0/glib-2.0.d.ts:21132</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-accordion" open><summary class="tsd-accordion-summary tsd-index-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
@@ -203,7 +203,7 @@ restricted to ASCII characters.</p>
 <li><span><code class="tsd-tag">Optional</code><span class="tsd-kind-parameter">properties</span>: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">&gt;</span></span></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="../modules/GLib-2.0.GLib.html" class="tsd-signature-type tsd-kind-namespace">GLib</a><span class="tsd-signature-symbol">.</span><a href="" class="tsd-signature-type tsd-kind-class">KeyFile</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L20794">glib-2.0/glib-2.0.d.ts:20794</a></li></ul></aside></div></li></ul></section></section></details>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21136">glib-2.0/glib-2.0.d.ts:21136</a></li></ul></aside></div></li></ul></section></section></details>
 <details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Properties"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
 <h2 class="tsd-anchor-link" id="properties-1">Properties<a href="#properties-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2></summary>
 <section>
@@ -211,7 +211,7 @@ restricted to ASCII characters.</p>
 <h3 class="tsd-anchor-link" id="gtype"><code class="tsd-tag">Static</code><span>$gtype</span><a href="#gtype" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">$gtype</span><span class="tsd-signature-symbol">:</span> <a href="../types/GObject-2.0.GObject.GType.html" class="tsd-signature-type tsd-kind-type-alias">GType</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/GLib-2.0.GLib.html" class="tsd-signature-type tsd-kind-namespace">GLib</a><span class="tsd-signature-symbol">.</span><a href="" class="tsd-signature-type tsd-kind-class">KeyFile</a><span class="tsd-signature-symbol">&gt;</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L20791">glib-2.0/glib-2.0.d.ts:20791</a></li></ul></aside></section></section></details>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21133">glib-2.0/glib-2.0.d.ts:21133</a></li></ul></aside></section></section></details>
 <details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Methods"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
 <h2 class="tsd-anchor-link" id="methods-1">Methods<a href="#methods-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2></summary>
 <section>
@@ -232,7 +232,7 @@ memory.</p>
 <h4 class="tsd-anchor-link" id="since">Since<a href="#since" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.6</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L20810">glib-2.0/glib-2.0.d.ts:20810</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21152">glib-2.0/glib-2.0.d.ts:21152</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_boolean"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.6</code><span>get_<wbr/>boolean</span><a href="#get_boolean" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -259,9 +259,12 @@ as a boolean then <a href="GLib-2.0.GLib.KeyFileError.html#invalid_value" class=
 <div class="tsd-comment tsd-typography">
 <div class="tsd-tag-since">
 <h4 class="tsd-anchor-link" id="since-1">Since<a href="#since-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.6</p>
+</div>
+<div class="tsd-tag-throws">
+<h4 class="tsd-anchor-link" id="throws">Throws<a href="#throws" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>GLib.Error</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L20824">glib-2.0/glib-2.0.d.ts:20824</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21167">glib-2.0/glib-2.0.d.ts:21167</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_boolean_list"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.6</code><span>get_<wbr/>boolean_<wbr/>list</span><a href="#get_boolean_list" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -288,9 +291,12 @@ as booleans then <a href="GLib-2.0.GLib.KeyFileError.html#invalid_value" class="
 <div class="tsd-comment tsd-typography">
 <div class="tsd-tag-since">
 <h4 class="tsd-anchor-link" id="since-2">Since<a href="#since-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.6</p>
+</div>
+<div class="tsd-tag-throws">
+<h4 class="tsd-anchor-link" id="throws-1">Throws<a href="#throws-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>GLib.Error</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L20838">glib-2.0/glib-2.0.d.ts:20838</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21182">glib-2.0/glib-2.0.d.ts:21182</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_comment"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.6</code><span>get_<wbr/>comment</span><a href="#get_comment" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -319,9 +325,12 @@ the line breaks between lines, but does not include the final line break.</p>
 <div class="tsd-comment tsd-typography">
 <div class="tsd-tag-since">
 <h4 class="tsd-anchor-link" id="since-3">Since<a href="#since-3" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.6</p>
+</div>
+<div class="tsd-tag-throws">
+<h4 class="tsd-anchor-link" id="throws-2">Throws<a href="#throws-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>GLib.Error</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L20855">glib-2.0/glib-2.0.d.ts:20855</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21200">glib-2.0/glib-2.0.d.ts:21200</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_double"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.12</code><span>get_<wbr/>double</span><a href="#get_double" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -347,9 +356,12 @@ as a double then <a href="GLib-2.0.GLib.KeyFileError.html#invalid_value" class="
 <div class="tsd-comment tsd-typography">
 <div class="tsd-tag-since">
 <h4 class="tsd-anchor-link" id="since-4">Since<a href="#since-4" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.12</p>
+</div>
+<div class="tsd-tag-throws">
+<h4 class="tsd-anchor-link" id="throws-3">Throws<a href="#throws-3" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>GLib.Error</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L20868">glib-2.0/glib-2.0.d.ts:20868</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21214">glib-2.0/glib-2.0.d.ts:21214</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_double_list"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.12</code><span>get_<wbr/>double_<wbr/>list</span><a href="#get_double_list" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -376,9 +388,12 @@ as doubles then <a href="GLib-2.0.GLib.KeyFileError.html#invalid_value" class="t
 <div class="tsd-comment tsd-typography">
 <div class="tsd-tag-since">
 <h4 class="tsd-anchor-link" id="since-5">Since<a href="#since-5" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.12</p>
+</div>
+<div class="tsd-tag-throws">
+<h4 class="tsd-anchor-link" id="throws-4">Throws<a href="#throws-4" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>GLib.Error</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L20882">glib-2.0/glib-2.0.d.ts:20882</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21229">glib-2.0/glib-2.0.d.ts:21229</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_groups"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.6</code><span>get_<wbr/>groups</span><a href="#get_groups" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -396,7 +411,7 @@ as doubles then <a href="GLib-2.0.GLib.KeyFileError.html#invalid_value" class="t
 <h4 class="tsd-anchor-link" id="since-6">Since<a href="#since-6" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.6</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L20892">glib-2.0/glib-2.0.d.ts:20892</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21239">glib-2.0/glib-2.0.d.ts:21239</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_int64"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.26</code><span>get_<wbr/>int64</span><a href="#get_int64" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -422,9 +437,12 @@ as doubles then <a href="GLib-2.0.GLib.KeyFileError.html#invalid_value" class="t
 <div class="tsd-comment tsd-typography">
 <div class="tsd-tag-since">
 <h4 class="tsd-anchor-link" id="since-7">Since<a href="#since-7" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.26</p>
+</div>
+<div class="tsd-tag-throws">
+<h4 class="tsd-anchor-link" id="throws-5">Throws<a href="#throws-5" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>GLib.Error</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L20905">glib-2.0/glib-2.0.d.ts:20905</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21253">glib-2.0/glib-2.0.d.ts:21253</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_integer"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.6</code><span>get_<wbr/>integer</span><a href="#get_integer" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -452,9 +470,12 @@ as an integer, or is out of range for a <code>gint</code>, then
 <div class="tsd-comment tsd-typography">
 <div class="tsd-tag-since">
 <h4 class="tsd-anchor-link" id="since-8">Since<a href="#since-8" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.6</p>
+</div>
+<div class="tsd-tag-throws">
+<h4 class="tsd-anchor-link" id="throws-6">Throws<a href="#throws-6" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>GLib.Error</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L20920">glib-2.0/glib-2.0.d.ts:20920</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21269">glib-2.0/glib-2.0.d.ts:21269</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_integer_list"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.6</code><span>get_<wbr/>integer_<wbr/>list</span><a href="#get_integer_list" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -482,9 +503,12 @@ as integers, or are out of range for <code>gint</code>, then
 <div class="tsd-comment tsd-typography">
 <div class="tsd-tag-since">
 <h4 class="tsd-anchor-link" id="since-9">Since<a href="#since-9" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.6</p>
+</div>
+<div class="tsd-tag-throws">
+<h4 class="tsd-anchor-link" id="throws-7">Throws<a href="#throws-7" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>GLib.Error</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L20935">glib-2.0/glib-2.0.d.ts:20935</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21285">glib-2.0/glib-2.0.d.ts:21285</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_keys"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.6</code><span>get_<wbr/>keys</span><a href="#get_keys" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -507,9 +531,12 @@ optionally be <code>NULL</code>. If the <code>group_name</code> cannot be found,
 <div class="tsd-comment tsd-typography">
 <div class="tsd-tag-since">
 <h4 class="tsd-anchor-link" id="since-10">Since<a href="#since-10" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.6</p>
+</div>
+<div class="tsd-tag-throws">
+<h4 class="tsd-anchor-link" id="throws-8">Throws<a href="#throws-8" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>GLib.Error</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L20947">glib-2.0/glib-2.0.d.ts:20947</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21298">glib-2.0/glib-2.0.d.ts:21298</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_locale_for_key"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.56</code><span>get_<wbr/>locale_<wbr/>for_<wbr/>key</span><a href="#get_locale_for_key" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -544,7 +571,7 @@ this function.</p>
 <h4 class="tsd-anchor-link" id="since-11">Since<a href="#since-11" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.56</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L20965">glib-2.0/glib-2.0.d.ts:20965</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21316">glib-2.0/glib-2.0.d.ts:21316</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_locale_string"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.6</code><span>get_<wbr/>locale_<wbr/>string</span><a href="#get_locale_string" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -581,9 +608,12 @@ be found then the untranslated value is returned.</p>
 <div class="tsd-comment tsd-typography">
 <div class="tsd-tag-since">
 <h4 class="tsd-anchor-link" id="since-12">Since<a href="#since-12" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.6</p>
+</div>
+<div class="tsd-tag-throws">
+<h4 class="tsd-anchor-link" id="throws-9">Throws<a href="#throws-9" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>GLib.Error</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L20990">glib-2.0/glib-2.0.d.ts:20990</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21342">glib-2.0/glib-2.0.d.ts:21342</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_locale_string_list"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.6</code><span>get_<wbr/>locale_<wbr/>string_<wbr/>list</span><a href="#get_locale_string_list" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -622,9 +652,12 @@ be <code>NULL</code>.</p>
 <div class="tsd-comment tsd-typography">
 <div class="tsd-tag-since">
 <h4 class="tsd-anchor-link" id="since-13">Since<a href="#since-13" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.6</p>
+</div>
+<div class="tsd-tag-throws">
+<h4 class="tsd-anchor-link" id="throws-10">Throws<a href="#throws-10" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>GLib.Error</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21017">glib-2.0/glib-2.0.d.ts:21017</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21370">glib-2.0/glib-2.0.d.ts:21370</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_start_group"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.6</code><span>get_<wbr/>start_<wbr/>group</span><a href="#get_start_group" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -640,7 +673,7 @@ be <code>NULL</code>.</p>
 <h4 class="tsd-anchor-link" id="since-14">Since<a href="#since-14" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.6</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21024">glib-2.0/glib-2.0.d.ts:21024</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21377">glib-2.0/glib-2.0.d.ts:21377</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_string"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.6</code><span>get_<wbr/>string</span><a href="#get_string" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -668,9 +701,12 @@ returned. If the <code>group_name</code> cannot be found,
 <div class="tsd-comment tsd-typography">
 <div class="tsd-tag-since">
 <h4 class="tsd-anchor-link" id="since-15">Since<a href="#since-15" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.6</p>
+</div>
+<div class="tsd-tag-throws">
+<h4 class="tsd-anchor-link" id="throws-11">Throws<a href="#throws-11" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>GLib.Error</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21040">glib-2.0/glib-2.0.d.ts:21040</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21394">glib-2.0/glib-2.0.d.ts:21394</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_string_list"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.6</code><span>get_<wbr/>string_<wbr/>list</span><a href="#get_string_list" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -696,9 +732,12 @@ returned. If the <code>group_name</code> cannot be found,
 <div class="tsd-comment tsd-typography">
 <div class="tsd-tag-since">
 <h4 class="tsd-anchor-link" id="since-16">Since<a href="#since-16" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.6</p>
+</div>
+<div class="tsd-tag-throws">
+<h4 class="tsd-anchor-link" id="throws-12">Throws<a href="#throws-12" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>GLib.Error</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21053">glib-2.0/glib-2.0.d.ts:21053</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21408">glib-2.0/glib-2.0.d.ts:21408</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_uint64"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.26</code><span>get_<wbr/>uint64</span><a href="#get_uint64" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -724,9 +763,12 @@ large positive results without truncation.</p>
 <div class="tsd-comment tsd-typography">
 <div class="tsd-tag-since">
 <h4 class="tsd-anchor-link" id="since-17">Since<a href="#since-17" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.26</p>
+</div>
+<div class="tsd-tag-throws">
+<h4 class="tsd-anchor-link" id="throws-13">Throws<a href="#throws-13" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>GLib.Error</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21066">glib-2.0/glib-2.0.d.ts:21066</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21422">glib-2.0/glib-2.0.d.ts:21422</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="get_value"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.6</code><span>get_<wbr/>value</span><a href="#get_value" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -753,9 +795,12 @@ is returned.  If the <code>group_name</code> cannot be found,
 <div class="tsd-comment tsd-typography">
 <div class="tsd-tag-since">
 <h4 class="tsd-anchor-link" id="since-18">Since<a href="#since-18" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.6</p>
+</div>
+<div class="tsd-tag-throws">
+<h4 class="tsd-anchor-link" id="throws-14">Throws<a href="#throws-14" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>GLib.Error</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21081">glib-2.0/glib-2.0.d.ts:21081</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21438">glib-2.0/glib-2.0.d.ts:21438</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="has_group"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.6</code><span>has_<wbr/>group</span><a href="#has_group" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -777,7 +822,7 @@ is returned.  If the <code>group_name</code> cannot be found,
 <h4 class="tsd-anchor-link" id="since-19">Since<a href="#since-19" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.6</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21089">glib-2.0/glib-2.0.d.ts:21089</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21446">glib-2.0/glib-2.0.d.ts:21446</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="load_from_bytes"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.50</code><span>load_<wbr/>from_<wbr/>bytes</span><a href="#load_from_bytes" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -802,9 +847,12 @@ structure.</p>
 <div class="tsd-comment tsd-typography">
 <div class="tsd-tag-since">
 <h4 class="tsd-anchor-link" id="since-20">Since<a href="#since-20" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.50</p>
+</div>
+<div class="tsd-tag-throws">
+<h4 class="tsd-anchor-link" id="throws-15">Throws<a href="#throws-15" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>GLib.Error</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21101">glib-2.0/glib-2.0.d.ts:21101</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21459">glib-2.0/glib-2.0.d.ts:21459</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="load_from_data"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.6</code><span>load_<wbr/>from_<wbr/>data</span><a href="#load_from_data" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -831,9 +879,12 @@ structure.</p>
 <div class="tsd-comment tsd-typography">
 <div class="tsd-tag-since">
 <h4 class="tsd-anchor-link" id="since-21">Since<a href="#since-21" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.6</p>
+</div>
+<div class="tsd-tag-throws">
+<h4 class="tsd-anchor-link" id="throws-16">Throws<a href="#throws-16" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>GLib.Error</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21113">glib-2.0/glib-2.0.d.ts:21113</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21472">glib-2.0/glib-2.0.d.ts:21472</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="load_from_data_dirs"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.6</code><span>load_<wbr/>from_<wbr/>data_<wbr/>dirs</span><a href="#load_from_data_dirs" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -862,9 +913,12 @@ structure.</p>
 <div class="tsd-comment tsd-typography">
 <div class="tsd-tag-since">
 <h4 class="tsd-anchor-link" id="since-22">Since<a href="#since-22" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.6</p>
+</div>
+<div class="tsd-tag-throws">
+<h4 class="tsd-anchor-link" id="throws-17">Throws<a href="#throws-17" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>GLib.Error</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21130">glib-2.0/glib-2.0.d.ts:21130</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21490">glib-2.0/glib-2.0.d.ts:21490</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="load_from_dirs"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.14</code><span>load_<wbr/>from_<wbr/>dirs</span><a href="#load_from_dirs" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -902,9 +956,12 @@ file, a <a href="GLib-2.0.GLib.KeyFileError.html" class="tsd-kind-class">GLib.Ke
 <div class="tsd-comment tsd-typography">
 <div class="tsd-tag-since">
 <h4 class="tsd-anchor-link" id="since-23">Since<a href="#since-23" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.14</p>
+</div>
+<div class="tsd-tag-throws">
+<h4 class="tsd-anchor-link" id="throws-18">Throws<a href="#throws-18" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>GLib.Error</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21154">glib-2.0/glib-2.0.d.ts:21154</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21515">glib-2.0/glib-2.0.d.ts:21515</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="load_from_file"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.6</code><span>load_<wbr/>from_<wbr/>file</span><a href="#load_from_file" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -932,9 +989,12 @@ error. If the <code>file</code> is not found, <a href="GLib-2.0.GLib.FileError.h
 <div class="tsd-comment tsd-typography">
 <div class="tsd-tag-since">
 <h4 class="tsd-anchor-link" id="since-24">Since<a href="#since-24" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.6</p>
+</div>
+<div class="tsd-tag-throws">
+<h4 class="tsd-anchor-link" id="throws-19">Throws<a href="#throws-19" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>GLib.Error</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21170">glib-2.0/glib-2.0.d.ts:21170</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21532">glib-2.0/glib-2.0.d.ts:21532</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="load_unix_configurations"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.90</code><span>load_<wbr/>unix_<wbr/>configurations</span><a href="#load_unix_configurations" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -976,7 +1036,7 @@ files, a <a href="GLib-2.0.GLib.KeyFileError.html" class="tsd-kind-class">GLib.K
 (if <code>&lt;SYSCONFDIR&gt;/project/mydaemon.conf</code> and <code>/run/project/mydaemon.conf are not defined</code>)</li>
 <li>valid drop-ins in <code>&lt;SYSCONFDIR&gt;/project/mydaemon.conf.d/</code>, <code>/run/project/mydaemon.conf.d/</code>, <code>&lt;LIBDIR&gt;/project/mydaemon.conf.d/</code></li>
 </ul>
-<pre><code><span class="hl-0">g_autoptr</span><span class="hl-1">(</span><span class="hl-5">GKeyFile</span><span class="hl-1">) </span><span class="hl-5">kf</span><span class="hl-1"> = </span><span class="hl-0">g_key_file_new</span><span class="hl-1"> ();</span><br/><span class="hl-0">g_autoptr</span><span class="hl-1">(</span><span class="hl-5">GError</span><span class="hl-1">) </span><span class="hl-5">local_error</span><span class="hl-1"> = </span><span class="hl-6">NULL</span><span class="hl-1">;</span><br/><br/><span class="hl-10">// Using build-configured paths or defaults instead of hardcoded strings</span><br/><span class="hl-5">gboolean</span><span class="hl-1"> </span><span class="hl-5">success</span><span class="hl-1"> = </span><span class="hl-0">g_key_file_load_unix_configurations</span><span class="hl-1"> (</span><span class="hl-5">kf</span><span class="hl-1">,</span><br/><span class="hl-1">                                                        </span><span class="hl-2">&quot;my-daemon&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">                                                        </span><span class="hl-6">SYSCONFDIR</span><span class="hl-1">,</span><br/><span class="hl-1">                                                        </span><span class="hl-6">RUNDIR</span><span class="hl-1">,</span><br/><span class="hl-1">                                                        </span><span class="hl-6">LIBDIR</span><span class="hl-1">,</span><br/><span class="hl-1">                                                        </span><span class="hl-2">&quot;mydaemon&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">                                                        </span><span class="hl-2">&quot;conf&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">                                                        </span><span class="hl-6">G_KEY_FILE_NONE</span><span class="hl-1">,</span><br/><span class="hl-1">                                                        &amp;</span><span class="hl-5">local_error</span><span class="hl-1">);</span><br/><span class="hl-4">if</span><span class="hl-1"> (!</span><span class="hl-5">success</span><span class="hl-1">)</span><br/><span class="hl-1">  {</span><br/><span class="hl-1">    </span><span class="hl-0">g_warning</span><span class="hl-1"> (</span><span class="hl-2">&quot;Failed to load configuration: %s&quot;</span><span class="hl-1">, </span><span class="hl-5">local_error</span><span class="hl-1">-&gt;</span><span class="hl-5">message</span><span class="hl-1">);</span><br/><span class="hl-1">    </span><span class="hl-4">return</span><span class="hl-1">;</span><br/><span class="hl-1">  }</span><br/><br/><span class="hl-5">g_autofree</span><span class="hl-1"> </span><span class="hl-5">char</span><span class="hl-1"> *</span><span class="hl-5">val</span><span class="hl-1"> = </span><span class="hl-0">g_key_file_get_string</span><span class="hl-1"> (</span><span class="hl-5">kf</span><span class="hl-1">, </span><span class="hl-2">&quot;Management&quot;</span><span class="hl-1">, </span><span class="hl-2">&quot;Setting&quot;</span><span class="hl-1">, </span><span class="hl-6">NULL</span><span class="hl-1">);</span>
+<pre><code><span class="hl-0">g_autoptr</span><span class="hl-1">(</span><span class="hl-5">GKeyFile</span><span class="hl-1">) </span><span class="hl-5">kf</span><span class="hl-1"> = </span><span class="hl-0">g_key_file_new</span><span class="hl-1"> ();</span><br/><span class="hl-0">g_autoptr</span><span class="hl-1">(</span><span class="hl-5">GError</span><span class="hl-1">) </span><span class="hl-5">local_error</span><span class="hl-1"> = </span><span class="hl-6">NULL</span><span class="hl-1">;</span><br/><br/><span class="hl-9">// Using build-configured paths or defaults instead of hardcoded strings</span><br/><span class="hl-5">gboolean</span><span class="hl-1"> </span><span class="hl-5">success</span><span class="hl-1"> = </span><span class="hl-0">g_key_file_load_unix_configurations</span><span class="hl-1"> (</span><span class="hl-5">kf</span><span class="hl-1">,</span><br/><span class="hl-1">                                                        </span><span class="hl-2">&quot;my-daemon&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">                                                        </span><span class="hl-6">SYSCONFDIR</span><span class="hl-1">,</span><br/><span class="hl-1">                                                        </span><span class="hl-6">RUNDIR</span><span class="hl-1">,</span><br/><span class="hl-1">                                                        </span><span class="hl-6">LIBDIR</span><span class="hl-1">,</span><br/><span class="hl-1">                                                        </span><span class="hl-2">&quot;mydaemon&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">                                                        </span><span class="hl-2">&quot;conf&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">                                                        </span><span class="hl-6">G_KEY_FILE_NONE</span><span class="hl-1">,</span><br/><span class="hl-1">                                                        &amp;</span><span class="hl-5">local_error</span><span class="hl-1">);</span><br/><span class="hl-4">if</span><span class="hl-1"> (!</span><span class="hl-5">success</span><span class="hl-1">)</span><br/><span class="hl-1">  {</span><br/><span class="hl-1">    </span><span class="hl-0">g_warning</span><span class="hl-1"> (</span><span class="hl-2">&quot;Failed to load configuration: %s&quot;</span><span class="hl-1">, </span><span class="hl-5">local_error</span><span class="hl-1">-&gt;</span><span class="hl-5">message</span><span class="hl-1">);</span><br/><span class="hl-1">    </span><span class="hl-4">return</span><span class="hl-1">;</span><br/><span class="hl-1">  }</span><br/><br/><span class="hl-5">g_autofree</span><span class="hl-1"> </span><span class="hl-5">char</span><span class="hl-1"> *</span><span class="hl-5">val</span><span class="hl-1"> = </span><span class="hl-0">g_key_file_get_string</span><span class="hl-1"> (</span><span class="hl-5">kf</span><span class="hl-1">, </span><span class="hl-2">&quot;Management&quot;</span><span class="hl-1">, </span><span class="hl-2">&quot;Setting&quot;</span><span class="hl-1">, </span><span class="hl-6">NULL</span><span class="hl-1">);</span>
 </code><button>Copy</button></pre>
 
 </div>
@@ -1009,9 +1069,12 @@ files, a <a href="GLib-2.0.GLib.KeyFileError.html" class="tsd-kind-class">GLib.K
 <div class="tsd-comment tsd-typography">
 <div class="tsd-tag-since">
 <h4 class="tsd-anchor-link" id="since-25">Since<a href="#since-25" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.90</p>
+</div>
+<div class="tsd-tag-throws">
+<h4 class="tsd-anchor-link" id="throws-20">Throws<a href="#throws-20" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>GLib.Error</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21248">glib-2.0/glib-2.0.d.ts:21248</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21611">glib-2.0/glib-2.0.d.ts:21611</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="ref"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.32</code><span>ref</span><a href="#ref" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1027,7 +1090,7 @@ files, a <a href="GLib-2.0.GLib.KeyFileError.html" class="tsd-kind-class">GLib.K
 <h4 class="tsd-anchor-link" id="since-26">Since<a href="#since-26" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.32</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21255">glib-2.0/glib-2.0.d.ts:21255</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21618">glib-2.0/glib-2.0.d.ts:21618</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="remove_comment"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.6</code><span>remove_<wbr/>comment</span><a href="#remove_comment" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1053,9 +1116,12 @@ be removed above the first group in the file.</p>
 <div class="tsd-comment tsd-typography">
 <div class="tsd-tag-since">
 <h4 class="tsd-anchor-link" id="since-27">Since<a href="#since-27" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.6</p>
+</div>
+<div class="tsd-tag-throws">
+<h4 class="tsd-anchor-link" id="throws-21">Throws<a href="#throws-21" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>GLib.Error</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21268">glib-2.0/glib-2.0.d.ts:21268</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21632">glib-2.0/glib-2.0.d.ts:21632</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="remove_group"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.6</code><span>remove_<wbr/>group</span><a href="#remove_group" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1076,9 +1142,12 @@ from the key file.</p>
 <div class="tsd-comment tsd-typography">
 <div class="tsd-tag-since">
 <h4 class="tsd-anchor-link" id="since-28">Since<a href="#since-28" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.6</p>
+</div>
+<div class="tsd-tag-throws">
+<h4 class="tsd-anchor-link" id="throws-22">Throws<a href="#throws-22" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>GLib.Error</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21277">glib-2.0/glib-2.0.d.ts:21277</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21642">glib-2.0/glib-2.0.d.ts:21642</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="remove_key"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.6</code><span>remove_<wbr/>key</span><a href="#remove_key" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1101,9 +1170,12 @@ from the key file.</p>
 <div class="tsd-comment tsd-typography">
 <div class="tsd-tag-since">
 <h4 class="tsd-anchor-link" id="since-29">Since<a href="#since-29" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.6</p>
+</div>
+<div class="tsd-tag-throws">
+<h4 class="tsd-anchor-link" id="throws-23">Throws<a href="#throws-23" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>GLib.Error</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21286">glib-2.0/glib-2.0.d.ts:21286</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21652">glib-2.0/glib-2.0.d.ts:21652</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="save_to_file"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.40</code><span>save_<wbr/>to_<wbr/>file</span><a href="#save_to_file" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1130,9 +1202,12 @@ the written file than are provided by <a href="../functions/GLib-2.0.GLib.file_s
 <div class="tsd-comment tsd-typography">
 <div class="tsd-tag-since">
 <h4 class="tsd-anchor-link" id="since-30">Since<a href="#since-30" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.40</p>
+</div>
+<div class="tsd-tag-throws">
+<h4 class="tsd-anchor-link" id="throws-24">Throws<a href="#throws-24" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>GLib.Error</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21303">glib-2.0/glib-2.0.d.ts:21303</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21670">glib-2.0/glib-2.0.d.ts:21670</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="set_boolean"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.6</code><span>set_<wbr/>boolean</span><a href="#set_boolean" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1160,7 +1235,7 @@ the written file than are provided by <a href="../functions/GLib-2.0.GLib.file_s
 <h4 class="tsd-anchor-link" id="since-31">Since<a href="#since-31" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.6</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21314">glib-2.0/glib-2.0.d.ts:21314</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21681">glib-2.0/glib-2.0.d.ts:21681</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="set_boolean_list"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.6</code><span>set_<wbr/>boolean_<wbr/>list</span><a href="#set_boolean_list" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1188,7 +1263,7 @@ the written file than are provided by <a href="../functions/GLib-2.0.GLib.file_s
 <h4 class="tsd-anchor-link" id="since-32">Since<a href="#since-32" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.6</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21325">glib-2.0/glib-2.0.d.ts:21325</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21692">glib-2.0/glib-2.0.d.ts:21692</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="set_comment"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.6</code><span>set_<wbr/>comment</span><a href="#set_comment" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1223,9 +1298,12 @@ each line of <code>comment</code>.</p>
 <div class="tsd-comment tsd-typography">
 <div class="tsd-tag-since">
 <h4 class="tsd-anchor-link" id="since-33">Since<a href="#since-33" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.6</p>
+</div>
+<div class="tsd-tag-throws">
+<h4 class="tsd-anchor-link" id="throws-25">Throws<a href="#throws-25" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>GLib.Error</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21347">glib-2.0/glib-2.0.d.ts:21347</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21715">glib-2.0/glib-2.0.d.ts:21715</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="set_double"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.12</code><span>set_<wbr/>double</span><a href="#set_double" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1253,7 +1331,7 @@ each line of <code>comment</code>.</p>
 <h4 class="tsd-anchor-link" id="since-34">Since<a href="#since-34" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.12</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21358">glib-2.0/glib-2.0.d.ts:21358</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21726">glib-2.0/glib-2.0.d.ts:21726</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="set_double_list"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.12</code><span>set_<wbr/>double_<wbr/>list</span><a href="#set_double_list" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1281,7 +1359,7 @@ each line of <code>comment</code>.</p>
 <h4 class="tsd-anchor-link" id="since-35">Since<a href="#since-35" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.12</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21369">glib-2.0/glib-2.0.d.ts:21369</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21737">glib-2.0/glib-2.0.d.ts:21737</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="set_int64"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.26</code><span>set_<wbr/>int64</span><a href="#set_int64" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1309,7 +1387,7 @@ each line of <code>comment</code>.</p>
 <h4 class="tsd-anchor-link" id="since-36">Since<a href="#since-36" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.26</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21380">glib-2.0/glib-2.0.d.ts:21380</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21748">glib-2.0/glib-2.0.d.ts:21748</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="set_integer"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.6</code><span>set_<wbr/>integer</span><a href="#set_integer" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1337,7 +1415,7 @@ each line of <code>comment</code>.</p>
 <h4 class="tsd-anchor-link" id="since-37">Since<a href="#since-37" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.6</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21391">glib-2.0/glib-2.0.d.ts:21391</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21759">glib-2.0/glib-2.0.d.ts:21759</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="set_integer_list"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.6</code><span>set_<wbr/>integer_<wbr/>list</span><a href="#set_integer_list" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1365,7 +1443,7 @@ each line of <code>comment</code>.</p>
 <h4 class="tsd-anchor-link" id="since-38">Since<a href="#since-38" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.6</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21402">glib-2.0/glib-2.0.d.ts:21402</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21770">glib-2.0/glib-2.0.d.ts:21770</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="set_list_separator"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.6</code><span>set_<wbr/>list_<wbr/>separator</span><a href="#set_list_separator" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1388,7 +1466,7 @@ is <code>;</code>.</p>
 <h4 class="tsd-anchor-link" id="since-39">Since<a href="#since-39" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.6</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21412">glib-2.0/glib-2.0.d.ts:21412</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21780">glib-2.0/glib-2.0.d.ts:21780</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="set_locale_string"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.6</code><span>set_<wbr/>locale_<wbr/>string</span><a href="#set_locale_string" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1420,7 +1498,7 @@ is <code>;</code>.</p>
 <h4 class="tsd-anchor-link" id="since-40">Since<a href="#since-40" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.6</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21426">glib-2.0/glib-2.0.d.ts:21426</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21794">glib-2.0/glib-2.0.d.ts:21794</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="set_locale_string_list"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.6</code><span>set_<wbr/>locale_<wbr/>string_<wbr/>list</span><a href="#set_locale_string_list" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1453,7 +1531,7 @@ is <code>;</code>.</p>
 <h4 class="tsd-anchor-link" id="since-41">Since<a href="#since-41" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.6</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21441">glib-2.0/glib-2.0.d.ts:21441</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21809">glib-2.0/glib-2.0.d.ts:21809</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="set_string"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.6</code><span>set_<wbr/>string</span><a href="#set_string" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1484,7 +1562,7 @@ that need escaping, such as newlines.</p>
 <h4 class="tsd-anchor-link" id="since-42">Since<a href="#since-42" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.6</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21455">glib-2.0/glib-2.0.d.ts:21455</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21823">glib-2.0/glib-2.0.d.ts:21823</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="set_string_list"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.6</code><span>set_<wbr/>string_<wbr/>list</span><a href="#set_string_list" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1513,7 +1591,7 @@ If <code>group_name</code> cannot be found then it is created.</p>
 <h4 class="tsd-anchor-link" id="since-43">Since<a href="#since-43" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.6</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21467">glib-2.0/glib-2.0.d.ts:21467</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21835">glib-2.0/glib-2.0.d.ts:21835</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="set_uint64"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.26</code><span>set_<wbr/>uint64</span><a href="#set_uint64" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1541,7 +1619,7 @@ If <code>group_name</code> cannot be found then it is created.</p>
 <h4 class="tsd-anchor-link" id="since-44">Since<a href="#since-44" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.26</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21478">glib-2.0/glib-2.0.d.ts:21478</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21846">glib-2.0/glib-2.0.d.ts:21846</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="set_value"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.6</code><span>set_<wbr/>value</span><a href="#set_value" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1572,7 +1650,7 @@ characters that need escaping (such as newlines or spaces), use
 <h4 class="tsd-anchor-link" id="since-45">Since<a href="#since-45" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.6</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21492">glib-2.0/glib-2.0.d.ts:21492</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21860">glib-2.0/glib-2.0.d.ts:21860</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="to_data"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.6</code><span>to_<wbr/>data</span><a href="#to_data" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1587,9 +1665,12 @@ characters that need escaping (such as newlines or spaces), use
 <div class="tsd-comment tsd-typography">
 <div class="tsd-tag-since">
 <h4 class="tsd-anchor-link" id="since-46">Since<a href="#since-46" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.6</p>
+</div>
+<div class="tsd-tag-throws">
+<h4 class="tsd-anchor-link" id="throws-26">Throws<a href="#throws-26" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>GLib.Error</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21501">glib-2.0/glib-2.0.d.ts:21501</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21870">glib-2.0/glib-2.0.d.ts:21870</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="unref"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-since">Since 2.32</code><span>unref</span><a href="#unref" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1606,7 +1687,7 @@ memory.</p>
 <h4 class="tsd-anchor-link" id="since-47">Since<a href="#since-47" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.32</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21510">glib-2.0/glib-2.0.d.ts:21510</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21879">glib-2.0/glib-2.0.d.ts:21879</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="error_quark"><code class="tsd-tag">Static</code><span>error_<wbr/>quark</span><a href="#error_quark" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1615,7 +1696,7 @@ memory.</p>
 <div class="tsd-description">
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L20799">glib-2.0/glib-2.0.d.ts:20799</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21141">glib-2.0/glib-2.0.d.ts:21141</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="new"><code class="tsd-tag">Static</code><span>new</span><a href="#new" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -1624,7 +1705,7 @@ memory.</p>
 <div class="tsd-description">
 <h4 class="tsd-returns-title">Returns <a href="../modules/GLib-2.0.GLib.html" class="tsd-signature-type tsd-kind-namespace">GLib</a><span class="tsd-signature-symbol">.</span><a href="" class="tsd-signature-type tsd-kind-class">KeyFile</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L20796">glib-2.0/glib-2.0.d.ts:20796</a></li></ul></aside></div></li></ul></section></section></details></div></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/glib-2.0.d.ts#L21138">glib-2.0/glib-2.0.d.ts:21138</a></li></ul></aside></div></li></ul></section></section></details></div></section>
 <nav id="gi-docgen-toc">
 <div class="tsd-page-navigation">
 <h3>Content</h3>

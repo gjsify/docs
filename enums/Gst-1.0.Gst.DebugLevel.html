@@ -34,7 +34,7 @@
 <li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div>
 <div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
 <div class="gi-docgen-generator">
-<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.4.0</p></div></nav>
+<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.5.0</p></div></nav>
 <section id="gi-docgen-main">
 <div class="gi-docgen-content">
 <div class="gi-docgen-page-title"><span class="gi-docgen-object-type">Enumeration (GI Enum)</span>
@@ -69,14 +69,14 @@ message is, the greater the probability that the debugging system outputs it.</p
 <section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="count"><span>COUNT</span><a href="#count" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">COUNT</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">COUNT</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">10</span></div>
 <div class="tsd-comment tsd-typography"><p>The number of defined debugging levels.</p>
 </div><aside class="tsd-sources">
 <ul>
 <li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L430">gst-1.0/gst-1.0.d.ts:430</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="debug"><span>DEBUG</span><a href="#debug" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">DEBUG</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">DEBUG</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">5</span></div>
 <div class="tsd-comment tsd-typography"><p>Debugging messages should be used when something common
 happens that is not the expected default behavior, or something that's
 useful to know but doesn't happen all the time (ie. per loop iteration or
@@ -88,7 +88,7 @@ of events.</p>
 <li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L407">gst-1.0/gst-1.0.d.ts:407</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="error"><span>ERROR</span><a href="#error" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">ERROR</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">ERROR</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">1</span></div>
 <div class="tsd-comment tsd-typography"><p>Error messages are to be used only when an error occurred
 that stops the application from keeping working correctly.
 An examples is gst_element_error, which outputs a message with this priority.
@@ -98,7 +98,7 @@ It does not mean that the application is terminating as with g_error.</p>
 <li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L375">gst-1.0/gst-1.0.d.ts:375</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="fixme"><span>FIXME</span><a href="#fixme" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">FIXME</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">FIXME</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">3</span></div>
 <div class="tsd-comment tsd-typography"><p>Fixme messages are messages that indicate that something
 in the executed code path is not fully implemented or handled yet. Note
 that this does not replace proper error handling in any way, the purpose
@@ -109,7 +109,7 @@ of code when reading the debug log.</p>
 <li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L390">gst-1.0/gst-1.0.d.ts:390</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="info"><span>INFO</span><a href="#info" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">INFO</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">INFO</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">4</span></div>
 <div class="tsd-comment tsd-typography"><p>Informational messages should be used to keep the developer
 updated about what is happening.
 Examples where this should be used are when a typefind function has
@@ -120,7 +120,7 @@ the format to be used. (&quot;This file has mono sound.&quot;)</p>
 <li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L398">gst-1.0/gst-1.0.d.ts:398</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="log"><span>LOG</span><a href="#log" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">LOG</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">LOG</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">6</span></div>
 <div class="tsd-comment tsd-typography"><p>Log messages are messages that are very common but might be
 useful to know. As a rule of thumb a pipeline that is running as expected
 should never output anything else but LOG messages whilst processing data.
@@ -131,7 +131,7 @@ loop functions, for example.</p>
 <li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L415">gst-1.0/gst-1.0.d.ts:415</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="memdump"><span>MEMDUMP</span><a href="#memdump" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">MEMDUMP</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">MEMDUMP</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">9</span></div>
 <div class="tsd-comment tsd-typography"><p>memory dump messages are used to log (small) chunks of
 data as memory dumps in the log. They will be displayed as hexdump with
 ASCII characters.</p>
@@ -140,7 +140,7 @@ ASCII characters.</p>
 <li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L426">gst-1.0/gst-1.0.d.ts:426</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="none"><span>NONE</span><a href="#none" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">NONE</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">NONE</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">0</span></div>
 <div class="tsd-comment tsd-typography"><p>No debugging level specified or desired. Used to deactivate
 debugging output.</p>
 </div><aside class="tsd-sources">
@@ -148,7 +148,7 @@ debugging output.</p>
 <li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L368">gst-1.0/gst-1.0.d.ts:368</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="trace"><span>TRACE</span><a href="#trace" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">TRACE</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">TRACE</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">7</span></div>
 <div class="tsd-comment tsd-typography"><p>Tracing-related messages.
 Examples for this are referencing/dereferencing of objects.</p>
 </div><aside class="tsd-sources">
@@ -156,7 +156,7 @@ Examples for this are referencing/dereferencing of objects.</p>
 <li>Defined in <a href="https://github.com/gjsify/types/blob/main/gst-1.0.d.ts#L420">gst-1.0/gst-1.0.d.ts:420</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="warning"><span>WARNING</span><a href="#warning" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">WARNING</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">WARNING</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">2</span></div>
 <div class="tsd-comment tsd-typography"><p>Warning messages are to inform about abnormal behaviour
 that could lead to problems or weird behaviour later on. An example of this
 would be clocking issues (&quot;your computer is pretty slow&quot;) or broken input

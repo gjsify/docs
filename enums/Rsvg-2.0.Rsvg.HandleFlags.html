@@ -36,7 +36,7 @@
 <li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div>
 <div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
 <div class="gi-docgen-generator">
-<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.4.0</p></div></nav>
+<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.5.0</p></div></nav>
 <section id="gi-docgen-main">
 <div class="gi-docgen-content">
 <div class="gi-docgen-page-title"><span class="gi-docgen-object-type">Enumeration (GI Flags)</span>
@@ -51,8 +51,8 @@ and <a href="../classes/Rsvg-2.0.Rsvg.Handle.html#new_from_stream_sync" class="t
 <h4 class="tsd-anchor-link" id="since">Since<a href="#since" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>2.40.3</p>
 </div></div></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/rsvg-2.0.d.ts#L306">rsvg-2.0/rsvg-2.0.d.ts:306</a></li>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/rsvg-2.0.d.ts#L317">rsvg-2.0/rsvg-2.0.d.ts:317</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/rsvg-2.0.d.ts#L325">rsvg-2.0/rsvg-2.0.d.ts:325</a></li>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/rsvg-2.0.d.ts#L336">rsvg-2.0/rsvg-2.0.d.ts:336</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-accordion" open><summary class="tsd-accordion-summary tsd-index-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
@@ -69,7 +69,7 @@ and <a href="../classes/Rsvg-2.0.Rsvg.Handle.html#new_from_stream_sync" class="t
 <section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="flag_keep_image_data"><span>FLAG_<wbr/>KEEP_<wbr/>IMAGE_<wbr/>DATA</span><a href="#flag_keep_image_data" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">FLAG_KEEP_IMAGE_DATA</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">FLAG_KEEP_IMAGE_DATA</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">2</span></div>
 <div class="tsd-comment tsd-typography"><p>Use this if the Cairo surface to which you are
 rendering is a PDF, PostScript, SVG, or Win32 Printing surface.  This will make librsvg
 and Cairo use the original, compressed data for images in the final output, instead of
@@ -79,24 +79,24 @@ documentation</a>
 for details.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/rsvg-2.0.d.ts#L338">rsvg-2.0/rsvg-2.0.d.ts:338</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/rsvg-2.0.d.ts#L357">rsvg-2.0/rsvg-2.0.d.ts:357</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="flag_unlimited"><span>FLAG_<wbr/>UNLIMITED</span><a href="#flag_unlimited" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">FLAG_UNLIMITED</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">FLAG_UNLIMITED</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">1</span></div>
 <div class="tsd-comment tsd-typography"><p>Disable safety limits in the XML parser.  Libxml2 has
 <a href="https://gitlab.gnome.org/GNOME/libxml2/blob/master/include/libxml/parserInternals.h">several limits</a>
 designed to keep malicious XML content from consuming too much memory while parsing.
 For security reasons, this should only be used for trusted input!  Since: 2.40.3</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/rsvg-2.0.d.ts#L328">rsvg-2.0/rsvg-2.0.d.ts:328</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/rsvg-2.0.d.ts#L347">rsvg-2.0/rsvg-2.0.d.ts:347</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="flags_none"><span>FLAGS_<wbr/>NONE</span><a href="#flags_none" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-enum-member">FLAGS_NONE</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<div class="tsd-signature"><span class="tsd-kind-enum-member">FLAGS_NONE</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">0</span></div>
 <div class="tsd-comment tsd-typography"><p>No flags are set.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/rsvg-2.0.d.ts#L321">rsvg-2.0/rsvg-2.0.d.ts:321</a></li></ul></aside></section></section></details>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/rsvg-2.0.d.ts#L340">rsvg-2.0/rsvg-2.0.d.ts:340</a></li></ul></aside></section></section></details>
 <details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Variables"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
 <h2>Variables</h2></summary><dl class="tsd-member-summaries"><dt class="tsd-member-summary" id="gtype"><span class="tsd-member-summary-name"><a href="../variables/Rsvg-2.0.Rsvg.HandleFlags._gtype.html">$gtype</a><a href="#gtype" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></span></dt><dd class="tsd-member-summary"></dd></dl></details></div></section>
 <nav id="gi-docgen-toc">
