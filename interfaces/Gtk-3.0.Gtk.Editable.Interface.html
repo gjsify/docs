@@ -34,7 +34,7 @@
 <li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div>
 <div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
 <div class="gi-docgen-generator">
-<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.5.0</p></div></nav>
+<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.6.0</p></div></nav>
 <section id="gi-docgen-main">
 <div class="gi-docgen-content">
 <div class="gi-docgen-page-title"><span class="gi-docgen-object-type">Interface</span>
@@ -44,14 +44,14 @@
 Contains only the virtual methods that need to be implemented.</p>
 </div></section>
 <div class="tsd-signature"><span class="tsd-signature-keyword">interface</span> <span class="tsd-kind-interface">Interface</span> <span class="tsd-signature-symbol">{</span><br/>    <a class="tsd-kind-call-signature" href="#vfunc_changed-1">vfunc_changed</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#vfunc_delete_text-1">vfunc_delete_text</a><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">start_pos</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">,</span> <span class="tsd-kind-parameter">end_pos</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#vfunc_do_delete_text-1">vfunc_do_delete_text</a><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">start_pos</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">,</span> <span class="tsd-kind-parameter">end_pos</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#vfunc_do_insert_text-1">vfunc_do_insert_text</a><span class="tsd-signature-symbol">(</span><br/>        <span class="tsd-kind-parameter">new_text</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">,</span><br/>        <span class="tsd-kind-parameter">new_text_length</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">,</span><br/>        <span class="tsd-kind-parameter">position</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#vfunc_get_chars-1">vfunc_get_chars</a><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">start_pos</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">,</span> <span class="tsd-kind-parameter">end_pos</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#vfunc_get_position-1">vfunc_get_position</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#vfunc_get_selection_bounds-1">vfunc_get_selection_bounds</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">,</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">,</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#vfunc_insert_text-1">vfunc_insert_text</a><span class="tsd-signature-symbol">(</span><br/>        <span class="tsd-kind-parameter">new_text</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">,</span><br/>        <span class="tsd-kind-parameter">new_text_length</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">,</span><br/>        <span class="tsd-kind-parameter">position</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#vfunc_set_position-1">vfunc_set_position</a><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">position</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#vfunc_set_selection_bounds-1">vfunc_set_selection_bounds</a><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">start_pos</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">,</span> <span class="tsd-kind-parameter">end_pos</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">;</span><br/><span class="tsd-signature-symbol">}</span></div>
-<section class="tsd-panel tsd-hierarchy" data-refl="562393">
+<section class="tsd-panel tsd-hierarchy" data-refl="564279">
 <h4>Hierarchy (<a href="../hierarchy.html#Gtk-3.0.Gtk.Editable.Interface">View Summary</a>)</h4>
 <ul class="tsd-hierarchy">
 <li class="tsd-hierarchy-item"><span class="tsd-hierarchy-target">Interface</span>
 <ul class="tsd-hierarchy">
 <li class="tsd-hierarchy-item"><a href="../modules/Gtk-3.0.Gtk.html" class="tsd-signature-type tsd-kind-namespace">Gtk</a><span class="tsd-signature-symbol">.</span><a href="Gtk-3.0.Gtk.Editable.html" class="tsd-signature-type tsd-kind-interface">Editable</a></li></ul></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150040">gtk-3.0/gtk-3.0.d.ts:150040</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150131">gtk-3.0/gtk-3.0.d.ts:150131</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-accordion" open><summary class="tsd-accordion-summary tsd-index-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
@@ -81,7 +81,7 @@ Contains only the virtual methods that need to be implemented.</p>
 <div class="tsd-description">
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150046">gtk-3.0/gtk-3.0.d.ts:150046</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150137">gtk-3.0/gtk-3.0.d.ts:150137</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="vfunc_delete_text"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>delete_<wbr/>text</span><a href="#vfunc_delete_text" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -105,7 +105,7 @@ are those from <code>start_pos</code> to the end of the text.</p>
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150059">gtk-3.0/gtk-3.0.d.ts:150059</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150150">gtk-3.0/gtk-3.0.d.ts:150150</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="vfunc_do_delete_text"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>do_<wbr/>delete_<wbr/>text</span><a href="#vfunc_do_delete_text" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -129,7 +129,7 @@ are those from <code>start_pos</code> to the end of the text.</p>
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150072">gtk-3.0/gtk-3.0.d.ts:150072</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150163">gtk-3.0/gtk-3.0.d.ts:150163</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="vfunc_do_insert_text"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>do_<wbr/>insert_<wbr/>text</span><a href="#vfunc_do_insert_text" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -155,7 +155,7 @@ The function updates <code>position</code> to point after the newly inserted tex
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150085">gtk-3.0/gtk-3.0.d.ts:150085</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150176">gtk-3.0/gtk-3.0.d.ts:150176</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="vfunc_get_chars"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>get_<wbr/>chars</span><a href="#vfunc_get_chars" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -179,7 +179,7 @@ retrieved are those characters from <code>start_pos</code> to the end of the tex
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150098">gtk-3.0/gtk-3.0.d.ts:150098</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150189">gtk-3.0/gtk-3.0.d.ts:150189</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="vfunc_get_position"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>get_<wbr/>position</span><a href="#vfunc_get_position" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -192,7 +192,7 @@ of the content of the editable.</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150107">gtk-3.0/gtk-3.0.d.ts:150107</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150198">gtk-3.0/gtk-3.0.d.ts:150198</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="vfunc_get_selection_bounds"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>get_<wbr/>selection_<wbr/>bounds</span><a href="#vfunc_get_selection_bounds" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -206,7 +206,7 @@ selected both will be identical and <code>false</code> will be returned.</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">,</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">,</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150117">gtk-3.0/gtk-3.0.d.ts:150117</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150208">gtk-3.0/gtk-3.0.d.ts:150208</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="vfunc_insert_text"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>insert_<wbr/>text</span><a href="#vfunc_insert_text" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -232,7 +232,7 @@ The function updates <code>position</code> to point after the newly inserted tex
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150130">gtk-3.0/gtk-3.0.d.ts:150130</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150221">gtk-3.0/gtk-3.0.d.ts:150221</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="vfunc_set_position"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>set_<wbr/>position</span><a href="#vfunc_set_position" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -254,7 +254,7 @@ of the editable. Note that <code>position</code> is in characters, not in bytes.
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150143">gtk-3.0/gtk-3.0.d.ts:150143</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150234">gtk-3.0/gtk-3.0.d.ts:150234</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="vfunc_set_selection_bounds"><code class="tsd-tag tsd-tag-gir tsd-tag-gir-virtual-method">Virtual</code><span>vfunc_<wbr/>set_<wbr/>selection_<wbr/>bounds</span><a href="#vfunc_set_selection_bounds" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -279,7 +279,7 @@ the end of the text.</p>
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150157">gtk-3.0/gtk-3.0.d.ts:150157</a></li></ul></aside></div></li></ul></section></section></details></div></section>
+<li>Defined in <a href="https://github.com/gjsify/types/blob/main/gtk-3.0.d.ts#L150248">gtk-3.0/gtk-3.0.d.ts:150248</a></li></ul></aside></div></li></ul></section></section></details></div></section>
 <nav id="gi-docgen-toc">
 <div class="tsd-page-navigation">
 <h3>Content</h3>

@@ -34,7 +34,7 @@
 <li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div>
 <div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
 <div class="gi-docgen-generator">
-<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.5.0</p></div></nav>
+<p>Generated with <a href="https://typedoc.org/" target="_blank">TypeDoc</a> via <a href="https://github.com/gjsify/ts-for-gir" target="_blank">ts-for-gir</a> v4.6.0</p></div></nav>
 <section id="gi-docgen-main">
 <div class="gi-docgen-content">
 <div class="gi-docgen-page-title"><span class="gi-docgen-object-type">Class (GI Class)</span>
@@ -159,7 +159,7 @@ text. The “title“ attribute is displayed as a tooltip on the link.</p>
 <p>It is possible to implement custom handling for links and their tooltips with
 the Gtk.Label.SignalSignatures.activate_link | Gtk.Label::activate-link signal and the <code>gtk_label_get_current_uri()</code> function.</p>
 </div></section>
-<section class="tsd-panel tsd-hierarchy" data-refl="817956">
+<section class="tsd-panel tsd-hierarchy" data-refl="820792">
 <h4>Hierarchy (<a href="../hierarchy.html#Gtk-3.0.Gtk.Label">View Summary</a>)</h4>
 <ul class="tsd-hierarchy">
 <li class="tsd-hierarchy-item"><a href="../modules/Gtk-3.0.Gtk.html" class="tsd-signature-type tsd-kind-namespace">Gtk</a><span class="tsd-signature-symbol">.</span><a href="Gtk-3.0.Gtk.Misc.html" class="tsd-signature-type tsd-kind-class">Misc</a>
@@ -4484,7 +4484,7 @@ number of lines.</p>
 label’s text and attribute list based on the parse results.</p>
 <p>If the <code>str</code> is external data, you may need to escape it with
 <code>g_markup_escape_text()</code> or <code>g_markup_printf_escaped()</code>:</p>
-<pre><code class="c"><span class="hl-1">GtkWidget *label = </span><span class="hl-0">gtk_label_new</span><span class="hl-1"> (</span><span class="hl-3">NULL</span><span class="hl-1">);</span><br/><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-3">char</span><span class="hl-1"> *str = </span><span class="hl-2">&quot;some text&quot;</span><span class="hl-1">;</span><br/><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-3">char</span><span class="hl-1"> *format = </span><span class="hl-2">&quot;&lt;span style=</span><span class="hl-15">\&quot;</span><span class="hl-2">italic</span><span class="hl-15">\&quot;</span><span class="hl-2">&gt;</span><span class="hl-17">\%</span><span class="hl-2">s&lt;/span&gt;&quot;</span><span class="hl-1">;</span><br/><span class="hl-3">char</span><span class="hl-1"> *markup;</span><br/><br/><span class="hl-1">markup = </span><span class="hl-0">g_markup_printf_escaped</span><span class="hl-1"> (format, str);</span><br/><span class="hl-0">gtk_label_set_markup</span><span class="hl-1"> (</span><span class="hl-0">GTK_LABEL</span><span class="hl-1"> (label), markup);</span><br/><span class="hl-0">g_free</span><span class="hl-1"> (markup);</span>
+<pre><code class="c"><span class="hl-1">GtkWidget *label = </span><span class="hl-0">gtk_label_new</span><span class="hl-1"> (</span><span class="hl-3">NULL</span><span class="hl-1">);</span><br/><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-3">char</span><span class="hl-1"> *str = </span><span class="hl-2">&quot;some text&quot;</span><span class="hl-1">;</span><br/><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-3">char</span><span class="hl-1"> *format = </span><span class="hl-2">&quot;&lt;span style=</span><span class="hl-15">\&quot;</span><span class="hl-2">italic</span><span class="hl-15">\&quot;</span><span class="hl-2">&gt;</span><span class="hl-21">\%</span><span class="hl-2">s&lt;/span&gt;&quot;</span><span class="hl-1">;</span><br/><span class="hl-3">char</span><span class="hl-1"> *markup;</span><br/><br/><span class="hl-1">markup = </span><span class="hl-0">g_markup_printf_escaped</span><span class="hl-1"> (format, str);</span><br/><span class="hl-0">gtk_label_set_markup</span><span class="hl-1"> (</span><span class="hl-0">GTK_LABEL</span><span class="hl-1"> (label), markup);</span><br/><span class="hl-0">g_free</span><span class="hl-1"> (markup);</span>
 </code><button type="button">Copy</button></pre>
 
 <p>This function will set the <a href="#use_markup" class="tsd-kind-accessor">Gtk.Label.use_markup</a> property to <code>true</code> as
